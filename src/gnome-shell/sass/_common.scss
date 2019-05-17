@@ -813,6 +813,11 @@ StScrollBar {
     height: 96px;
   }
 
+/* Window Cycler */
+.cycler-highlight {
+  border: 5px solid $secondary_selected_bg_color;
+}
+
 /* Workspace Switcher */
 .workspace-switcher-group { padding: 8px; }
 
@@ -2288,7 +2293,7 @@ $legacy_icon_size: 24px;
 }
 
 #lockDialogGroup {
-  background: #374040 url("assets/noise-texture.png");
+  background: #888888;
   background-repeat: repeat;
 }
 

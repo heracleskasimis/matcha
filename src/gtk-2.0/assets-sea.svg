@@ -1317,7 +1317,7 @@
             <g
                id="g3981-0-31"
                transform="translate(-3,-4.9999826)"
-               style="fill:#3b3c3e;fill-opacity:1">
+               style="fill:#3c3c3c;fill-opacity:1">
               <rect
                  ry="0.66666085"
                  rx="0.66666085"
@@ -1501,7 +1501,7 @@
             <g
                id="g3981-0-3-4"
                transform="translate(-3,-4.9999826)"
-               style="fill:#3b3c3e;fill-opacity:1">
+               style="fill:#3c3c3c;fill-opacity:1">
               <path
                  style="opacity:1;fill:url(#linearGradient5036);fill-opacity:1;stroke:none"
                  d="m 11.63183,1027.2825 0,6.0104 -3.0052035,0 0,1.9888 3.0052035,0 2.010834,0.022 -0.0221,-2.0109 0.0221,-5.9883 -2.010834,-0.022 z"
@@ -1731,7 +1731,7 @@
             <g
                id="g3981-0-4-2"
                transform="translate(-3,-4.9999826)"
-               style="fill:#3b3c3e;fill-opacity:1">
+               style="fill:#3c3c3c;fill-opacity:1">
               <rect
                  ry="0.66666085"
                  rx="0.66666085"
@@ -1986,7 +1986,7 @@
             <g
                id="g3981-0-3-0-5"
                transform="translate(-3,-4.9999826)"
-               style="fill:#3b3c3e;fill-opacity:1">
+               style="fill:#3c3c3c;fill-opacity:1">
               <path
                  style="opacity:1;fill:url(#linearGradient5026);fill-opacity:1;stroke:none"
                  d="m 47.28125,64.78125 -4.25,4.25 -2.125,-2.125 -1.40625,1.40625 2.125,2.125 1.40625,1.4375 1.40625,-1.4375 4.25,-4.21875 -1.40625,-1.4375 z"
@@ -5003,7 +5003,7 @@
          cy="263.5"
          cx="262.5"
          id="path5834-5-4"
-         style="opacity:1;fill:#f9fafb;fill-opacity:1;stroke:#f9fafb;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:#fafafa;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <circle
          r="7"
          cy="263.5"
@@ -5475,14 +5475,14 @@
          height="32"
          width="24"
          id="rect6166-6"
-         style="opacity:1;fill:#1b2224;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#dddddd;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          y="142"
          x="437"
          height="1"
          width="24"
          id="rect6168-6"
-         style="opacity:1;fill:#11191b;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#dddddd;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <rect
        transform="matrix(0,1,-1,0,0,0)"
@@ -5869,7 +5869,7 @@
             <g
                id="g3981-0-31-5"
                transform="translate(-3,-4.9999826)"
-               style="fill:#3b3c3e;fill-opacity:1">
+               style="fill:#3c3c3c;fill-opacity:1">
               <rect
                  ry="0.66666085"
                  rx="0.66666085"

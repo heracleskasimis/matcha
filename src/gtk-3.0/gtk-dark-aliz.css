@@ -19,7 +19,7 @@
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 4;
-  -GtkTextView-error-underline-color: #FC4138;
+  -GtkTextView-error-underline-color: #FC4160;
   -GtkScrolledWindow-scrollbar-spacing: 0;
   -GtkToolItemGroup-expander-size: 11;
   -GtkWidget-text-handle-width: 20;
@@ -249,7 +249,7 @@ entry:disabled {
 entry.warning {
   color: white;
   border-color: rgba(0, 0, 0, 0.2);
-  background-color: #a0572f;
+  background-color: #7b5b8d;
 }
 
 entry.warning image {
@@ -258,19 +258,19 @@ entry.warning image {
 
 entry.warning:focus {
   color: white;
-  background-color: #F27835;
+  background-color: #b37fd1;
   box-shadow: none;
 }
 
 entry.warning selection, entry.warning selection:focus {
   background-color: white;
-  color: #F27835;
+  color: #b37fd1;
 }
 
 entry.error {
   color: white;
   border-color: rgba(0, 0, 0, 0.2);
-  background-color: #a63631;
+  background-color: #a63649;
 }
 
 entry.error image {
@@ -279,19 +279,19 @@ entry.error image {
 
 entry.error:focus {
   color: white;
-  background-color: #FC4138;
+  background-color: #FC4160;
   box-shadow: none;
 }
 
 entry.error selection, entry.error selection:focus {
   background-color: white;
-  color: #FC4138;
+  color: #FC4160;
 }
 
 entry.search-missing {
   color: white;
   border-color: rgba(0, 0, 0, 0.2);
-  background-color: #a63631;
+  background-color: #a63649;
 }
 
 entry.search-missing image {
@@ -300,13 +300,13 @@ entry.search-missing image {
 
 entry.search-missing:focus {
   color: white;
-  background-color: #FC4138;
+  background-color: #FC4160;
   box-shadow: none;
 }
 
 entry.search-missing selection, entry.search-missing selection:focus {
   background-color: white;
-  color: #FC4138;
+  color: #FC4160;
 }
 
 entry:drop(active):focus, entry:drop(active) {
@@ -764,17 +764,17 @@ button.font separator, button.file separator {
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error + entry.warning,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning + entry.error {
-  border-left-color: #f75d37;
+  border-left-color: #d86099;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry:focus:not(:last-child),
@@ -801,24 +801,24 @@ button.font separator, button.file separator {
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning:focus:not(:last-child),
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning:focus:last-child {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error:focus:not(:last-child),
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error:focus:last-child {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error:focus:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error:focus:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:active + entry,
@@ -874,17 +874,17 @@ button.font separator, button.file separator {
 
 .osd .linked:not(.vertical) > entry.error + entry,
 .osd .linked:not(.vertical) > entry + entry.error {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .osd .linked:not(.vertical) > entry.warning + entry,
 .osd .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .osd .linked:not(.vertical) > entry.error + entry.warning,
 .osd .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #f75d37;
+  border-left-color: #d86099;
 }
 
 .osd .linked:not(.vertical) > entry + entry:focus:not(:last-child),
@@ -911,24 +911,24 @@ button.font separator, button.file separator {
 
 .osd .linked:not(.vertical) > entry + entry.warning:focus:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.warning:focus:last-child {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .osd .linked:not(.vertical) > entry + entry.error:focus:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.error:focus:last-child {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .osd .linked:not(.vertical) > entry.error:focus:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.error:focus:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .osd .linked:not(.vertical) > button:active + entry,
@@ -972,17 +972,17 @@ button.font separator, button.file separator {
 
 .linked.vertical > entry.error + entry,
 .linked.vertical > entry + entry.error {
-  border-top-color: #FC4138;
+  border-top-color: #FC4160;
 }
 
 .linked.vertical > entry.warning + entry,
 .linked.vertical > entry + entry.warning {
-  border-top-color: #F27835;
+  border-top-color: #b37fd1;
 }
 
 .linked.vertical > entry.error + entry.warning,
 .linked.vertical > entry.warning + entry.error {
-  border-top-color: #f75d37;
+  border-top-color: #d86099;
 }
 
 .linked.vertical > entry + entry:focus:not(:last-child),
@@ -1009,24 +1009,24 @@ button.font separator, button.file separator {
 
 .linked.vertical > entry + entry.warning:focus:not(:last-child),
 .linked.vertical > entry + entry.warning:focus:last-child {
-  border-top-color: #F27835;
+  border-top-color: #b37fd1;
 }
 
 .linked.vertical > entry.warning:focus:not(:only-child) + entry,
 .linked.vertical > entry.warning:focus:not(:only-child) + button,
 .linked.vertical > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #F27835;
+  border-top-color: #b37fd1;
 }
 
 .linked.vertical > entry + entry.error:focus:not(:last-child),
 .linked.vertical > entry + entry.error:focus:last-child {
-  border-top-color: #FC4138;
+  border-top-color: #FC4160;
 }
 
 .linked.vertical > entry.error:focus:not(:only-child) + entry,
 .linked.vertical > entry.error:focus:not(:only-child) + button,
 .linked.vertical > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #FC4138;
+  border-top-color: #FC4160;
 }
 
 .linked.vertical > button:active + entry,
@@ -1760,33 +1760,33 @@ headerbar entry progress, .nemo-window .primary-toolbar entry progress, window.t
 headerbar entry.warning, .nemo-window .primary-toolbar entry.warning, window.thunar toolbar#location-toolbar entry.warning, window.thunar #location-toolbar.inline-toolbar entry.warning {
   color: white;
   border-color: rgba(0, 0, 0, 0.4);
-  background-color: #9c532a;
+  background-color: #765788;
 }
 
 headerbar entry.warning:focus, .nemo-window .primary-toolbar entry.warning:focus, window.thunar toolbar#location-toolbar entry.warning:focus, window.thunar #location-toolbar.inline-toolbar entry.warning:focus {
   color: white;
-  background-color: #F27835;
+  background-color: #b37fd1;
 }
 
 headerbar entry.warning selection, .nemo-window .primary-toolbar entry.warning selection, window.thunar toolbar#location-toolbar entry.warning selection, window.thunar #location-toolbar.inline-toolbar entry.warning selection, headerbar entry.warning selection:focus, .nemo-window .primary-toolbar entry.warning selection:focus, window.thunar toolbar#location-toolbar entry.warning selection:focus, window.thunar #location-toolbar.inline-toolbar entry.warning selection:focus {
   background-color: white;
-  color: #F27835;
+  color: #b37fd1;
 }
 
 headerbar entry.error, .nemo-window .primary-toolbar entry.error, window.thunar toolbar#location-toolbar entry.error, window.thunar #location-toolbar.inline-toolbar entry.error {
   color: white;
   border-color: rgba(0, 0, 0, 0.4);
-  background-color: #a2322c;
+  background-color: #a23244;
 }
 
 headerbar entry.error:focus, .nemo-window .primary-toolbar entry.error:focus, window.thunar toolbar#location-toolbar entry.error:focus, window.thunar #location-toolbar.inline-toolbar entry.error:focus {
   color: white;
-  background-color: #FC4138;
+  background-color: #FC4160;
 }
 
 headerbar entry.error selection, .nemo-window .primary-toolbar entry.error selection, window.thunar toolbar#location-toolbar entry.error selection, window.thunar #location-toolbar.inline-toolbar entry.error selection, headerbar entry.error selection:focus, .nemo-window .primary-toolbar entry.error selection:focus, window.thunar toolbar#location-toolbar entry.error selection:focus, window.thunar #location-toolbar.inline-toolbar entry.error selection:focus {
   background-color: white;
-  color: #FC4138;
+  color: #FC4160;
 }
 
 headerbar.selection-mode button, .nemo-window .selection-mode.primary-toolbar button, headerbar.selection-mode button.flat, .nemo-window .selection-mode.primary-toolbar button.flat, headerbar.selection-mode button.sidebar-button, .nemo-window .selection-mode.primary-toolbar button.sidebar-button, headerbar.selection-mode button.budgie-menu-launcher, .nemo-window .selection-mode.primary-toolbar button.budgie-menu-launcher, headerbar.selection-mode .budgie-panel #tasklist-button, .budgie-panel headerbar.selection-mode #tasklist-button, .nemo-window .selection-mode.primary-toolbar .budgie-panel #tasklist-button, .budgie-panel .nemo-window .selection-mode.primary-toolbar #tasklist-button, headerbar.selection-mode .budgie-panel button.flat.launcher, .budgie-panel headerbar.selection-mode button.flat.launcher {
@@ -1876,7 +1876,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry, .nemo-win
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry + entry.error {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry {
@@ -1884,15 +1884,15 @@ headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry, .nemo-w
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry + entry.warning {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry.error + entry.warning {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry.warning + entry.error {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar) > entry + entry:focus:not(:last-child), .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry + entry:focus:not(:last-child),
@@ -3652,8 +3652,8 @@ levelbar block:not(.empty) {
 }
 
 levelbar block.low {
-  border-color: #F27835;
-  background-color: #F27835;
+  border-color: #b37fd1;
+  background-color: #b37fd1;
 }
 
 levelbar block.high {
@@ -3886,17 +3886,17 @@ row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview
 
 .app-notification .linked:not(.vertical) > entry.error + entry,
 .app-notification .linked:not(.vertical) > entry + entry.error {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .app-notification .linked:not(.vertical) > entry.warning + entry,
 .app-notification .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .app-notification .linked:not(.vertical) > entry.error + entry.warning,
 .app-notification .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #f75d37;
+  border-left-color: #d86099;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry:focus:not(:last-child),
@@ -3923,24 +3923,24 @@ row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview
 
 .app-notification .linked:not(.vertical) > entry + entry.warning:focus:not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry.warning:focus:last-child {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .app-notification .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry.warning:focus:not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .app-notification .linked:not(.vertical) > entry + entry.error:focus:not(:last-child),
 .app-notification .linked:not(.vertical) > entry + entry.error:focus:last-child {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .app-notification .linked:not(.vertical) > entry.error:focus:not(:only-child) + entry,
 .app-notification .linked:not(.vertical) > entry.error:focus:not(:only-child) + button,
 .app-notification .linked:not(.vertical) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .app-notification .linked:not(.vertical) > button:active + entry,
@@ -5062,11 +5062,11 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 
 .conflict-row.activatable, .conflict-row.activatable:active {
   color: white;
-  background-color: #FC4138;
+  background-color: #FC4160;
 }
 
 .conflict-row.activatable:hover {
-  background-color: #fd716a;
+  background-color: #fd738a;
 }
 
 .conflict-row.activatable:selected {
@@ -6680,7 +6680,7 @@ UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration
 
 UnityPanelWidget,
 .unity-panel {
-  background-image: linear-gradient(to bottom, #1b2224, #1b2224);
+  background-image: linear-gradient(to bottom, #222222, #222222);
   color: #f9f7f7;
   box-shadow: none;
 }
@@ -7872,21 +7872,21 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window .linked:not(.vertical) > entry + entry.error,
 .budgie-osd-window .linked:not(.vertical) > entry + entry.error,
 .budgie-switcher-window .linked:not(.vertical) > entry + entry.error {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .budgie-notification-window .linked:not(.vertical) > entry.warning + entry, .budgie-osd-window .linked:not(.vertical) > entry.warning + entry, .budgie-switcher-window .linked:not(.vertical) > entry.warning + entry,
 .budgie-notification-window .linked:not(.vertical) > entry + entry.warning,
 .budgie-osd-window .linked:not(.vertical) > entry + entry.warning,
 .budgie-switcher-window .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .budgie-notification-window .linked:not(.vertical) > entry.error + entry.warning, .budgie-osd-window .linked:not(.vertical) > entry.error + entry.warning, .budgie-switcher-window .linked:not(.vertical) > entry.error + entry.warning,
 .budgie-notification-window .linked:not(.vertical) > entry.warning + entry.error,
 .budgie-osd-window .linked:not(.vertical) > entry.warning + entry.error,
 .budgie-switcher-window .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #f75d37;
+  border-left-color: #d86099;
 }
 
 .budgie-notification-window .linked:not(.vertical) > entry + entry:focus:not(:last-child), .budgie-osd-window .linked:not(.vertical) > entry + entry:focus:not(:last-child), .budgie-switcher-window .linked:not(.vertical) > entry + entry:focus:not(:last-child),
@@ -7927,7 +7927,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window .linked:not(.vertical) > entry + entry.warning:focus:last-child,
 .budgie-osd-window .linked:not(.vertical) > entry + entry.warning:focus:last-child,
 .budgie-switcher-window .linked:not(.vertical) > entry + entry.warning:focus:last-child {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .budgie-notification-window .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry, .budgie-osd-window .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry, .budgie-switcher-window .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry,
@@ -7937,14 +7937,14 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo,
 .budgie-osd-window .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo,
 .budgie-switcher-window .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #F27835;
+  border-left-color: #b37fd1;
 }
 
 .budgie-notification-window .linked:not(.vertical) > entry + entry.error:focus:not(:last-child), .budgie-osd-window .linked:not(.vertical) > entry + entry.error:focus:not(:last-child), .budgie-switcher-window .linked:not(.vertical) > entry + entry.error:focus:not(:last-child),
 .budgie-notification-window .linked:not(.vertical) > entry + entry.error:focus:last-child,
 .budgie-osd-window .linked:not(.vertical) > entry + entry.error:focus:last-child,
 .budgie-switcher-window .linked:not(.vertical) > entry + entry.error:focus:last-child {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .budgie-notification-window .linked:not(.vertical) > entry.error:focus:not(:only-child) + entry, .budgie-osd-window .linked:not(.vertical) > entry.error:focus:not(:only-child) + entry, .budgie-switcher-window .linked:not(.vertical) > entry.error:focus:not(:only-child) + entry,
@@ -7954,7 +7954,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window .linked:not(.vertical) > entry.error:focus:not(:only-child) + combobox > box > button.combo,
 .budgie-osd-window .linked:not(.vertical) > entry.error:focus:not(:only-child) + combobox > box > button.combo,
 .budgie-switcher-window .linked:not(.vertical) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #FC4138;
+  border-left-color: #FC4160;
 }
 
 .budgie-notification-window .linked:not(.vertical) > button:active + entry, .budgie-osd-window .linked:not(.vertical) > button:active + entry, .budgie-switcher-window .linked:not(.vertical) > button:active + entry,
@@ -9383,8 +9383,8 @@ window.thunar .sidebar scrollbar trough, filechooser placessidebar.sidebar scrol
 @define-color theme_unfocused_base_color #262626;
 @define-color borders rgba(0, 0, 0, 0.2);
 @define-color unfocused_borders rgba(0, 0, 0, 0.2);
-@define-color warning_color #F27835;
-@define-color error_color #FC4138;
+@define-color warning_color #b37fd1;
+@define-color error_color #FC4160;
 @define-color success_color #3498db;
 @define-color placeholder_text_color #A8A8A8;
 @define-color link_color #f8aeaa;
@@ -9395,9 +9395,9 @@ window.thunar .sidebar scrollbar trough, filechooser placessidebar.sidebar scrol
 @define-color wm_bg_unfocused #272727;
 @define-color wm_highlight #222222;
 @define-color wm_shadow alpha(black, 0.35);
-@define-color wm_button_close_bg #cc575d;
-@define-color wm_button_close_hover_bg #d7787d;
-@define-color wm_button_close_active_bg #be3841;
+@define-color wm_button_close_bg #cc576e;
+@define-color wm_button_close_hover_bg #d77888;
+@define-color wm_button_close_active_bg #be384c;
 @define-color wm_icon_close_bg #1a1a1a;
 @define-color wm_button_hover_bg #343434;
 @define-color wm_button_active_bg #F0544C;
@@ -9409,4 +9409,4 @@ window.thunar .sidebar scrollbar trough, filechooser placessidebar.sidebar scrol
 @define-color budgie_tasklist_indicator_color #F0544C;
 @define-color budgie_tasklist_indicator_color_active #F0544C;
 @define-color budgie_tasklist_indicator_color_active_window #913d39;
-@define-color budgie_tasklist_indicator_color_attention #F27835;
+@define-color budgie_tasklist_indicator_color_attention #b37fd1;

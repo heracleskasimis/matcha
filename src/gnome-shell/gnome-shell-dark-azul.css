@@ -178,7 +178,7 @@ StEntry:insensitive {
 
 StEntry StIcon.capslock-warning {
   icon-size: 16px;
-  warning-color: #FF6D00;
+  warning-color: #937FD1;
   padding: 0 0;
 }
 
@@ -252,7 +252,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -barlevel-border-color: transparent;
   -barlevel-active-background-color: #5faee3;
   -barlevel-active-border-color: transparent;
-  -barlevel-overdrive-color: #FF5252;
+  -barlevel-overdrive-color: #FF5274;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 2px;
   -barlevel-border-width: 0;
@@ -426,7 +426,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .end-session-dialog-warning {
   width: 28em;
-  color: #FF6D00;
+  color: #937FD1;
   padding-top: 6px;
 }
 
@@ -592,7 +592,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .prompt-dialog-error-label {
   font-size: 1em;
-  color: #DD2C00;
+  color: #DD002C;
   padding-bottom: 8px;
 }
 
@@ -622,7 +622,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .polkit-dialog-user-root-label {
-  color: #FF6D00;
+  color: #937FD1;
 }
 
 .polkit-dialog-user-icon {
@@ -886,8 +886,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #FFFFFF;
   -barlevel-height: 3px;
   -barlevel-background-color: transparent;
-  -barlevel-active-background-color: #00C853;
-  -barlevel-overdrive-color: #FF5252;
+  -barlevel-active-background-color: #00C873;
+  -barlevel-overdrive-color: #FF5274;
   -barlevel-overdrive-separator-width: 3px;
   -barlevel-border-width: 0;
 }
@@ -951,6 +951,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-weight: 400;
   width: 96px;
   height: 96px;
+}
+
+/* Window Cycler */
+.cycler-highlight {
+  border: 5px solid #4aa3df;
 }
 
 /* Workspace Switcher */
@@ -1102,11 +1107,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .screencast-indicator {
-  color: #DD2C00;
+  color: #DD002C;
 }
 
 #panel .remote-access-indicator {
-  color: #FF6D00;
+  color: #937FD1;
 }
 
 #panel.solid {
@@ -2692,7 +2697,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .login-dialog-message-warning {
-  color: #FF6D00;
+  color: #937FD1;
 }
 
 .login-dialog-message-hint {
@@ -2915,7 +2920,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #lockDialogGroup {
-  background: #374040 url("assets/noise-texture.png");
+  background: #888888;
   background-repeat: repeat;
 }
 

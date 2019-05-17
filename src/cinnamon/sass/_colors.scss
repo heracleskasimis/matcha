@@ -3,7 +3,7 @@
 
 $base_color: if($variant =='light', #ffffff, #222b2e);
 $text_color: if($variant == 'light', #303d41, #abb9b6);
-$bg_color: if($variant =='light', #f7f7f7, #1b2224);
+$bg_color: if($variant =='light', #f7f7f7, #222222);
 $fg_color: if($variant =='light', #273134, #ccd7d4);
 
 @if $color=='aliz' {
@@ -53,9 +53,9 @@ $drop_target_color: #F08437;
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
 $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%), lighten($bg_color, 2%));
 
-$header_bg: #1b2224;
-@if $color=='sea' and $variant=='light' { $header_bg: #1b2224; }
-@if $color=='sea' and $variant=='dark' { $header_bg: darken(#1b2224, 3%); }
+$header_bg: #222222;
+@if $color=='sea' and $variant=='light' { $header_bg: #222222; }
+@if $color=='sea' and $variant=='dark' { $header_bg: darken(#222222, 3%); }
 @if $color=='aliz' and $variant=='light' { $header_bg: #222222; }
 @if $color=='aliz' and $variant=='dark' { $header_bg: darken(#222222, 3%); }
 @if $color=='azul' and $variant=='light' { $header_bg: #1b1d24; }
