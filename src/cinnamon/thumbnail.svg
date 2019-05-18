@@ -4076,7 +4076,7 @@
            inkscape:label="show-desktop"
            transform="matrix(0.90857634,0,0,0.89999944,1.5994805,29.091623)">
           <path
-             style="display:inline;fill:#2eb398;fill-opacity:1;stroke:none;stroke-width:0.26458335;enable-background:new"
+             style="display:inline;fill:#00d0d0;fill-opacity:1;stroke:none;stroke-width:0.26458335;enable-background:new"
              d="m 23.283334,291.70831 v 4.10104 c 0,0.21987 0.177006,0.39688 0.396875,0.39688 h 5.027083 c 0.219869,0 0.429096,-0.17938 0.396875,-0.39688 v -4.10104 z"
              id="path2258"
              inkscape:connector-curvature="0"
@@ -4338,10 +4338,10 @@
            id="text2342"
            y="294.8833"
            x="146.40605"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2eb398;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00d0d0;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
            xml:space="preserve"
            inkscape:label="workspace-switcher-1"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88055563px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#2eb398;fill-opacity:1;stroke-width:0.26458332;"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88055563px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00d0d0;fill-opacity:1;stroke-width:0.26458332;"
              y="294.8833"
              x="146.40605"
              id="tspan2340"
@@ -4388,7 +4388,7 @@
            height="7.4083319"
            width="42.068752"
            id="rect2360"
-           style="fill:#2eb398;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.98688161;stroke-opacity:0.11000001"
+           style="fill:#00d0d0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.98688161;stroke-opacity:0.11000001"
            inkscape:label="indicator" />
         <text
            id="text2358"
@@ -4576,7 +4576,7 @@
                cy="246.72914"
                cx="139.17084"
                id="circle2420"
-               style="fill:#2eb398;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28228101;stroke-opacity:0.11000001"
+               style="fill:#00d0d0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28228101;stroke-opacity:0.11000001"
                inkscape:label="#path828-4" />
             <text
                xml:space="preserve"
@@ -4993,7 +4993,7 @@
            inkscape:label="show-desktop"
            transform="matrix(0.90857634,0,0,0.89999944,1.5994805,29.091623)">
           <path
-             style="display:inline;fill:#2eb398;fill-opacity:1;stroke:none;stroke-width:0.26458335;enable-background:new"
+             style="display:inline;fill:#00d0d0;fill-opacity:1;stroke:none;stroke-width:0.26458335;enable-background:new"
              d="m 23.283334,291.70831 v 4.10104 c 0,0.21987 0.177006,0.39688 0.396875,0.39688 h 5.027083 c 0.219869,0 0.429096,-0.17938 0.396875,-0.39688 v -4.10104 z"
              id="path2564"
              inkscape:connector-curvature="0"
@@ -5255,10 +5255,10 @@
            id="text2648"
            y="294.8833"
            x="146.40605"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2eb398;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00d0d0;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
            xml:space="preserve"
            inkscape:label="workspace-switcher-1"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88055563px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#2eb398;fill-opacity:1;stroke-width:0.26458332;"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88055563px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00d0d0;fill-opacity:1;stroke-width:0.26458332;"
              y="294.8833"
              x="146.40605"
              id="tspan2646"
@@ -5305,7 +5305,7 @@
            height="7.4083433"
            width="42.068756"
            id="rect2666"
-           style="fill:#2eb398;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.98688239;stroke-opacity:0.11000001"
+           style="fill:#00d0d0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.98688239;stroke-opacity:0.11000001"
            inkscape:label="indicator" />
         <text
            id="text2664"
@@ -5491,7 +5491,7 @@
              cy="246.72914"
              cx="139.17084"
              id="circle2726"
-             style="fill:#2eb398;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28228101;stroke-opacity:0.11000001"
+             style="fill:#00d0d0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28228101;stroke-opacity:0.11000001"
              inkscape:label="#path828-4" />
           <text
              xml:space="preserve"

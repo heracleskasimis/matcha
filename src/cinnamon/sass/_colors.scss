@@ -21,7 +21,7 @@ $fg_color: if($variant =='light', #273134, #ccd7d4);
 }
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: #2eb398;
+$selected_bg_color: #00d0d0;
 @if $color=='aliz' { $selected_bg_color: #F0544C; }
 @if $color=='azul' { $selected_bg_color: #3498db; }
 $alt_selected_bg_color: lighten($selected_bg_color, 6%);
@@ -38,7 +38,7 @@ $warning_color: #F27835;
 $error_color: #FC4138;
 $warning_fg_color: white;
 $error_fg_color: white;
-$success_color: #2eb398;
+$success_color: #00d0d0;
 $destructive_color: #db5b5b;
 $suggested_color: #db5b5b;
 $destructive_fg_color: white;
