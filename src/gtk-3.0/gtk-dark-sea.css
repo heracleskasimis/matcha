@@ -6467,7 +6467,7 @@ widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titl
 }
 
 list.tilix-session-sidebar {
-  background-image: image(rgba(238, 238, 238, 0.95));
+  background-image: image(rgba(48, 48, 48, 0.95));
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button {
@@ -8393,12 +8393,12 @@ window.thunar .sidebar {
 }
 
 window.thunar .sidebar treeview.view {
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(48, 48, 48, 0.95);
   color: #cccccc;
 }
 
 window.thunar .sidebar treeview.view:hover {
-  background-color: rgba(251, 251, 251, 0.95);
+  background-color: rgba(61, 61, 61, 0.95);
   box-shadow: none;
 }
 
@@ -8630,7 +8630,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
 
 treeview.view.sidebar {
   color: #cccccc;
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(48, 48, 48, 0.95);
 }
 
 treeview.view.sidebar.source-list {
@@ -9064,7 +9064,7 @@ GtkListBox .h4 {
 
 filechooser paned > separator,
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(225, 225, 225, 0.95), rgba(225, 225, 225, 0.95));
+  background-image: linear-gradient(to bottom, rgba(35, 35, 35, 0.95), rgba(35, 35, 35, 0.95));
 }
 
 filechooser.csd.background, filechooser placessidebar list,
@@ -9075,7 +9075,7 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(48, 48, 48, 0.95);
 }
 
 filechooser placessidebar.sidebar row.sidebar-row,
@@ -9176,12 +9176,12 @@ filechooser placessidebar.sidebar separator,
 
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
-  background-color: #eeeeee;
+  background-color: #303030;
 }
 
 .nemo-window .sidebar {
   color: #cccccc;
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(48, 48, 48, 0.95);
 }
 
 .nemo-window .sidebar .view, .nemo-window .sidebar row {
@@ -9198,7 +9198,7 @@ filechooser.maximized placessidebar.sidebar,
 }
 
 .nemo-window .sidebar .view.expander, .nemo-window .sidebar row.expander {
-  color: rgba(220, 220, 220, 0.975);
+  color: rgba(130, 130, 130, 0.975);
 }
 
 .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar row.expander:hover {
@@ -9245,7 +9245,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(225, 225, 225, 0.95), rgba(225, 225, 225, 0.95));
+  background-image: linear-gradient(to bottom, rgba(35, 35, 35, 0.95), rgba(35, 35, 35, 0.95));
 }
 
 .gedit-bottom-panel-paned > separator {
@@ -9253,11 +9253,11 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-document-panel {
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(48, 48, 48, 0.95);
 }
 
 .maximized .gedit-document-panel {
-  background-color: #eeeeee;
+  background-color: #303030;
 }
 
 .gedit-document-panel row {
@@ -9334,7 +9334,7 @@ filechooser actionbar entry:disabled {
 
 window.thunar .sidebar scrollbar, filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
-  border-color: rgba(225, 225, 225, 0.95);
+  border-color: rgba(35, 35, 35, 0.95);
 }
 
 window.thunar .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .caja-side-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
@@ -9359,7 +9359,7 @@ window.thunar .sidebar scrollbar slider:disabled, filechooser placessidebar.side
 }
 
 window.thunar .sidebar scrollbar trough, filechooser placessidebar.sidebar scrollbar trough, .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: rgba(35, 35, 35, 0.95);
 }
 
 @define-color theme_fg_color #cccccc;

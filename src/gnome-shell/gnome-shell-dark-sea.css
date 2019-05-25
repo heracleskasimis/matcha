@@ -956,7 +956,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Window Cycler */
 .cycler-highlight {
-  border: 5px solid #00eaea;
+  border: 5px solid #00d0d0;
 }
 
 /* Workspace Switcher */
