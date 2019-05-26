@@ -38,8 +38,8 @@ $menuitem_size: if($laptop == 'true', 28px, 32px);
 }
 
 /* GLOBALS */
-$font-family: "M+ 1c", Roboto, Cantarell, Sans-Serif;
-$large-font-family: Roboto, "M+ 1c", Cantarell, Sans-Serif;
+$font-family: "Liberation Sans Regular", "M+ 1c", Roboto, Cantarell, Sans-Serif;
+$large-font-family: "Liberation Sans Regular", Roboto, "M+ 1c", Cantarell, Sans-Serif;
 
 stage {
   font-family: $font-family;
