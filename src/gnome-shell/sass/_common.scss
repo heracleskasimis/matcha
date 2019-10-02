@@ -165,6 +165,8 @@ StScrollBar {
   -slider-active-border-color: transparent; //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 7px;
+  -slider-handle-border-width: 1px;
+  -slider-handle-border-color: $borders_color;
 
   // barlevels are for >= 3.29.90
   -barlevel-height: 2px;
@@ -176,6 +178,16 @@ StScrollBar {
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 2px;
   -barlevel-border-width: 0;
+
+  .popup-menu-item.selected & {
+    color: $selected_fg_color;
+    -slider-background-color: rgba(black, 0.2);
+    -slider-active-background-color: $selected_fg_color;
+
+    // barlevels are for >= 3.29.90
+    -barlevel-background-color: rgba(black, 0.2);
+    -barlevel-active-background-color: $selected_fg_color;
+  }
 }
 
 /* Check Boxes */
@@ -221,14 +233,23 @@ StScrollBar {
   width: 40px;
   height: 20px;
   background-size: contain;
+  background-image: url("assets/toggle-off.svg");
+
+  &:checked { background-image: url("assets/toggle-on.svg"); }
+
+  .popup-menu-item.selected & {
+    background-image: url("assets/toggle-off.svg");
+
+    &:checked { background-image: url("assets/toggle-on.svg"); }
+  }
 }
 
-  @each $v in us, intl {
-    .toggle-switch-#{$v} {
-      background-image: url("assets/toggle-off.svg");
-      &:checked { background-image: url("assets/toggle-on.svg"); }
-    }
+@each $v in us, intl {
+  .toggle-switch-#{$v} {
+    background-image: url("assets/toggle-off.svg");
+    &:checked { background-image: url("assets/toggle-on.svg"); }
   }
+}
 
 /* links */
 .shell-link {
@@ -285,6 +306,31 @@ StScrollBar {
 .mount-question-dialog-subject,
 .end-session-dialog-subject { //this should be a generic header class
   @include font(title);
+}
+
+/* Message Dialog */
+.message-dialog-main-layout {
+  padding: 12px 20px 0;
+  spacing: 12px;
+}
+
+.message-dialog-content {
+  max-width: 28em;
+  spacing: 20px;
+}
+
+.message-dialog-icon {
+  min-width: 48px;
+  icon-size: 48px;
+}
+
+.message-dialog-title {
+  font-weight: bold;
+}
+
+.message-dialog-subtitle {
+  color: $tertiary_fg_color;
+  font-weight: bold;
 }
 
 /* End Session Dialog */
@@ -429,6 +475,69 @@ StScrollBar {
     font-size: 1em;
   }
 
+  /* ShellMountOperation Dialogs */
+  .shell-mount-operation-icon {
+    icon-size: 48px;
+  }
+
+  .mount-dialog {
+    spacing: 24px;
+  }
+    .mount-dialog .message-dialog-title {
+      padding-top: 10px;
+      padding-left: 17px;
+      padding-bottom: 6px;
+      max-width: 34em;
+    }
+    .mount-dialog .message-dialog-title:rtl {
+      padding-left: 0px;
+      padding-right: 17px;
+    }
+    .mount-dialog .message-dialog-body {
+      padding-left: 17px;
+      width: 28em;
+    }
+    .mount-dialog .message-dialog-body:rtl {
+      padding-left: 0px;
+      padding-right: 17px;
+    }
+
+  .mount-dialog-app-list {
+    max-height: 200px;
+    padding-top: 24px;
+    padding-left: 49px;
+    padding-right: 32px;
+  }
+
+  .mount-dialog-app-list:rtl {
+    padding-right: 49px;
+    padding-left: 32px;
+  }
+
+  .mount-dialog-app-list-item {
+    color: $fg_color;
+  }
+    .mount-dialog-app-list-item:hover {
+      color: $tertiary_fg_color;
+    }
+    .mount-dialog-app-list-item:ltr {
+      padding-right: 1em;
+    }
+    .mount-dialog-app-list-item:rtl {
+      padding-left: 1em;
+    }
+
+  .mount-dialog-app-list-item-icon:ltr {
+    padding-right: 17px;
+  }
+
+  .mount-dialog-app-list-item-icon:rtl {
+    padding-left: 17px;
+  }
+
+  .mount-dialog-app-list-item-name {
+    font-size: 10pt;
+  }
 
 /* Password or Authentication Dialog */
 
@@ -436,6 +545,17 @@ StScrollBar {
   //this is the width of the entire modal popup
   width: 500px;
   border: none;
+
+  .message-dialog-main-layout {
+    spacing: 24px;
+    padding: 10px;
+  }
+  .message-dialog-content {
+    spacing: 16px;
+  }
+  .message-dialog-title {
+    color: $tertiary_fg_color;
+  }
 }
 
   .prompt-dialog-main-layout {
@@ -593,6 +713,22 @@ StScrollBar {
     font-weight: bold;
   }
 
+  /* Extension Dialog */
+  .extension-dialog .message-dialog-main-layout {
+    spacing: 24px;
+    padding: 10px;
+  }
+
+  .extension-dialog .message-dialog-title {
+    font-weight: normal;
+    color: $tertiary_fg_color;
+  }
+
+  /* Inhibit-Shortcuts Dialog */
+  .inhibit-shortcuts-dialog {
+    spacing: 30px;
+  }
+
 /* Network Agent Dialog */
 
 .network-dialog-secret-table {
@@ -612,7 +748,8 @@ StScrollBar {
   color: $fg_color;
   border-image: url("assets/menu.svg") 9 9 9 9;
 
-  .popup-menu-arrow { } //defined globally in the TOP BAR
+  // .popup-menu-arrow { } //defined globally in the TOP BAR
+
   .popup-sub-menu {
     background: none;
     box-shadow: none;
@@ -932,6 +1069,8 @@ StScrollBar {
       //dimensions of the icon are hardcoded
     }
 
+    .popup-menu-arrow { width: 0; height: 0; } // Remove panel arrows
+
     &:hover {
       color: $topbar_fg_color;
     }
@@ -988,12 +1127,6 @@ StScrollBar {
       &:hover, &:active, &:overview, &:focus, &:checked {
         color: $topbar_fg_color;
       }
-    }
-
-    .system-status-icon,
-    .app-menu-icon > StIcon,
-    .popup-menu-arrow {
-      icon-shadow: none;
     }
   }
 }
@@ -1218,6 +1351,7 @@ StScrollBar {
         .message {
           min-height: $menuitem_size * 2;
           background-color: transparent;
+          border: none;
           &:hover,&:focus { background-color: $semi_track_color; }
           &:active { background-color: $track_color; }
           border-radius: 2px;
@@ -1232,6 +1366,11 @@ StScrollBar {
             icon-size: 32px;
           }
 
+          .message-icon-bin > .fallback-window-icon {
+            width: 1.09em;
+            height: 1.09em;
+          }
+
           .message-secondary-bin {
             &:ltr { padding-left: 8px; }
             &:rtl { padding-right: 8px; }
@@ -1239,6 +1378,14 @@ StScrollBar {
 
           .message-secondary-bin {
             color: $tertiary_fg_color;
+          }
+
+          .message-secondary-bin > .event-time {
+            color: $insensitive_fg_color;
+            font-size: 0.7em;
+            /* HACK: the label should be baseline-aligned with a 1em label,
+                     fake this with some bottom padding */
+            padding-bottom: 0.13em;
           }
 
           .message-secondary-bin > StIcon {
@@ -1358,7 +1505,7 @@ StScrollBar {
 }
 
 // not really top bar only
-.popup-menu-arrow { width: 0; height: 0; }
+.popup-menu-arrow { width: 16px; height: 16px; }
 .popup-menu-icon { @include em(16px); }
 
 //close buttons
@@ -1458,14 +1605,15 @@ StScrollBar {
   }
   .app-view-control { //favorties | all toggle button
     padding: 0 16px;
+    margin: 0;
     font-weight: bold;
     color: $secondary_selected_fg_color;
-    background-color: rgba(black, 0.35);
-    border: 1px solid rgba(black, 0.25);
+    background-color: rgba(white, 0.10);
+    border: 1px solid rgba(black, 0.8);
 
     &:hover {
       color: $selected_fg_color;
-      background-color: rgba(black, 0.25);
+      background-color: rgba(white, 0.15);
       box-shadow: none;
     }
     &:active {
@@ -1530,26 +1678,26 @@ StScrollBar {
   padding: 0 8px;
   border-radius: 20px;
   color: $entry_color;
-  background-color: rgba(black, 0.35);
+  background-color: rgba(white, 0.10);
   box-shadow: none;
-  border: 1px solid rgba(black, 0.25);
+  border: 1px solid rgba(black, 0.8);
   text-shadow: none;
+
+  &:hover {
+    .search-entry-icon { color: $entry_hover_color; }
+    box-shadow: none;
+    background-color: rgba(white, 0.15);
+  }
 
   &:focus {
     padding: 0 8px;
     color: $entry_hover_color;
-    background-color: rgba(black, 0.25);
+    background-color: rgba(white, 0.10);
     box-shadow: none;
     border: 1px solid $selected_bg_color;
   }
 
   .search-entry-icon { icon-size: 16px; padding: 0 0; color: $entry_color; }
-
-  &:hover {
-    .search-entry-icon { color: $entry_hover_color; }
-    box-shadow: none;
-    background-color: rgba(black, 0.25);
-  }
 }
 
 //search results
@@ -1670,8 +1818,8 @@ StScrollBar {
 }
 
 .app-well-app-running-dot { //running apps indicator
-  width: 32px; height: 2px;
-  background-color: $selected_fg_color;
+  width: 24px; height: 2px;
+  background-color: $selected_bg_color;
   margin-bottom: 0;
 }
 
