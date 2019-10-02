@@ -171,7 +171,7 @@ popover.background.osd,
 popover.background.magnifier, .csd popover.background.osd, .csd popover.background.magnifier, .osd .scale-popup, .osd {
   color: #000a0a;
   border: none;
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: #e1e1e1;
   background-clip: padding-box;
   box-shadow: none;
 }
@@ -501,8 +501,8 @@ button:drop(active), combobox:drop(active) button.combo {
 
 button.osd {
   color: #000a0a;
-  background-color: rgba(225, 225, 225, 0.95);
-  border-color: rgba(205, 205, 205, 0.95);
+  background-color: #e1e1e1;
+  border-color: #cdcdcd;
 }
 
 button.osd.image-button {
@@ -1612,14 +1612,14 @@ headerbar .subtitle,
 headerbar.selection-mode,
 .selection-mode.titlebar:not(headerbar) {
   color: #ffffff;
-  background-color: rgba(0, 208, 208, 0.95);
-  border-color: rgba(0, 188, 188, 0.95);
+  background-color: #00d0d0;
+  border-color: #00bcbc;
   box-shadow: none;
 }
 
 headerbar.selection-mode:backdrop,
 .selection-mode.titlebar:backdrop:not(headerbar) {
-  background-color: rgba(0, 208, 208, 0.95);
+  background-color: #00d0d0;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -3505,7 +3505,7 @@ scale trough:disabled {
 
 .osd
 scale trough {
-  background-color: rgba(243, 243, 243, 0.95);
+  background-color: #f3f3f3;
 }
 
 .osd
@@ -3950,7 +3950,7 @@ row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview
 .app-notification {
   padding: 10px;
   color: #000a0a;
-  background-color: alpha(rgba(225, 225, 225, 0.95),0.9);
+  background-color: alpha(#e1e1e1,0.9);
   background-clip: border-box;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
@@ -4486,7 +4486,7 @@ tooltip {
 }
 
 tooltip.background {
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: #e1e1e1;
   background-clip: padding-box;
 }
 
@@ -5656,8 +5656,8 @@ list#AutostartListBoxTweakGroup.tweak-group-startup {
 #gf-candidate-popup,
 #gf-candidate-popup.solid {
   color: #002e2e;
-  background-color: rgba(225, 225, 225, 0.95);
-  border: 1px solid rgba(205, 205, 205, 0.95);
+  background-color: #e1e1e1;
+  border: 1px solid #cdcdcd;
   border-radius: 2px;
 }
 
@@ -5679,7 +5679,7 @@ list#AutostartListBoxTweakGroup.tweak-group-startup {
 #gf-osd-window levelbar block.empty,
 #gf-input-source-popup levelbar block.empty,
 #gf-candidate-popup levelbar block.empty {
-  background-color: rgba(213, 212, 212, 0.95);
+  background-color: #d5d4d4;
 }
 
 #gf-bubble levelbar trough,
@@ -5749,7 +5749,7 @@ widget#PROCESSOR list row, widget#MEMORY list row {
 }
 
 widget#PROCESSOR list row.max, widget#MEMORY list row.max {
-  color: rgba(225, 225, 225, 0.95);
+  color: #e1e1e1;
 }
 
 widget#PROCESSOR list separator.list, widget#MEMORY list separator.list {
@@ -6611,7 +6611,7 @@ widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titl
 }
 
 list.tilix-session-sidebar {
-  background-image: image(rgba(238, 238, 238, 0.95));
+  background-image: image(#eeeeee);
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button {
@@ -6963,7 +6963,7 @@ UnityPanelWidget:backdrop,
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid rgba(205, 205, 205, 0.95);
+  border: 1px solid #cdcdcd;
 }
 
 MsdOsdWindow.background.osd .progressbar {
@@ -6974,7 +6974,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 MsdOsdWindow.background.osd .trough {
-  background-color: rgba(213, 212, 212, 0.95);
+  background-color: #d5d4d4;
   border: none;
   border-radius: 5px;
 }
@@ -7336,7 +7336,7 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 .eom-window statusbar {
   margin: 0 -10px;
   padding: 0 0.41875rem;
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: #e1e1e1;
   color: #000a0a;
 }
 
@@ -7403,7 +7403,7 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
   border: 1px solid rgba(195, 195, 195, 0.42);
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: #e1e1e1;
   box-shadow: none;
 }
 
@@ -9092,12 +9092,12 @@ window.thunar .sidebar {
 }
 
 window.thunar .sidebar treeview.view {
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: #eeeeee;
   color: #000a0a;
 }
 
 window.thunar .sidebar treeview.view:hover {
-  background-color: rgba(251, 251, 251, 0.95);
+  background-color: #fbfbfb;
   box-shadow: none;
 }
 
@@ -9329,7 +9329,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
 
 treeview.view.sidebar {
   color: #000a0a;
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: #eeeeee;
 }
 
 treeview.view.sidebar.source-list {
@@ -9474,12 +9474,12 @@ scale.warmth trough {
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: #e1e1e1;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px;
-  box-shadow: inset 0 1px rgba(238, 238, 238, 0.95);
+  box-shadow: inset 0 1px #eeeeee;
 }
 
 #buttonbox_frame button {
@@ -9763,7 +9763,7 @@ GtkListBox .h4 {
 
 filechooser paned > separator,
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95));
+  background-image: linear-gradient(to bottom, #eeeeee, #eeeeee);
 }
 
 filechooser paned > separator:dir(ltr),
@@ -9784,7 +9784,7 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: #eeeeee;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row,
@@ -9890,7 +9890,7 @@ filechooser.maximized placessidebar.sidebar,
 
 .nemo-window .sidebar {
   color: #000a0a;
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: #eeeeee;
 }
 
 .nemo-window .sidebar .view, .nemo-window .sidebar row {
@@ -9907,7 +9907,7 @@ filechooser.maximized placessidebar.sidebar,
 }
 
 .nemo-window .sidebar .view.expander, .nemo-window .sidebar row.expander {
-  color: rgba(113, 118, 118, 0.975);
+  color: #777c7c;
 }
 
 .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar row.expander:hover {
@@ -9933,7 +9933,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95));
+  background-image: linear-gradient(to bottom, #eeeeee, #eeeeee);
 }
 
 .gedit-bottom-panel-paned > separator {
@@ -9941,7 +9941,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-document-panel {
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: #eeeeee;
 }
 
 .maximized .gedit-document-panel {
@@ -10022,7 +10022,7 @@ filechooser actionbar entry:disabled {
 
 window.thunar .sidebar scrollbar, filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar {
-  border-color: rgba(225, 225, 225, 0.95);
+  border-color: #e1e1e1;
 }
 
 window.thunar .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
@@ -10047,7 +10047,7 @@ window.thunar .sidebar scrollbar slider:disabled, filechooser placessidebar.side
 }
 
 window.thunar .sidebar scrollbar trough, filechooser placessidebar.sidebar scrollbar trough, .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough {
-  background-color: rgba(225, 225, 225, 0.95);
+  background-color: #e1e1e1;
 }
 
 @define-color theme_fg_color #272727;
