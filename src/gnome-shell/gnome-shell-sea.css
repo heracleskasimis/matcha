@@ -1873,6 +1873,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /* OVERVIEW */
 #overview {
   spacing: 24px;
+  background-color: #808080;
   /* App Vault/Grid */
 }
 
@@ -1897,7 +1898,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.75);
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid transparent;
 }
 
 #overview .app-view-control:hover {
@@ -1980,7 +1981,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #FAFAFA;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: none;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid transparent;
   text-shadow: none;
 }
 
