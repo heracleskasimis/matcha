@@ -1120,8 +1120,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 8px;
 }
 
-.ws-switcher-active-up, .ws-switcher-active-down,
-.ws-switcher-active-left, .ws-switcher-active-rigth {
+.ws-switcher-active-up, .ws-switcher-active-down {
   height: 48px;
   background-color: #00d0d0;
   color: #FFFFFF;
