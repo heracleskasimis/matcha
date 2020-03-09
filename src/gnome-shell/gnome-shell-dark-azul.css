@@ -1360,6 +1360,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .weather-button,
 .message-list-section-title,
 .events-section-title {
+  color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border-color: transparent;
 }
@@ -1463,6 +1464,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 0;
   margin: 2px;
   border-radius: 100px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .calendar-day-base:hover, .calendar-day-base:focus {
@@ -1641,6 +1643,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 8px;
   color: rgba(255, 255, 255, 0.75);
   font-size: 1em;
+}
+
+.message-body {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .message-content * > StIcon {

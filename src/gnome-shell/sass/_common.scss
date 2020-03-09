@@ -1193,6 +1193,7 @@ StScrollBar {
     .weather-button,
     .message-list-section-title,
     .events-section-title {
+      color: $tertiary_fg_color;
       background-color: transparent;
       border-color: transparent;
       &:hover,&:focus {
@@ -1266,6 +1267,7 @@ StScrollBar {
       padding: 0;
       margin: 2px;
       border-radius: 100px;
+      color: $tertiary_fg_color;
       &:hover,&:focus { background-color: $semi_track_color; }
       // &:active { background-color: $track_color; }
       &:active, &:selected {
@@ -1418,6 +1420,10 @@ StScrollBar {
             padding: 8px;
             color: $secondary_fg_color;
             font-size: 1em;
+          }
+
+          .message-body {
+            color: $tertiary_fg_color;
           }
 
           .message-content * > StIcon {
