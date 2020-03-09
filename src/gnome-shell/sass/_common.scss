@@ -281,6 +281,10 @@ StScrollBar {
   box-shadow: $z-depth-2;
   border: none;
 
+  * {
+    color: $tertiary_fg_color;
+  }
+
   .modal-dialog-content-box {
     padding: 24px;
   }

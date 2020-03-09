@@ -391,6 +391,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
 }
 
+.modal-dialog * {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .modal-dialog .modal-dialog-content-box {
   padding: 24px;
 }
