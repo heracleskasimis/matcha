@@ -34,7 +34,7 @@
 }
 
 .background {
-  color: #323232;
+  color: #272727;
   background-color: #f7f7f7;
 }
 
@@ -48,22 +48,22 @@
 
 .gtkstyle-fallback {
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 .gtkstyle-fallback:hover {
   background-color: white;
-  color: #323232;
+  color: #272727;
 }
 
 .gtkstyle-fallback:active {
-  background-color: #dedddd;
-  color: #323232;
+  background-color: #dedede;
+  color: #272727;
 }
 
 .gtkstyle-fallback:disabled {
   background-color: #fcfcfc;
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .gtkstyle-fallback:selected {
@@ -81,7 +81,7 @@ button.gtkstyle-fallback:active, button.gtkstyle-fallback:checked {
 textview text,
 iconview,
 .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar {
-  color: #363636;
+  color: #303030;
   background-color: #ffffff;
 }
 
@@ -89,7 +89,7 @@ iconview,
 textview text:hover,
 iconview:hover,
 .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:hover {
-  color: #323232;
+  color: #272727;
 }
 
 .view:selected:hover,
@@ -124,7 +124,7 @@ flowbox flowboxchild:selected {
 
 label.separator, popover label.separator,
 popover.background label.separator {
-  color: #323232;
+  color: #272727;
 }
 
 label selection {
@@ -133,7 +133,7 @@ label selection {
 }
 
 label:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .dim-label, label.separator, popover label.separator,
@@ -171,7 +171,7 @@ popover.background.osd,
 popover.background.magnifier, .csd popover.background.osd, .csd popover.background.magnifier, .osd .scale-popup, .osd {
   color: #0c0404;
   border: none;
-  background-color: rgba(41, 41, 41, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
   background-clip: padding-box;
   box-shadow: none;
 }
@@ -204,7 +204,7 @@ entry {
   caret-color: currentColor;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: #363636;
+  color: #303030;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
 }
@@ -214,7 +214,7 @@ entry.search {
 }
 
 entry image {
-  color: #5b5b5b;
+  color: #525252;
 }
 
 entry image.left {
@@ -237,13 +237,13 @@ entry.flat, .raven .raven-background spinbutton:not(.vertical), entry.flat:focus
 
 entry:focus {
   background-clip: border-box;
-  color: #363636;
+  color: #303030;
   border-color: #F0544C;
   background-color: #ffffff;
 }
 
 entry:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
   border-color: rgba(0, 0, 0, 0.04);
   background-color: rgba(255, 255, 255, 0.55);
 }
@@ -318,8 +318,8 @@ entry:drop(active):focus, entry:drop(active) {
 
 .osd entry {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.42);
 }
 
 .osd entry image, .osd entry image:hover {
@@ -328,13 +328,13 @@ entry:drop(active):focus, entry:drop(active) {
 
 .osd entry:focus {
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
 }
 
 .osd entry:disabled {
   color: rgba(12, 4, 4, 0.55);
-  background-color: rgba(97, 97, 97, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .osd entry selection:focus, .osd entry selection {
@@ -379,7 +379,7 @@ button {
   border: 1px solid;
   border-radius: 3px;
   padding: 2px 6px;
-  color: #323232;
+  color: #272727;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #fcfcfc;
 }
@@ -405,7 +405,7 @@ button.flat:hover:active, button.sidebar-button:hover:active, PanelToplevel.mate
 }
 
 button:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
   -gtk-icon-effect: highlight;
@@ -425,7 +425,7 @@ button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label
 }
 
 button:active {
-  color: #323232;
+  color: #272727;
 }
 
 button:active:hover, button:checked {
@@ -444,7 +444,7 @@ button:disabled {
 }
 
 button:disabled label, button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 button:disabled:active, button:disabled:checked {
@@ -501,8 +501,8 @@ button:drop(active), combobox:drop(active) button.combo {
 
 button.osd {
   color: #0c0404;
-  background-color: rgba(41, 41, 41, 0.95);
-  border-color: rgba(21, 21, 21, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
+  border-color: rgba(205, 205, 205, 0.95);
 }
 
 button.osd.image-button {
@@ -517,39 +517,39 @@ button.osd:hover {
 
 button.osd:active, button.osd:checked {
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
 }
 
 button.osd:disabled {
-  color: #201e1e;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.85);
+  color: #a19f9f;
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .osd button {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.42);
 }
 
 .osd button:hover {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(115, 115, 115, 0.52);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.52);
 }
 
 .osd button:active, .osd button:checked {
   background-clip: padding-box;
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
 }
 
 .osd button:disabled {
-  color: #201e1e;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.85);
+  color: #a19f9f;
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .osd button.flat, .osd button.sidebar-button, .osd PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, .osd button.budgie-menu-launcher, .osd .budgie-panel #tasklist-button, .budgie-panel .osd #tasklist-button, .osd .budgie-panel button.flat.launcher, .budgie-panel .osd button.flat.launcher {
@@ -561,20 +561,20 @@ button.osd:disabled {
 
 .osd button.flat:hover, .osd button.sidebar-button:hover, .osd PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:hover, .osd button.budgie-menu-launcher:hover, .osd .budgie-panel #tasklist-button:hover, .budgie-panel .osd #tasklist-button:hover {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(115, 115, 115, 0.52);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.52);
 }
 
 .osd button.flat:disabled, .osd button.sidebar-button:disabled, .osd PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:disabled, .osd button.budgie-menu-launcher:disabled, .osd .budgie-panel #tasklist-button:disabled, .budgie-panel .osd #tasklist-button:disabled {
-  color: #201e1e;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.85);
+  color: #a19f9f;
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.85);
   background-image: none;
 }
 
 .osd button.flat:active, .osd button.sidebar-button:active, .osd PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:active, .osd button.budgie-menu-launcher:active, .osd .budgie-panel #tasklist-button:active, .budgie-panel .osd #tasklist-button:active, .osd button.flat:checked, .osd button.sidebar-button:checked, .osd PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:checked, .osd button.budgie-menu-launcher:checked, .osd .budgie-panel #tasklist-button:checked, .budgie-panel .osd #tasklist-button:checked {
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
 }
 
@@ -615,7 +615,7 @@ button.suggested-action.flat:disabled, button.suggested-action.sidebar-button:di
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 button.suggested-action:disabled {
@@ -624,7 +624,7 @@ button.suggested-action:disabled {
 }
 
 button.suggested-action:disabled label, button.suggested-action:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 button.destructive-action {
@@ -659,7 +659,7 @@ button.destructive-action.flat:disabled, button.destructive-action.sidebar-butto
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 button.destructive-action:disabled {
@@ -668,7 +668,7 @@ button.destructive-action:disabled {
 }
 
 button.destructive-action:disabled label, button.destructive-action:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .stack-switcher > button {
@@ -724,13 +724,13 @@ button.font separator, button.file separator {
 }
 
 .inline-toolbar toolbutton > button {
-  color: #323232;
+  color: #272727;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #fcfcfc;
 }
 
 .inline-toolbar toolbutton > button:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
 }
@@ -747,7 +747,7 @@ button.font separator, button.file separator {
 }
 
 .inline-toolbar toolbutton > button:disabled label, .inline-toolbar toolbutton > button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
@@ -871,7 +871,7 @@ button.font separator, button.file separator {
 }
 
 .osd .linked:not(.vertical) > entry + entry {
-  border-left-color: rgba(11, 11, 11, 0.3);
+  border-left-color: rgba(195, 195, 195, 0.3);
 }
 
 .osd .linked:not(.vertical) > entry.error + entry,
@@ -944,12 +944,12 @@ button.font separator, button.file separator {
 
 .osd .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
 .osd .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .osd .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled:not(:only-child),
 .osd .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover) {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .osd .linked:not(.vertical) > button:active + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
@@ -1317,12 +1317,12 @@ modelbutton.flat:hover {
 
 menuitem.button.flat:checked,
 modelbutton.flat:checked {
-  color: #323232;
+  color: #272727;
 }
 
 menuitem.button.flat:disabled,
 modelbutton.flat:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 menuitem.button.flat check:last-child,
@@ -1352,7 +1352,7 @@ modelbutton.flat arrow.right {
 }
 
 *:link:visited, button:visited {
-  color: #292929;
+  color: #232323;
 }
 
 *:selected *:link:visited, *:selected button:visited:link, *:selected button:visited {
@@ -1375,7 +1375,7 @@ modelbutton.flat arrow.right {
   color: #fcdddb;
 }
 
-infobar.info *:link, infobar.info button:link, infobar.info button:visited, infobar.question *:link, infobar.question button:link, infobar.question button:visited, infobar.warning *:link, infobar.warning button:link, infobar.warning button:visited, infobar.error *:link, infobar.error button:link, infobar.error button:visited, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link,
+infobar.info :link, infobar.question :link, infobar.warning :link, infobar.error :link, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link,
 .selection-mode.titlebar:not(headerbar) .subtitle:link,
 *:selected *:link,
 *:selected button:link,
@@ -1396,7 +1396,7 @@ spinbutton button:active {
 }
 
 spinbutton:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 spinbutton:not(.vertical) entry {
@@ -1438,7 +1438,7 @@ spinbutton:not(.vertical) > entry:drop(active) + button {
 
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
@@ -1507,7 +1507,7 @@ toolbar.osd, .osd.inline-toolbar {
   padding: 7px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 3px;
-  background-color: rgba(41, 41, 41, 0.9);
+  background-color: rgba(225, 225, 225, 0.9);
 }
 
 toolbar.osd.left, .osd.left.inline-toolbar, toolbar.osd.right, .osd.right.inline-toolbar, toolbar.osd.top, .osd.top.inline-toolbar, toolbar.osd.bottom, .osd.bottom.inline-toolbar {
@@ -1550,7 +1550,7 @@ toolbar:not(.inline-toolbar) .linked > entry,
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) {
-  color: #363636;
+  color: #303030;
   background-color: transparent;
   box-shadow: none;
   border-width: 0 0 1px 0;
@@ -1987,7 +1987,7 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button
 }
 
 headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, .caja-navigation-window toolbar#Toolbar.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button {
-  background-color: #f7f6f6;
+  background-color: #f7f7f7;
   color: #0c0404;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.08);
@@ -2245,7 +2245,7 @@ headerbar switch:backdrop, .nemo-window .primary-toolbar switch:backdrop, .caja-
 }
 
 headerbar progressbar trough, .nemo-window .primary-toolbar progressbar trough, .caja-navigation-window toolbar#Toolbar.primary-toolbar progressbar trough, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar progressbar trough {
-  background-color: #c4c3c3;
+  background-color: #c4c4c4;
 }
 
 headerbar progressbar:backdrop, .nemo-window .primary-toolbar progressbar:backdrop, .caja-navigation-window toolbar#Toolbar.primary-toolbar progressbar:backdrop, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar progressbar:backdrop {
@@ -2277,15 +2277,15 @@ headerbar scale slider:disabled, .nemo-window .primary-toolbar scale slider:disa
 }
 
 headerbar scale trough, .nemo-window .primary-toolbar scale trough, .caja-navigation-window toolbar#Toolbar.primary-toolbar scale trough, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar scale trough {
-  background-color: #c4c3c3;
+  background-color: #c4c4c4;
 }
 
 headerbar scale trough:disabled, .nemo-window .primary-toolbar scale trough:disabled, .caja-navigation-window toolbar#Toolbar.primary-toolbar scale trough:disabled, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar scale trough:disabled {
-  background-color: rgba(196, 195, 195, 0.95);
+  background-color: rgba(196, 196, 196, 0.95);
 }
 
 .path-bar button:hover {
-  background-color: rgba(50, 50, 50, 0.06);
+  background-color: rgba(39, 39, 39, 0.06);
 }
 
 .path-bar button:checked, .path-bar button:active {
@@ -2327,7 +2327,7 @@ headerbar scale trough:disabled, .nemo-window .primary-toolbar scale trough:disa
 }
 
 treeview.view {
-  border-left-color: rgba(50, 50, 50, 0.15);
+  border-left-color: rgba(39, 39, 39, 0.15);
   border-top-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -2347,11 +2347,11 @@ treeview.view acceleditor > label {
 treeview.view:selected, treeview.view:selected:focus {
   border-radius: 0;
   border-left-color: #f8aaa6;
-  border-top-color: rgba(50, 50, 50, 0.1);
+  border-top-color: rgba(39, 39, 39, 0.1);
 }
 
 treeview.view:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 treeview.view:disabled:selected {
@@ -2366,7 +2366,7 @@ treeview.view.separator {
 treeview.view:drop(active) {
   border-style: solid none;
   border-width: 1px;
-  border-color: #91433f;
+  border-color: #8c3e3a;
 }
 
 treeview.view:drop(active).after {
@@ -2379,7 +2379,7 @@ treeview.view:drop(active).before {
 
 treeview.view.expander {
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-  color: #999999;
+  color: #939393;
 }
 
 treeview.view.expander:dir(rtl) {
@@ -2387,7 +2387,7 @@ treeview.view.expander:dir(rtl) {
 }
 
 treeview.view.expander:hover {
-  color: #323232;
+  color: #272727;
 }
 
 treeview.view.expander:selected {
@@ -2415,7 +2415,7 @@ treeview.view.progressbar:selected, treeview.view.progressbar:selected:focus, tr
 }
 
 treeview.view.trough, treeview.view.sidebar.source-list.trough {
-  color: #323232;
+  color: #272727;
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 3px;
   border-width: 0;
@@ -2433,7 +2433,7 @@ treeview.view header button {
   min-width: 0;
   padding: 3px 6px;
   font-weight: bold;
-  color: #5b5b5b;
+  color: #525252;
   background-color: #ffffff;
   background-image: none;
   border-style: none solid none none;
@@ -2446,7 +2446,7 @@ treeview.view header button:hover {
 }
 
 treeview.view header button:active {
-  color: #323232;
+  color: #272727;
 }
 
 treeview.view header button:active, treeview.view header button:hover {
@@ -2454,7 +2454,7 @@ treeview.view header button:active, treeview.view header button:hover {
 }
 
 treeview.view header button:active:hover {
-  color: #323232;
+  color: #272727;
 }
 
 treeview.view header button:disabled {
@@ -2560,7 +2560,7 @@ menu menuitem,
   min-height: 16px;
   min-width: 40px;
   padding: 5px;
-  color: #363636;
+  color: #303030;
 }
 
 menu menuitem:hover,
@@ -2571,12 +2571,12 @@ menu menuitem:hover,
 
 menu menuitem:disabled,
 .menu menuitem:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 menu menuitem label:disabled,
 .menu menuitem label:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 menu menuitem arrow,
@@ -2641,7 +2641,7 @@ menu > arrow.bottom,
 
 menu > arrow:hover,
 .menu > arrow:hover {
-  background-color: #ebebeb;
+  background-color: #e9e9e9;
 }
 
 menu > arrow:disabled,
@@ -2686,7 +2686,7 @@ popover.background > .inline-toolbar {
 popover button:not(.suggested-action):not(.destructive-action):hover,
 popover.background button:not(.suggested-action):not(.destructive-action):hover {
   background-color: rgba(0, 0, 0, 0.05);
-  color: #363636;
+  color: #303030;
 }
 
 popover button:not(.suggested-action):not(.destructive-action):checked, popover button:not(.suggested-action):not(.destructive-action):active,
@@ -2885,33 +2885,33 @@ notebook > header.left > tabs > arrow.down:first-child, notebook > header.right 
 }
 
 notebook > header > tabs > arrow {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 notebook > header > tabs > arrow:hover {
-  color: rgba(50, 50, 50, 0.775);
+  color: rgba(39, 39, 39, 0.775);
 }
 
 notebook > header > tabs > arrow:active {
-  color: #323232;
+  color: #272727;
 }
 
 notebook > header > tabs > arrow:disabled {
-  color: rgba(50, 50, 50, 0.7);
+  color: rgba(39, 39, 39, 0.7);
 }
 
 notebook > header > tabs > tab {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
   background-color: rgba(247, 247, 247, 0);
 }
 
 notebook > header > tabs > tab:hover:not(:checked) {
-  color: rgba(50, 50, 50, 0.775);
+  color: rgba(39, 39, 39, 0.775);
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 notebook > header > tabs > tab:checked {
-  color: #323232;
+  color: #272727;
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -2921,7 +2921,7 @@ notebook > header > tabs > tab button.flat, notebook > header > tabs > tab butto
   min-width: 16px;
   padding: 0;
   margin: 4px 0;
-  color: #777777;
+  color: #707070;
 }
 
 notebook > header > tabs > tab button.flat:hover, notebook > header > tabs > tab button.sidebar-button:hover, notebook > header > tabs > tab PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:hover, notebook > header > tabs > tab button.budgie-menu-launcher:hover, notebook > header > tabs > tab .budgie-panel #tasklist-button:hover, .budgie-panel notebook > header > tabs > tab #tasklist-button:hover, notebook > header > tabs > tab .budgie-panel button.flat.launcher:hover, .budgie-panel notebook > header > tabs > tab button.flat.launcher:hover {
@@ -2991,11 +2991,11 @@ scrollbar slider {
   border: 4px solid transparent;
   border-radius: 8px;
   background-clip: padding-box;
-  background-color: #a8a8a8;
+  background-color: #a4a4a4;
 }
 
 scrollbar slider:hover {
-  background-color: #bcbcbc;
+  background-color: #b9b9b9;
 }
 
 scrollbar slider:hover:active {
@@ -3029,7 +3029,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
   margin: 0;
   min-width: 4px;
   min-height: 4px;
-  background-color: #6d6d6d;
+  background-color: #656565;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -3411,11 +3411,11 @@ checkbutton.text-button, radiobutton.text-button {
 }
 
 checkbutton.text-button:hover, radiobutton.text-button:hover {
-  color: #0c0c0c;
+  color: #010101;
 }
 
 checkbutton.text-button:disabled, radiobutton.text-button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 checkbutton label:not(:only-child):first-child, radiobutton label:not(:only-child):first-child {
@@ -3505,7 +3505,7 @@ scale trough:disabled {
 
 .osd
 scale trough {
-  background-color: rgba(59, 59, 59, 0.95);
+  background-color: rgba(243, 243, 243, 0.95);
 }
 
 .osd
@@ -3559,7 +3559,7 @@ scale slider:active {
 
 
 scale slider:disabled {
-  background-color: #e6e5e5;
+  background-color: #e6e6e6;
   border-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -3693,7 +3693,7 @@ scale:selected trough:disabled {
 progressbar {
   padding: 0;
   font-size: smaller;
-  color: rgba(50, 50, 50, 0.7);
+  color: rgba(39, 39, 39, 0.7);
 }
 
 progressbar.osd {
@@ -3778,8 +3778,8 @@ levelbar block.full {
 }
 
 levelbar block.empty {
-  background-color: rgba(50, 50, 50, 0.2);
-  border-color: rgba(50, 50, 50, 0.2);
+  background-color: rgba(39, 39, 39, 0.2);
+  border-color: rgba(39, 39, 39, 0.2);
 }
 
 printdialog paper {
@@ -3928,11 +3928,11 @@ row.activatable.has-open-popup, .has-open-popup.view, textview text.has-open-pop
 }
 
 row.activatable:active, .view:active, textview text:active, iconview:active, .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:active, .nemo-window .nemo-places-sidebar .places-treeview:active, .budgie-menu button:active, .panel popover .sidebar .view:active, treeview.view.sidebar.source-list:active {
-  color: #323232;
+  color: #272727;
 }
 
 row.activatable:disabled, .view:disabled, textview text:disabled, iconview:disabled, .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:disabled, .nemo-window .nemo-places-sidebar .places-treeview:disabled, .budgie-menu button:disabled, .panel popover .sidebar .view:disabled, treeview.view.sidebar.source-list:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 row.activatable:disabled image, .view:disabled image, textview text:disabled image, iconview:disabled image, .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:disabled image, .nemo-window .nemo-places-sidebar .places-treeview:disabled image, .budgie-menu button:disabled image, .panel popover .sidebar .view:disabled image, treeview.view.sidebar.source-list:disabled image {
@@ -3943,19 +3943,19 @@ row.activatable:selected:active, .view:selected:active, textview text:selected:a
   color: #ffffff;
 }
 
-row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview text:selected.has-open-popup, iconview:selected.has-open-popup, .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:selected.has-open-popup, .nemo-window .nemo-places-sidebar .places-treeview:selected.has-open-popup, .budgie-menu button:selected.has-open-popup, .panel popover .sidebar .view:selected.has-open-popup, treeview.view.sidebar.source-list:selected.has-open-popup, row.activatable:selected:hover, .view:selected:hover, textview text:selected:hover, iconview:selected:hover, .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:selected:hover, .nemo-window .nemo-places-sidebar .places-treeview:selected:hover, .budgie-menu button:selected:hover, .panel popover .sidebar .view:selected:hover, treeview.view.sidebar.source-list:selected:hover {
+row.activatable:selected.has-open-popup, :selected.has-open-popup.view, textview text:selected.has-open-popup, iconview:selected.has-open-popup, .geary-sidebar-pane-separator frame.geary-folder-frame treeview:selected.has-open-popup.view.sidebar, .nemo-window .nemo-places-sidebar :selected.has-open-popup.places-treeview, .budgie-menu button:selected.has-open-popup, .panel popover .sidebar :selected.has-open-popup.view, treeview:selected.has-open-popup.view.sidebar.source-list, row.activatable:selected:hover, .view:selected:hover, textview text:selected:hover, iconview:selected:hover, .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:selected:hover, .nemo-window .nemo-places-sidebar .places-treeview:selected:hover, .budgie-menu button:selected:hover, .panel popover .sidebar .view:selected:hover, treeview.view.sidebar.source-list:selected:hover {
   background-color: #d84c44;
 }
 
 .app-notification {
   padding: 10px;
   color: #0c0404;
-  background-color: alpha(rgba(41, 41, 41, 0.95),0.9);
+  background-color: alpha(rgba(225, 225, 225, 0.95),0.9);
   background-clip: border-box;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
 }
 
 .app-notification border {
@@ -3964,8 +3964,8 @@ row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview
 
 .app-notification button {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.42);
 }
 
 .app-notification button.flat, .app-notification button.sidebar-button, .app-notification PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, .app-notification button.budgie-menu-launcher, .app-notification .budgie-panel #tasklist-button, .budgie-panel .app-notification #tasklist-button, .app-notification .budgie-panel button.flat.launcher, .budgie-panel .app-notification button.flat.launcher {
@@ -3974,21 +3974,21 @@ row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview
 
 .app-notification button:hover {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(115, 115, 115, 0.52);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.52);
 }
 
 .app-notification button:active, .app-notification button:checked {
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
   background-clip: padding-box;
 }
 
 .app-notification button:disabled {
-  color: #201e1e;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.85);
+  color: #a19f9f;
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .app-notification .linked:not(.vertical) > entry + entry {
@@ -4065,12 +4065,12 @@ row.activatable:selected.has-open-popup, .view:selected.has-open-popup, textview
 
 .app-notification .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
 .app-notification .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .app-notification .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled:not(:only-child),
 .app-notification .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover) {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .app-notification .linked:not(.vertical) > button:active + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
@@ -4100,7 +4100,7 @@ expander arrow:dir(rtl) {
 }
 
 expander arrow:hover {
-  color: #7f7e7e;
+  color: #747474;
 }
 
 expander arrow:checked {
@@ -4108,7 +4108,7 @@ expander arrow:checked {
 }
 
 calendar {
-  color: #323232;
+  color: #272727;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 0;
   padding: 2px;
@@ -4119,20 +4119,20 @@ calendar:selected {
 }
 
 calendar.header {
-  color: #323232;
+  color: #272727;
   border: none;
 }
 
 calendar.button {
-  color: rgba(50, 50, 50, 0.45);
+  color: rgba(39, 39, 39, 0.45);
 }
 
 calendar.button:hover {
-  color: #323232;
+  color: #272727;
 }
 
 calendar.button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 calendar:indeterminate {
@@ -4140,7 +4140,7 @@ calendar:indeterminate {
 }
 
 calendar.highlight {
-  color: #323232;
+  color: #272727;
 }
 
 messagedialog.csd .dialog-action-area.linked:not(.vertical) > button, messagedialog.csd .dialog-action-area.linked:not(.vertical) > button:hover, messagedialog.csd .dialog-action-area.linked:not(.vertical) > button:active, messagedialog.csd .dialog-action-area.linked:not(.vertical) > button:checked, messagedialog.csd .dialog-action-area.linked:not(.vertical) > button:disabled {
@@ -4211,12 +4211,12 @@ messagedialog .dialog-action-area.linked:not(.vertical) > button:only-child, mes
 }
 
 messagedialog .dialog-action-area.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action):hover {
-  background-color: alpha(#323232,0.06);
+  background-color: alpha(#272727,0.06);
 }
 
 messagedialog .dialog-action-area.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action):active, messagedialog .dialog-action-area.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action):checked {
-  background-color: alpha(#323232,0.1);
-  color: #323232;
+  background-color: alpha(#272727,0.1);
+  color: #272727;
 }
 
 messagedialog.csd.background {
@@ -4486,7 +4486,7 @@ tooltip {
 }
 
 tooltip.background {
-  background-color: rgba(41, 41, 41, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
   background-clip: padding-box;
 }
 
@@ -4583,13 +4583,13 @@ colorswatch:disabled overlay {
 colorswatch#add-color-button {
   border-style: solid;
   border-width: 1px;
-  color: #323232;
+  color: #272727;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #fcfcfc;
 }
 
 colorswatch#add-color-button:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
 }
@@ -4622,7 +4622,7 @@ colorchooser .popover.osd {
 }
 
 .scale-popup button:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
 }
@@ -4658,7 +4658,7 @@ button.circular-button label {
   min-width: 16px;
   min-height: 20px;
   padding: 3px 6px 4px 6px;
-  color: #323232;
+  color: #272727;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 2.5px;
@@ -5108,7 +5108,7 @@ terminal-window notebook scrollbar,
 }
 
 .nautilus-desktop.nautilus-canvas-item:active, .nemo-desktop.nemo-canvas-item:active, .caja-desktop:active, .nautilus-desktop.caja-canvas-item:active {
-  color: #323232;
+  color: #272727;
 }
 
 .nautilus-desktop.nautilus-canvas-item:selected, .nemo-desktop.nemo-canvas-item:selected, .caja-desktop:selected, .nautilus-desktop.caja-canvas-item:selected {
@@ -5125,7 +5125,7 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 .budgie-switcher .nautilus-canvas-item.notification-body,
 .nautilus-list-dim-label,
 .caja-list-dim-label {
-  color: #959595;
+  color: #8f8f8f;
 }
 
 .nautilus-canvas-item.dim-label:selected, label.nautilus-canvas-item.separator:selected, label.separator.caja-canvas-item:selected, headerbar .nautilus-canvas-item.subtitle:selected, headerbar .subtitle.caja-canvas-item:selected,
@@ -5165,8 +5165,8 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 }
 
 .disk-space-display.unknown {
-  background-color: rgba(50, 50, 50, 0.5);
-  border-color: rgba(25, 24, 24, 0.5);
+  background-color: rgba(39, 39, 39, 0.5);
+  border-color: rgba(14, 14, 14, 0.5);
 }
 
 .disk-space-display.used {
@@ -5221,7 +5221,7 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 }
 
 .open-document-selector-treeview.view:hover {
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
 }
 
 .open-document-selector-treeview.view:hover:selected {
@@ -5230,11 +5230,11 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 }
 
 .open-document-selector-name-label {
-  color: #323232;
+  color: #272727;
 }
 
 .open-document-selector-path-label {
-  color: #999999;
+  color: #939393;
   font-size: smaller;
 }
 
@@ -5257,7 +5257,7 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 }
 
 .gedit-document-panel row:hover:not(:selected) button {
-  color: #777777;
+  color: #707070;
 }
 
 .gedit-document-panel row:hover:not(:selected) button:hover {
@@ -5265,7 +5265,7 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 }
 
 .gedit-document-panel row:hover:not(:selected) button:active {
-  color: #323232;
+  color: #272727;
 }
 
 .gedit-document-panel row:hover:selected button:hover {
@@ -5281,8 +5281,8 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 
 .gedit-document-panel-dragged-row {
   border: 1px solid rgba(0, 0, 0, 0.08);
-  background-color: #dedddd;
-  color: #323232;
+  background-color: #dedede;
+  color: #272727;
 }
 
 .gedit-side-panel-paned statusbar {
@@ -5300,7 +5300,7 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
 }
 
 .gedit-search-entry-occurrences-tag {
-  color: rgba(50, 50, 50, 0.6);
+  color: rgba(39, 39, 39, 0.6);
   border: none;
   margin: 2px;
   padding: 2px;
@@ -5446,14 +5446,14 @@ popover.popover-selector list row image {
 }
 
 button.dzlmenubuttonitem.check label {
-  color: #323232;
+  color: #272727;
 }
 
 button.dzlmenubuttonitem.check label.dim-label, button.dzlmenubuttonitem.check label.separator, button.dzlmenubuttonitem.check headerbar label.subtitle, headerbar button.dzlmenubuttonitem.check label.subtitle,
 button.dzlmenubuttonitem.check .titlebar:not(headerbar) label.subtitle, .titlebar:not(headerbar) button.dzlmenubuttonitem.check label.subtitle, button.dzlmenubuttonitem.check .slate-notification label.notification-body, .slate-notification button.dzlmenubuttonitem.check label.notification-body,
 button.dzlmenubuttonitem.check .budgie-notification label.notification-body, .budgie-notification button.dzlmenubuttonitem.check label.notification-body,
 button.dzlmenubuttonitem.check .budgie-switcher label.notification-body, .budgie-switcher button.dzlmenubuttonitem.check label.notification-body {
-  color: #323232;
+  color: #272727;
 }
 
 button.dzlmenubuttonitem.check box > image {
@@ -5495,7 +5495,7 @@ gstyleslidein #scale_box button.toggle:checked,
 gstyleslidein #strings_controls button.toggle:checked,
 gstyleslidein #palette_controls button.toggle:checked,
 gstyleslidein #components_controls button.toggle:checked {
-  color: #323232;
+  color: #272727;
 }
 
 configurationview entry.flat, configurationview .raven .raven-background spinbutton:not(.vertical), .raven .raven-background configurationview spinbutton:not(.vertical) {
@@ -5531,7 +5531,7 @@ button.documents-load-more {
 }
 
 .documents-collection-icon, .photos-collection-icon {
-  background-color: rgba(50, 50, 50, 0.3);
+  background-color: rgba(39, 39, 39, 0.3);
   border-radius: 2px;
 }
 
@@ -5656,8 +5656,8 @@ list#AutostartListBoxTweakGroup.tweak-group-startup {
 #gf-candidate-popup,
 #gf-candidate-popup.solid {
   color: #270d0d;
-  background-color: rgba(41, 41, 41, 0.95);
-  border: 1px solid rgba(21, 21, 21, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
+  border: 1px solid rgba(205, 205, 205, 0.95);
   border-radius: 2px;
 }
 
@@ -5679,7 +5679,7 @@ list#AutostartListBoxTweakGroup.tweak-group-startup {
 #gf-osd-window levelbar block.empty,
 #gf-input-source-popup levelbar block.empty,
 #gf-candidate-popup levelbar block.empty {
-  background-color: rgba(29, 28, 28, 0.95);
+  background-color: rgba(213, 213, 213, 0.95);
 }
 
 #gf-bubble levelbar trough,
@@ -5749,7 +5749,7 @@ widget#PROCESSOR list row, widget#MEMORY list row {
 }
 
 widget#PROCESSOR list row.max, widget#MEMORY list row.max {
-  color: rgba(41, 41, 41, 0.95);
+  color: rgba(225, 225, 225, 0.95);
 }
 
 widget#PROCESSOR list separator.list, widget#MEMORY list separator.list {
@@ -5761,11 +5761,11 @@ widget#STORAGE list {
 }
 
 widget#STORAGE list row.activatable, widget#STORAGE list .view, widget#STORAGE list textview text, textview widget#STORAGE list text, widget#STORAGE list iconview, widget#STORAGE list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar, .geary-sidebar-pane-separator frame.geary-folder-frame widget#STORAGE list treeview.view.sidebar, widget#STORAGE list .nemo-window .nemo-places-sidebar .places-treeview, .nemo-window .nemo-places-sidebar widget#STORAGE list .places-treeview, widget#STORAGE list .budgie-menu button, .budgie-menu widget#STORAGE list button, widget#STORAGE list .panel popover .sidebar .view, .panel popover .sidebar widget#STORAGE list .view, widget#STORAGE list treeview.view.sidebar.source-list {
-  color: rgba(50, 50, 50, 0.75);
+  color: rgba(39, 39, 39, 0.75);
 }
 
 widget#STORAGE list row.activatable:hover, widget#STORAGE list .view:hover, widget#STORAGE list textview text:hover, textview widget#STORAGE list text:hover, widget#STORAGE list iconview:hover, widget#STORAGE list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:hover, .geary-sidebar-pane-separator frame.geary-folder-frame widget#STORAGE list treeview.view.sidebar:hover, widget#STORAGE list .nemo-window .nemo-places-sidebar .places-treeview:hover, .nemo-window .nemo-places-sidebar widget#STORAGE list .places-treeview:hover, widget#STORAGE list .budgie-menu button:hover, .budgie-menu widget#STORAGE list button:hover, widget#STORAGE list .panel popover .sidebar .view:hover, .panel popover .sidebar widget#STORAGE list .view:hover, widget#STORAGE list treeview.view.sidebar.source-list:hover, widget#STORAGE list row.activatable:active, widget#STORAGE list .view:active, widget#STORAGE list textview text:active, textview widget#STORAGE list text:active, widget#STORAGE list iconview:active, widget#STORAGE list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar:active, .geary-sidebar-pane-separator frame.geary-folder-frame widget#STORAGE list treeview.view.sidebar:active, widget#STORAGE list .nemo-window .nemo-places-sidebar .places-treeview:active, .nemo-window .nemo-places-sidebar widget#STORAGE list .places-treeview:active, widget#STORAGE list .budgie-menu button:active, .budgie-menu widget#STORAGE list button:active, widget#STORAGE list .panel popover .sidebar .view:active, .panel popover .sidebar widget#STORAGE list .view:active, widget#STORAGE list treeview.view.sidebar.source-list:active {
-  color: rgba(50, 50, 50, 0.75);
+  color: rgba(39, 39, 39, 0.75);
 }
 
 widget#STORAGE list separator.list {
@@ -5781,12 +5781,12 @@ widget#PERFORMANCE searchbar entry, widget#PERFORMANCE searchbar button {
 }
 
 graph-switcher-button.toggle {
-  color: rgba(50, 50, 50, 0.75);
+  color: rgba(39, 39, 39, 0.75);
   font-weight: 500;
 }
 
 graph-switcher-button.toggle:hover {
-  color: #323232;
+  color: #272727;
   background-image: image(rgba(0, 0, 0, 0.05));
 }
 
@@ -5824,18 +5824,18 @@ headerbar > button.flat.popup.title-menu-button.toggle > grid .subtitle, headerb
 window.background > box.vertical box.horizontal list.categories {
   background-color: #f7f7f7;
   border: none;
-  color: #323232;
+  color: #272727;
 }
 
 window.background > box.vertical box.horizontal list.categories row.activatable.category, window.background > box.vertical box.horizontal list.categories .category.view, window.background > box.vertical box.horizontal list.categories textview text.category, textview window.background > box.vertical box.horizontal list.categories text.category, window.background > box.vertical box.horizontal list.categories iconview.category, window.background > box.vertical box.horizontal list.categories .geary-sidebar-pane-separator frame.geary-folder-frame treeview.category.view.sidebar, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal list.categories treeview.category.view.sidebar, window.background > box.vertical box.horizontal list.categories .nemo-window .nemo-places-sidebar .category.places-treeview, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal list.categories .category.places-treeview, window.background > box.vertical box.horizontal list.categories .budgie-menu button.category, .budgie-menu window.background > box.vertical box.horizontal list.categories button.category, window.background > box.vertical box.horizontal list.categories .panel popover .sidebar .category.view, .panel popover .sidebar window.background > box.vertical box.horizontal list.categories .category.view, window.background > box.vertical box.horizontal list.categories treeview.category.view.sidebar.source-list {
-  color: #323232;
+  color: #272727;
   background-color: transparent;
   font-weight: 500;
 }
 
 window.background > box.vertical box.horizontal list.categories row.activatable.category:hover, window.background > box.vertical box.horizontal list.categories .category.view:hover, window.background > box.vertical box.horizontal list.categories textview text.category:hover, textview window.background > box.vertical box.horizontal list.categories text.category:hover, window.background > box.vertical box.horizontal list.categories iconview.category:hover, window.background > box.vertical box.horizontal list.categories .geary-sidebar-pane-separator frame.geary-folder-frame treeview.category.view.sidebar:hover, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal list.categories treeview.category.view.sidebar:hover, window.background > box.vertical box.horizontal list.categories .nemo-window .nemo-places-sidebar .category.places-treeview:hover, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal list.categories .category.places-treeview:hover, window.background > box.vertical box.horizontal list.categories .budgie-menu button.category:hover, .budgie-menu window.background > box.vertical box.horizontal list.categories button.category:hover, window.background > box.vertical box.horizontal list.categories .panel popover .sidebar .category.view:hover, .panel popover .sidebar window.background > box.vertical box.horizontal list.categories .category.view:hover, window.background > box.vertical box.horizontal list.categories treeview.category.view.sidebar.source-list:hover {
-  color: #323232;
-  background-color: rgba(50, 50, 50, 0.08);
+  color: #272727;
+  background-color: rgba(39, 39, 39, 0.08);
 }
 
 window.background > box.vertical box.horizontal list.categories row.activatable.category:selected, window.background > box.vertical box.horizontal list.categories .category.view:selected, window.background > box.vertical box.horizontal list.categories textview text.category:selected, textview window.background > box.vertical box.horizontal list.categories text.category:selected, window.background > box.vertical box.horizontal list.categories iconview.category:selected, window.background > box.vertical box.horizontal list.categories .geary-sidebar-pane-separator frame.geary-folder-frame treeview.category.view.sidebar:selected, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal list.categories treeview.category.view.sidebar:selected, window.background > box.vertical box.horizontal list.categories .nemo-window .nemo-places-sidebar .category.places-treeview:selected, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal list.categories .category.places-treeview:selected, window.background > box.vertical box.horizontal list.categories .budgie-menu button.category:selected, .budgie-menu window.background > box.vertical box.horizontal list.categories button.category:selected, window.background > box.vertical box.horizontal list.categories .panel popover .sidebar .category.view:selected, .panel popover .sidebar window.background > box.vertical box.horizontal list.categories .category.view:selected, window.background > box.vertical box.horizontal list.categories treeview.category.view.sidebar.source-list:selected {
@@ -5861,12 +5861,12 @@ window.background > box.vertical box.horizontal > box.vertical > scrolledwindow 
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.view.sidebar, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.places-treeview, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.places-treeview, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.view, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar.source-list {
-  color: #323232;
+  color: #272727;
   transition-duration: 0.1s;
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event:hover, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.view.sidebar:hover, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.places-treeview:hover, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.places-treeview:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event:hover, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.view:hover, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar.source-list:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event:active, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.view.sidebar:active, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.places-treeview:active, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.places-treeview:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event:active, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.view:active, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar.source-list:active {
-  color: #323232;
+  color: #272727;
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event label.compressed-entries-label, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.view.sidebar label.compressed-entries-label, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.places-treeview label.compressed-entries-label, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.places-treeview label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event label.compressed-entries-label, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.view label.compressed-entries-label, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.view label.compressed-entries-label, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.view.sidebar.source-list label.compressed-entries-label {
@@ -5883,12 +5883,12 @@ window.background > box.vertical box.horizontal > box.vertical > scrolledwindow 
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.view:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event.compressed-row:hover, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event.compressed-row:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event.compressed-row:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.compressed-row.view.sidebar:hover, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.compressed-row.view.sidebar:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.compressed-row.places-treeview:hover, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.places-treeview:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event.compressed-row:hover, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event.compressed-row:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.compressed-row.view:hover, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.view:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.compressed-row.view.sidebar.source-list:hover {
   background-image: image(#ededed);
-  color: #323232;
+  color: #272727;
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.view:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event.compressed-row:active, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event.compressed-row:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event.compressed-row:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.compressed-row.view.sidebar:active, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.compressed-row.view.sidebar:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.compressed-row.places-treeview:active, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.places-treeview:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event.compressed-row:active, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event.compressed-row:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.compressed-row.view:active, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.view:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.compressed-row.view.sidebar.source-list:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.view:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list textview text.event.compressed-row:active:focus, textview window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list text.event.compressed-row:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list iconview.event.compressed-row:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .geary-sidebar-pane-separator frame.geary-folder-frame treeview.event.compressed-row.view.sidebar:active:focus, .geary-sidebar-pane-separator frame.geary-folder-frame window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.compressed-row.view.sidebar:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .nemo-window .nemo-places-sidebar .event.compressed-row.places-treeview:active:focus, .nemo-window .nemo-places-sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.places-treeview:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .budgie-menu button.event.compressed-row:active:focus, .budgie-menu window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list button.event.compressed-row:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .panel popover .sidebar .event.compressed-row.view:active:focus, .panel popover .sidebar window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list .event.compressed-row.view:active:focus, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list treeview.event.compressed-row.view.sidebar.source-list:active:focus {
-  background-image: image(#e3e3e3);
-  color: #323232;
+  background-image: image(#e2e2e2);
+  color: #272727;
   animation: none;
 }
 
@@ -5956,20 +5956,20 @@ window.background > box.vertical > overlay > stack > widget > stack widget > box
 }
 
 .category_page_header_filter_box button {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
   background-image: image(#f7f7f7);
 }
 
 .category_page_header_filter_box button:hover {
-  color: rgba(50, 50, 50, 0.75);
+  color: rgba(39, 39, 39, 0.75);
 }
 
 .category_page_header_filter_box button:checked {
-  color: #323232;
+  color: #272727;
 }
 
 .category_page_header_filter_box button:disabled {
-  color: rgba(50, 50, 50, 0.65);
+  color: rgba(39, 39, 39, 0.65);
 }
 
 .application-details-infobar {
@@ -6000,7 +6000,7 @@ headerbar.titlebar.incognito-mode entry:disabled {
 }
 
 notebook > box > stack > box.vertical > paned.vertical > overlay > .floating-bar {
-  color: rgba(50, 50, 50, 0.75);
+  color: rgba(39, 39, 39, 0.75);
 }
 
 .background headerbar entry.starred, .background headerbar entry.non-starred {
@@ -6039,14 +6039,14 @@ popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport
 
 popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > row.activatable, popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > .view, textview popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > text, popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > iconview, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > treeview.view.sidebar, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > .places-treeview, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > button, .panel popover .sidebar popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > .view, popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > treeview.view.sidebar.source-list {
   background-color: #f7f7f7;
-  color: rgba(50, 50, 50, 0.85);
+  color: rgba(39, 39, 39, 0.85);
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   margin: 2px;
 }
 
 popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > row.activatable:hover, popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > .view:hover, textview popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > text:hover, popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > iconview:hover, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > treeview.view.sidebar:hover, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > .places-treeview:hover, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > button:hover, .panel popover .sidebar popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > .view:hover, popover.background:not(.emoji-picker) > box.vertical > scrolledwindow > viewport.frame > list.background > treeview.view.sidebar.source-list:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
 }
@@ -6062,15 +6062,15 @@ popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scro
 
 popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list {
   background-color: rgba(255, 255, 255, 0.35);
-  color: rgba(50, 50, 50, 0.85);
+  color: rgba(39, 39, 39, 0.85);
   border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
   padding: 6px 0;
   margin: 0;
 }
 
 popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row:hover, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar:hover, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview:hover, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row:hover, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row:hover, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list:hover, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row:active, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar:active, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview:active, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row:active, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row:active, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list:active, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row:checked, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar:checked, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview:checked, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row:checked, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row:checked, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view:checked, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list:checked {
-  color: #323232;
-  background-color: rgba(50, 50, 50, 0.05);
+  color: #272727;
+  background-color: rgba(39, 39, 39, 0.05);
 }
 
 popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.flat, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.flat, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.flat, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.flat, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.flat, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list button.flat, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.sidebar-button, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.sidebar-button, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.sidebar-button, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.sidebar-button, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.sidebar-button, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list button.sidebar-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view PanelToplevel.mate-panel-menu-bar > grid.horizontal > button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.budgie-menu-launcher, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.budgie-menu-launcher, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.budgie-menu-launcher, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.budgie-menu-launcher, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.budgie-menu-launcher, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar.source-list button.budgie-menu-launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row #tasklist-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view #tasklist-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row #tasklist-button, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row .budgie-panel #tasklist-button, .budgie-panel textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row #tasklist-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row #tasklist-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar #tasklist-button, .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar .budgie-panel #tasklist-button, .budgie-panel .geary-sidebar-pane-separator frame.geary-folder-frame popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar #tasklist-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview #tasklist-button, .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview .budgie-panel #tasklist-button, .budgie-panel .nemo-window .nemo-places-sidebar popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview #tasklist-button, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row .budgie-panel #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row #tasklist-button, .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row .budgie-panel #tasklist-button, .budgie-panel .budgie-menu popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > button.bookmarks-row #tasklist-button, .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view .budgie-panel #tasklist-button, .budgie-panel .panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.view #tasklist-button, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > row.activatable.bookmarks-row button.flat.launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view .budgie-panel button.flat.launcher, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > .bookmarks-row.view button.flat.launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row .budgie-panel button.flat.launcher, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical textview scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.flat.launcher, textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row .budgie-panel button.flat.launcher, .budgie-panel textview popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > text.bookmarks-row button.flat.launcher, popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row .budgie-panel button.flat.launcher, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical scrolledwindow > viewport.frame > list.background > iconview.bookmarks-row button.flat.launcher, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .geary-sidebar-pane-separator frame.geary-folder-frame scrolledwindow > viewport.frame > list.background > treeview.bookmarks-row.view.sidebar button.flat.launcher, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .nemo-window .nemo-places-sidebar scrolledwindow > viewport.frame > list.background > .bookmarks-row.places-treeview button.flat.launcher, .budgie-panel popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical .budgie-menu scrolledwindow > viewport.frame > list.background > button.bookmarks-row button.flat.launcher {
@@ -6233,7 +6233,7 @@ dialog.background.csd box.dialog-vbox grid.horizontal stack scrolledwindow.frame
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
   border-radius: 3px;
-  color: #363636;
+  color: #303030;
   border-color: #F0544C;
   background-color: #ffffff;
 }
@@ -6336,7 +6336,7 @@ window.background:not(.csd) > menu > separator {
 }
 
 window.background:not(.csd) > menu > menuitem > label:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 #MozillaGtkWidget.background {
@@ -6368,15 +6368,15 @@ window.background:not(.csd) > menu > menuitem > label:disabled {
 }
 
 #MozillaGtkWidget.background scrollbar slider {
-  background-color: #9e9e9e;
+  background-color: #999999;
 }
 
 #MozillaGtkWidget.background scrollbar slider:hover {
-  background-color: #818181;
+  background-color: #7a7a7a;
 }
 
 #MozillaGtkWidget.background scrollbar slider:hover:active {
-  background-color: #636363;
+  background-color: #5b5b5b;
 }
 
 #MozillaGtkWidget.background scrollbar slider:disabled {
@@ -6390,7 +6390,7 @@ window.background:not(.csd) > menu > menuitem > label:disabled {
 #MozillaGtkWidget.background *:active button,
 #MozillaGtkWidget.background *:checked,
 #MozillaGtkWidget.background *:checked button {
-  color: #323232;
+  color: #272727;
 }
 
 #MozillaGtkWidget.background > window.background > menu {
@@ -6422,7 +6422,7 @@ window.background:not(.csd) > menu > menuitem > label:disabled {
 
 window.background.chromium {
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 window.background.chromium headerbar.titlebar button.toggle {
@@ -6457,28 +6457,28 @@ window.background.chromium button {
   border-style: solid;
   border-color: #e5e5e5;
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 window.background.chromium entry.chromium {
   border-image: none;
   border: 1px solid #e5e5e5;
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 window.background.chromium > textview.view {
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 window.background.chromium > textview {
-  color: #323232;
+  color: #272727;
   background-color: #f7f7f7;
 }
 
 window.background.chromium > textview text {
-  color: #323232;
+  color: #272727;
   background-color: #f7f7f7;
 }
 
@@ -6494,7 +6494,7 @@ window.background.chromium > menubar > menuitem {
 window.background.chromium > menu {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
-  color: #363636;
+  color: #303030;
 }
 
 window.background.chromium > menu > separator {
@@ -6503,7 +6503,7 @@ window.background.chromium > menu > separator {
 }
 
 window.background.chromium > menu > menuitem {
-  color: #363636;
+  color: #303030;
 }
 
 window.background.chromium > menu > menuitem:hover {
@@ -6512,16 +6512,16 @@ window.background.chromium > menu > menuitem:hover {
 }
 
 window.background.chromium > menu > menuitem:disabled {
-  color: rgba(54, 54, 54, 0.45);
+  color: rgba(48, 48, 48, 0.45);
 }
 
 window.background.chromium > menu > menuitem label:disabled {
-  color: rgba(54, 54, 54, 0.45);
+  color: rgba(48, 48, 48, 0.45);
 }
 
 .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar {
   background-color: #f7f7f7;
-  color: #363636;
+  color: #303030;
 }
 
 overlay.window-overlay grid.horizontal stack paned.horizontal stack widget.view.frame,
@@ -6598,7 +6598,7 @@ widget > box.terminal-titlebar > button.flat.popup.toggle:hover, widget > box.te
 widget > box.terminal-titlebar > button.flat.popup.toggle:checked, widget > box.terminal-titlebar > button.popup.toggle.sidebar-button:checked, widget > box.terminal-titlebar > button.popup.toggle.budgie-menu-launcher:checked, .budgie-panel widget > box.terminal-titlebar > .popup.toggle#tasklist-button:checked, .budgie-panel widget > box.terminal-titlebar > button.popup.toggle.flat.launcher:checked, widget > box.terminal-titlebar > button.flat.popup.toggle:active, widget > box.terminal-titlebar > button.popup.toggle.sidebar-button:active, widget > box.terminal-titlebar > button.popup.toggle.budgie-menu-launcher:active, .budgie-panel widget > box.terminal-titlebar > .popup.toggle#tasklist-button:active, .budgie-panel widget > box.terminal-titlebar > button.popup.toggle.flat.launcher:active {
   border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), #F0544C 100%, transparent 0%) 0 0 2/0 0 2px;
   background-color: transparent;
-  color: #323232;
+  color: #272727;
 }
 
 widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titlebar > button.image-button.toggle {
@@ -6611,7 +6611,7 @@ widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titl
 }
 
 list.tilix-session-sidebar {
-  background-image: image(rgba(54, 54, 54, 0.95));
+  background-image: image(rgba(238, 238, 238, 0.95));
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button {
@@ -6963,7 +6963,7 @@ UnityPanelWidget:backdrop,
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid rgba(21, 21, 21, 0.95);
+  border: 1px solid rgba(205, 205, 205, 0.95);
 }
 
 MsdOsdWindow.background.osd .progressbar {
@@ -6974,7 +6974,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 MsdOsdWindow.background.osd .trough {
-  background-color: rgba(29, 28, 28, 0.95);
+  background-color: rgba(213, 213, 213, 0.95);
   border: none;
   border-radius: 5px;
 }
@@ -6998,7 +6998,7 @@ panel-toplevel.background button#tasklist-button image {
 .mate-panel-menu-bar .wnck-pager,
 panel-toplevel.background .wnck-pager {
   color: #686464;
-  background-color: #090808;
+  background-color: #090909;
 }
 
 .mate-panel-menu-bar .wnck-pager:hover,
@@ -7247,12 +7247,12 @@ PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:not(:first-child):d
 }
 
 .brisk-menu list.content-view.view row.activatable > button.flat:hover, .brisk-menu list.content-view.view .view > button.flat:hover, .brisk-menu list.content-view.view textview text > button.flat:hover, textview .brisk-menu list.content-view.view text > button.flat:hover, .brisk-menu list.content-view.view iconview > button.flat:hover, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.flat:hover, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.flat:hover, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.flat:hover, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.flat:hover, .brisk-menu list.content-view.view .budgie-menu button > button.flat:hover, .budgie-menu .brisk-menu list.content-view.view button > button.flat:hover, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.flat:hover, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.flat:hover, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.flat:hover, .brisk-menu list.content-view.view row.activatable > button.sidebar-button:hover, .brisk-menu list.content-view.view .view > button.sidebar-button:hover, .brisk-menu list.content-view.view textview text > button.sidebar-button:hover, textview .brisk-menu list.content-view.view text > button.sidebar-button:hover, .brisk-menu list.content-view.view iconview > button.sidebar-button:hover, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.sidebar-button:hover, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.sidebar-button:hover, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.sidebar-button:hover, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.sidebar-button:hover, .brisk-menu list.content-view.view .budgie-menu button > button.sidebar-button:hover, .budgie-menu .brisk-menu list.content-view.view button > button.sidebar-button:hover, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.sidebar-button:hover, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.sidebar-button:hover, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.sidebar-button:hover, .brisk-menu list.content-view.view PanelToplevel.mate-panel-menu-bar > grid.horizontal.view > button:hover, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal.places-treeview > button:hover, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view PanelToplevel.mate-panel-menu-bar > grid.horizontal.places-treeview > button:hover, .brisk-menu list.content-view.view .panel popover .sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal.view > button:hover, .brisk-menu list.content-view.view row.activatable > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view .view > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view textview text > button.budgie-menu-launcher:hover, textview .brisk-menu list.content-view.view text > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view iconview > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.budgie-menu-launcher:hover, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.budgie-menu-launcher:hover, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view .budgie-menu button > button.budgie-menu-launcher:hover, .budgie-menu .brisk-menu list.content-view.view button > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.budgie-menu-launcher:hover, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.budgie-menu-launcher:hover, .brisk-menu list.content-view.view .budgie-panel row.activatable > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view row.activatable > #tasklist-button:hover, .brisk-menu list.content-view.view .budgie-panel .view > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view .view > #tasklist-button:hover, .brisk-menu list.content-view.view textview .budgie-panel text > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view textview text > #tasklist-button:hover, textview .brisk-menu list.content-view.view .budgie-panel text > #tasklist-button:hover, .budgie-panel textview .brisk-menu list.content-view.view text > #tasklist-button:hover, .brisk-menu list.content-view.view .budgie-panel iconview > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view iconview > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > #tasklist-button:hover, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .budgie-panel .places-treeview > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > #tasklist-button:hover, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .budgie-panel .places-treeview > #tasklist-button:hover, .budgie-panel .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > #tasklist-button:hover, .brisk-menu list.content-view.view .budgie-menu .budgie-panel button > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view .budgie-menu button > #tasklist-button:hover, .budgie-menu .brisk-menu list.content-view.view .budgie-panel button > #tasklist-button:hover, .budgie-panel .budgie-menu .brisk-menu list.content-view.view button > #tasklist-button:hover, .budgie-panel .brisk-menu list.content-view.view .panel popover .sidebar .view > #tasklist-button:hover, .brisk-menu list.content-view.view .budgie-panel row.activatable > button.flat.launcher:hover, .brisk-menu list.content-view.view .budgie-panel .view > button.flat.launcher:hover, .budgie-panel .brisk-menu list.content-view.view .view > button.flat.launcher:hover, .brisk-menu list.content-view.view textview .budgie-panel text > button.flat.launcher:hover, .budgie-panel .brisk-menu list.content-view.view textview text > button.flat.launcher:hover, textview .brisk-menu list.content-view.view .budgie-panel text > button.flat.launcher:hover, .budgie-panel textview .brisk-menu list.content-view.view text > button.flat.launcher:hover, .brisk-menu list.content-view.view .budgie-panel iconview > button.flat.launcher:hover, .budgie-panel .brisk-menu list.content-view.view iconview > button.flat.launcher:hover, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .budgie-panel .places-treeview > button.flat.launcher:hover, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .budgie-panel .places-treeview > button.flat.launcher:hover, .brisk-menu list.content-view.view .budgie-menu .budgie-panel button > button.flat.launcher:hover, .budgie-panel .brisk-menu list.content-view.view .budgie-menu button > button.flat.launcher:hover, .budgie-menu .brisk-menu list.content-view.view .budgie-panel button > button.flat.launcher:hover, .budgie-panel .budgie-menu .brisk-menu list.content-view.view button > button.flat.launcher:hover {
-  background-color: rgba(50, 50, 50, 0.06);
+  background-color: rgba(39, 39, 39, 0.06);
 }
 
 .brisk-menu list.content-view.view row.activatable > button.flat:active, .brisk-menu list.content-view.view .view > button.flat:active, .brisk-menu list.content-view.view textview text > button.flat:active, textview .brisk-menu list.content-view.view text > button.flat:active, .brisk-menu list.content-view.view iconview > button.flat:active, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.flat:active, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.flat:active, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.flat:active, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.flat:active, .brisk-menu list.content-view.view .budgie-menu button > button.flat:active, .budgie-menu .brisk-menu list.content-view.view button > button.flat:active, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.flat:active, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.flat:active, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.flat:active, .brisk-menu list.content-view.view row.activatable > button.sidebar-button:active, .brisk-menu list.content-view.view .view > button.sidebar-button:active, .brisk-menu list.content-view.view textview text > button.sidebar-button:active, textview .brisk-menu list.content-view.view text > button.sidebar-button:active, .brisk-menu list.content-view.view iconview > button.sidebar-button:active, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.sidebar-button:active, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.sidebar-button:active, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.sidebar-button:active, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.sidebar-button:active, .brisk-menu list.content-view.view .budgie-menu button > button.sidebar-button:active, .budgie-menu .brisk-menu list.content-view.view button > button.sidebar-button:active, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.sidebar-button:active, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.sidebar-button:active, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.sidebar-button:active, .brisk-menu list.content-view.view PanelToplevel.mate-panel-menu-bar > grid.horizontal.view > button:active, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal.places-treeview > button:active, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view PanelToplevel.mate-panel-menu-bar > grid.horizontal.places-treeview > button:active, .brisk-menu list.content-view.view .panel popover .sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal.view > button:active, .brisk-menu list.content-view.view row.activatable > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view .view > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view textview text > button.budgie-menu-launcher:active, textview .brisk-menu list.content-view.view text > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view iconview > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.budgie-menu-launcher:active, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.budgie-menu-launcher:active, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view .budgie-menu button > button.budgie-menu-launcher:active, .budgie-menu .brisk-menu list.content-view.view button > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.budgie-menu-launcher:active, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.budgie-menu-launcher:active, .brisk-menu list.content-view.view .budgie-panel row.activatable > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view row.activatable > #tasklist-button:active, .brisk-menu list.content-view.view .budgie-panel .view > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view .view > #tasklist-button:active, .brisk-menu list.content-view.view textview .budgie-panel text > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view textview text > #tasklist-button:active, textview .brisk-menu list.content-view.view .budgie-panel text > #tasklist-button:active, .budgie-panel textview .brisk-menu list.content-view.view text > #tasklist-button:active, .brisk-menu list.content-view.view .budgie-panel iconview > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view iconview > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > #tasklist-button:active, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .budgie-panel .places-treeview > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > #tasklist-button:active, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .budgie-panel .places-treeview > #tasklist-button:active, .budgie-panel .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > #tasklist-button:active, .brisk-menu list.content-view.view .budgie-menu .budgie-panel button > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view .budgie-menu button > #tasklist-button:active, .budgie-menu .brisk-menu list.content-view.view .budgie-panel button > #tasklist-button:active, .budgie-panel .budgie-menu .brisk-menu list.content-view.view button > #tasklist-button:active, .budgie-panel .brisk-menu list.content-view.view .panel popover .sidebar .view > #tasklist-button:active, .brisk-menu list.content-view.view .budgie-panel row.activatable > button.flat.launcher:active, .brisk-menu list.content-view.view .budgie-panel .view > button.flat.launcher:active, .budgie-panel .brisk-menu list.content-view.view .view > button.flat.launcher:active, .brisk-menu list.content-view.view textview .budgie-panel text > button.flat.launcher:active, .budgie-panel .brisk-menu list.content-view.view textview text > button.flat.launcher:active, textview .brisk-menu list.content-view.view .budgie-panel text > button.flat.launcher:active, .budgie-panel textview .brisk-menu list.content-view.view text > button.flat.launcher:active, .brisk-menu list.content-view.view .budgie-panel iconview > button.flat.launcher:active, .budgie-panel .brisk-menu list.content-view.view iconview > button.flat.launcher:active, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .budgie-panel .places-treeview > button.flat.launcher:active, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .budgie-panel .places-treeview > button.flat.launcher:active, .brisk-menu list.content-view.view .budgie-menu .budgie-panel button > button.flat.launcher:active, .budgie-panel .brisk-menu list.content-view.view .budgie-menu button > button.flat.launcher:active, .budgie-menu .brisk-menu list.content-view.view .budgie-panel button > button.flat.launcher:active, .budgie-panel .budgie-menu .brisk-menu list.content-view.view button > button.flat.launcher:active {
-  background-color: rgba(50, 50, 50, 0.1);
-  color: #323232;
+  background-color: rgba(39, 39, 39, 0.1);
+  color: #272727;
 }
 
 .brisk-menu list.content-view.view row.activatable > button.flat > box.horizontal > image, .brisk-menu list.content-view.view .view > button.flat > box.horizontal > image, .brisk-menu list.content-view.view textview text > button.flat > box.horizontal > image, textview .brisk-menu list.content-view.view text > button.flat > box.horizontal > image, .brisk-menu list.content-view.view iconview > button.flat > box.horizontal > image, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.flat > box.horizontal > image, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.flat > box.horizontal > image, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.flat > box.horizontal > image, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.flat > box.horizontal > image, .brisk-menu list.content-view.view .budgie-menu button > button.flat > box.horizontal > image, .budgie-menu .brisk-menu list.content-view.view button > button.flat > box.horizontal > image, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.flat > box.horizontal > image, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.flat > box.horizontal > image, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.flat > box.horizontal > image, .brisk-menu list.content-view.view row.activatable > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view .view > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view textview text > button.sidebar-button > box.horizontal > image, textview .brisk-menu list.content-view.view text > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view iconview > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.sidebar-button > box.horizontal > image, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.sidebar-button > box.horizontal > image, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view .budgie-menu button > button.sidebar-button > box.horizontal > image, .budgie-menu .brisk-menu list.content-view.view button > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.sidebar-button > box.horizontal > image, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.sidebar-button > box.horizontal > image, .brisk-menu list.content-view.view PanelToplevel.mate-panel-menu-bar > grid.horizontal.view > button > box.horizontal > image, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal.places-treeview > button > box.horizontal > image, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view PanelToplevel.mate-panel-menu-bar > grid.horizontal.places-treeview > button > box.horizontal > image, .brisk-menu list.content-view.view .panel popover .sidebar PanelToplevel.mate-panel-menu-bar > grid.horizontal.view > button > box.horizontal > image, .brisk-menu list.content-view.view row.activatable > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view .view > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view textview text > button.budgie-menu-launcher > box.horizontal > image, textview .brisk-menu list.content-view.view text > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view iconview > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > button.budgie-menu-launcher > box.horizontal > image, .geary-sidebar-pane-separator frame.geary-folder-frame .brisk-menu list.content-view.view treeview.view.sidebar > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > button.budgie-menu-launcher > box.horizontal > image, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view .budgie-menu button > button.budgie-menu-launcher > box.horizontal > image, .budgie-menu .brisk-menu list.content-view.view button > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view .panel popover .sidebar .view > button.budgie-menu-launcher > box.horizontal > image, .panel popover .sidebar .brisk-menu list.content-view.view .view > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view treeview.view.sidebar.source-list > button.budgie-menu-launcher > box.horizontal > image, .brisk-menu list.content-view.view .budgie-panel row.activatable > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view row.activatable > #tasklist-button > box.horizontal > image, .brisk-menu list.content-view.view .budgie-panel .view > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .view > #tasklist-button > box.horizontal > image, .brisk-menu list.content-view.view textview .budgie-panel text > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view textview text > #tasklist-button > box.horizontal > image, textview .brisk-menu list.content-view.view .budgie-panel text > #tasklist-button > box.horizontal > image, .budgie-panel textview .brisk-menu list.content-view.view text > #tasklist-button > box.horizontal > image, .brisk-menu list.content-view.view .budgie-panel iconview > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view iconview > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .geary-sidebar-pane-separator frame.geary-folder-frame treeview.view.sidebar > #tasklist-button > box.horizontal > image, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .budgie-panel .places-treeview > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .places-treeview > #tasklist-button > box.horizontal > image, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .budgie-panel .places-treeview > #tasklist-button > box.horizontal > image, .budgie-panel .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .places-treeview > #tasklist-button > box.horizontal > image, .brisk-menu list.content-view.view .budgie-menu .budgie-panel button > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .budgie-menu button > #tasklist-button > box.horizontal > image, .budgie-menu .brisk-menu list.content-view.view .budgie-panel button > #tasklist-button > box.horizontal > image, .budgie-panel .budgie-menu .brisk-menu list.content-view.view button > #tasklist-button > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .panel popover .sidebar .view > #tasklist-button > box.horizontal > image, .brisk-menu list.content-view.view .budgie-panel row.activatable > button.flat.launcher > box.horizontal > image, .brisk-menu list.content-view.view .budgie-panel .view > button.flat.launcher > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .view > button.flat.launcher > box.horizontal > image, .brisk-menu list.content-view.view textview .budgie-panel text > button.flat.launcher > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view textview text > button.flat.launcher > box.horizontal > image, textview .brisk-menu list.content-view.view .budgie-panel text > button.flat.launcher > box.horizontal > image, .budgie-panel textview .brisk-menu list.content-view.view text > button.flat.launcher > box.horizontal > image, .brisk-menu list.content-view.view .budgie-panel iconview > button.flat.launcher > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view iconview > button.flat.launcher > box.horizontal > image, .brisk-menu list.content-view.view .nemo-window .nemo-places-sidebar .budgie-panel .places-treeview > button.flat.launcher > box.horizontal > image, .nemo-window .nemo-places-sidebar .brisk-menu list.content-view.view .budgie-panel .places-treeview > button.flat.launcher > box.horizontal > image, .brisk-menu list.content-view.view .budgie-menu .budgie-panel button > button.flat.launcher > box.horizontal > image, .budgie-panel .brisk-menu list.content-view.view .budgie-menu button > button.flat.launcher > box.horizontal > image, .budgie-menu .brisk-menu list.content-view.view .budgie-panel button > button.flat.launcher > box.horizontal > image, .budgie-panel .budgie-menu .brisk-menu list.content-view.view button > button.flat.launcher > box.horizontal > image {
@@ -7336,7 +7336,7 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 .eom-window statusbar {
   margin: 0 -10px;
   padding: 0 0.41875rem;
-  background-color: rgba(41, 41, 41, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
   color: #0c0404;
 }
 
@@ -7389,9 +7389,9 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
   transition-duration: 0s;
 }
 
-.atril-window.fullscreen.background > box.vertical > toolbar:not(.primary-toolbar).horizontal, .atril-window.fullscreen.background > box.vertical > .inline-toolbar:not(.primary-toolbar).horizontal,
+.atril-window.fullscreen.background > box.vertical > toolbar:not(.primary-toolbar).horizontal, .atril-window.fullscreen.background > box.vertical > :not(.primary-toolbar).horizontal.inline-toolbar,
 .xreader-window.fullscreen.background > box.vertical > toolbar:not(.primary-toolbar).horizontal,
-.xreader-window.fullscreen.background > box.vertical > .inline-toolbar:not(.primary-toolbar).horizontal {
+.xreader-window.fullscreen.background > box.vertical > :not(.primary-toolbar).horizontal.inline-toolbar {
   border-bottom-color: #e5e5e5;
 }
 
@@ -7402,8 +7402,8 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid rgba(11, 11, 11, 0.42);
-  background-color: rgba(41, 41, 41, 0.95);
+  border: 1px solid rgba(195, 195, 195, 0.42);
+  background-color: rgba(225, 225, 225, 0.95);
   box-shadow: none;
 }
 
@@ -7490,22 +7490,22 @@ MsdOsdWindow.background.osd .progressbar {
 .budgie-popover:not(.budgie-menu) button.flat:not(.image-button), .budgie-popover:not(.budgie-menu) button.sidebar-button:not(.image-button), .budgie-popover:not(.budgie-menu) PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:not(.image-button), .budgie-popover:not(.budgie-menu) button.budgie-menu-launcher:not(.image-button), .budgie-popover:not(.budgie-menu) .budgie-panel #tasklist-button:not(.image-button), .budgie-panel .budgie-popover:not(.budgie-menu) #tasklist-button:not(.image-button) {
   min-height: 28px;
   padding: 0 8px;
-  color: rgba(50, 50, 50, 0.85);
+  color: rgba(39, 39, 39, 0.85);
   font-weight: normal;
   border: none;
 }
 
 .budgie-popover:not(.budgie-menu) button.flat:not(.image-button):hover, .budgie-popover:not(.budgie-menu) button.sidebar-button:not(.image-button):hover, .budgie-popover:not(.budgie-menu) PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:not(.image-button):hover, .budgie-popover:not(.budgie-menu) button.budgie-menu-launcher:not(.image-button):hover, .budgie-popover:not(.budgie-menu) .budgie-panel #tasklist-button:not(.image-button):hover, .budgie-panel .budgie-popover:not(.budgie-menu) #tasklist-button:not(.image-button):hover {
-  background-color: rgba(50, 50, 50, 0.12);
+  background-color: rgba(39, 39, 39, 0.12);
 }
 
 .budgie-popover:not(.budgie-menu) button.flat:not(.image-button):checked, .budgie-popover:not(.budgie-menu) button.sidebar-button:not(.image-button):checked, .budgie-popover:not(.budgie-menu) PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:not(.image-button):checked, .budgie-popover:not(.budgie-menu) button.budgie-menu-launcher:not(.image-button):checked, .budgie-popover:not(.budgie-menu) .budgie-panel #tasklist-button:not(.image-button):checked, .budgie-panel .budgie-popover:not(.budgie-menu) #tasklist-button:not(.image-button):checked, .budgie-popover:not(.budgie-menu) button.flat:not(.image-button):active, .budgie-popover:not(.budgie-menu) button.sidebar-button:not(.image-button):active, .budgie-popover:not(.budgie-menu) PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:not(.image-button):active, .budgie-popover:not(.budgie-menu) button.budgie-menu-launcher:not(.image-button):active, .budgie-popover:not(.budgie-menu) .budgie-panel #tasklist-button:not(.image-button):active, .budgie-panel .budgie-popover:not(.budgie-menu) #tasklist-button:not(.image-button):active {
-  background-color: rgba(50, 50, 50, 0.22);
-  color: #323232;
+  background-color: rgba(39, 39, 39, 0.22);
+  color: #272727;
 }
 
 .budgie-popover:not(.budgie-menu) button.flat:not(.image-button):disabled, .budgie-popover:not(.budgie-menu) button.sidebar-button:not(.image-button):disabled, .budgie-popover:not(.budgie-menu) PanelToplevel.mate-panel-menu-bar > grid.horizontal > button:not(.image-button):disabled, .budgie-popover:not(.budgie-menu) button.budgie-menu-launcher:not(.image-button):disabled, .budgie-popover:not(.budgie-menu) .budgie-panel #tasklist-button:not(.image-button):disabled, .budgie-panel .budgie-popover:not(.budgie-menu) #tasklist-button:not(.image-button):disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .budgie-popover.budgie-menu .container {
@@ -7679,13 +7679,13 @@ window.budgie-popover:not(.csd) > frame.container > border {
   min-height: 32px;
   padding: 0 8px;
   border-radius: 0;
-  color: #323232;
+  color: #272727;
   font-weight: normal;
   border: none;
 }
 
 .budgie-menu button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .budgie-menu button:checked:disabled {
@@ -8176,7 +8176,7 @@ frame.raven-frame > border {
   padding: 2px 16px;
   min-height: 16px;
   border: none;
-  background-color: #3c3b3b;
+  background-color: #3c3c3c;
   color: #d0c8c8;
 }
 
@@ -8328,7 +8328,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button > box.vertical *,
 .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view > box.vertical *,
 box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list > box.vertical * {
-  color: #323232;
+  color: #272727;
 }
 
 box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable image, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view image, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text image, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview image, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar image, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview image, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button image, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view image, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list image {
@@ -8362,7 +8362,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 }
 
 box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > row.activatable:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > row.activatable:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > row.activatable:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > row.activatable:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > row.activatable:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > row.activatable:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > row.activatable:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > row.activatable:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > row.activatable:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .view:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > .view:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > .view:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > .view:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable textview list > text:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > text:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view textview list > text:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > text:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > text:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview textview list > text:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > text:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar textview list > text:selected, textview .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > text:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview textview list > text:selected, textview .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > text:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button textview list > text:selected, textview .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > text:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view textview list > text:selected, textview .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > text:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list textview list > text:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > text:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > iconview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > iconview:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > iconview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > iconview:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > iconview:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > iconview:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > iconview:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > iconview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > iconview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > treeview.view.sidebar:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > treeview.view.sidebar:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, .geary-sidebar-pane-separator frame.geary-folder-frame textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > treeview.view.sidebar:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > treeview.view.sidebar:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, .geary-sidebar-pane-separator frame.geary-folder-frame .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > treeview.view.sidebar:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > .places-treeview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .places-treeview:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > .places-treeview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > .places-treeview:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > .places-treeview:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > .places-treeview:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .nemo-window .nemo-places-sidebar list > .places-treeview:selected, .nemo-window .nemo-places-sidebar .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .places-treeview:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .budgie-menu list > button:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > button:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .budgie-menu list > button:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > button:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .budgie-menu list > button:selected, .budgie-menu textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > button:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .budgie-menu list > button:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > button:selected, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar .budgie-menu list > button:selected, .budgie-menu .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > button:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview .budgie-menu list > button:selected, .budgie-menu .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > button:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > button:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .budgie-menu list > button:selected, .budgie-menu .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > button:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list .budgie-menu list > button:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > button:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .panel popover .sidebar list > .view:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .panel popover .sidebar list > .view:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .panel popover .sidebar list > .view:selected, .panel popover .sidebar textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .panel popover .sidebar list > .view:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > .view:selected, .geary-sidebar-pane-separator frame.geary-folder-frame .panel popover box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > .view:selected, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview .panel popover .sidebar list > .view:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button .panel popover .sidebar list > .view:selected, .panel popover .sidebar .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > .view:selected, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .view:selected, .panel popover box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > .view:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > treeview.view.sidebar.source-list:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > treeview.view.sidebar.source-list:selected, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > treeview.view.sidebar.source-list:selected, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > treeview.view.sidebar.source-list:selected, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > treeview.view.sidebar.source-list:selected {
-  background-color: rgba(50, 50, 50, 0.06);
+  background-color: rgba(39, 39, 39, 0.06);
 }
 
 box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > row.activatable label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > row.activatable label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > row.activatable label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > row.activatable label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > row.activatable label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > row.activatable label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > row.activatable label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > row.activatable label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > row.activatable label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .view label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > .view label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > .view label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > .view label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable textview list > text label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > text label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view textview list > text label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > text label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > text label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview textview list > text label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > text label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar textview list > text label, textview .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > text label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview textview list > text label, textview .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > text label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button textview list > text label, textview .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > text label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view textview list > text label, textview .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > text label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list textview list > text label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > text label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > iconview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > iconview label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > iconview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > iconview label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > iconview label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > iconview label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > iconview label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > iconview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > iconview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > treeview.view.sidebar label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > treeview.view.sidebar label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, .geary-sidebar-pane-separator frame.geary-folder-frame textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > treeview.view.sidebar label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > treeview.view.sidebar label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, .geary-sidebar-pane-separator frame.geary-folder-frame .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > treeview.view.sidebar label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .geary-sidebar-pane-separator frame.geary-folder-frame list > treeview.view.sidebar label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > .places-treeview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .places-treeview label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > .places-treeview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > .places-treeview label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > .places-treeview label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > .places-treeview label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .nemo-window .nemo-places-sidebar list > .places-treeview label, .nemo-window .nemo-places-sidebar .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .places-treeview label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .budgie-menu list > button label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > button label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .budgie-menu list > button label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > button label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .budgie-menu list > button label, .budgie-menu textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > button label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .budgie-menu list > button label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > button label, .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar .budgie-menu list > button label, .budgie-menu .geary-sidebar-pane-separator frame.geary-folder-frame box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > button label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview .budgie-menu list > button label, .budgie-menu .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview list > button label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > button label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .budgie-menu list > button label, .budgie-menu .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > button label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list .budgie-menu list > button label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > button label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable .panel popover .sidebar list > .view label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view .panel popover .sidebar list > .view label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text .panel popover .sidebar list > .view label, .panel popover .sidebar textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview .panel popover .sidebar list > .view label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > .view label, .geary-sidebar-pane-separator frame.geary-folder-frame .panel popover box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar list > .view label, .nemo-window .nemo-places-sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .places-treeview .panel popover .sidebar list > .view label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button .panel popover .sidebar list > .view label, .panel popover .sidebar .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > .view label, .panel popover .sidebar box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > .view label, .panel popover box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > treeview.view.sidebar.source-list list > .view label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > row.activatable list > treeview.view.sidebar.source-list label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > .view list > treeview.view.sidebar.source-list label, textview box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > text list > treeview.view.sidebar.source-list label, box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > iconview list > treeview.view.sidebar.source-list label, .budgie-menu box.vertical > stack > box.vertical > .raven-background > viewport.frame > list > button list > treeview.view.sidebar.source-list label {
@@ -8432,8 +8432,8 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-osd-window button,
 .budgie-switcher-window button {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.42);
 }
 
 .slate-notification-window button:hover,
@@ -8441,8 +8441,8 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-osd-window button:hover,
 .budgie-switcher-window button:hover {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(115, 115, 115, 0.52);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.52);
 }
 
 .slate-notification-window button:active, .slate-notification-window button:checked,
@@ -8453,7 +8453,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-osd-window button:checked,
 .budgie-switcher-window button:checked {
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
 }
 
@@ -8461,9 +8461,9 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window button:disabled,
 .budgie-osd-window button:disabled,
 .budgie-switcher-window button:disabled {
-  color: #201e1e;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.85);
+  color: #a19f9f;
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .slate-notification-window .linked:not(.vertical) > entry + entry,
@@ -8636,7 +8636,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action),
 .budgie-osd-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action),
 .budgie-switcher-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .slate-notification-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled:not(:only-child),
@@ -8647,7 +8647,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-notification-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover),
 .budgie-osd-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover),
 .budgie-switcher-window .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):disabled + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):not(:hover) {
-  box-shadow: inset 1px 0 rgba(11, 11, 11, 0.42);
+  box-shadow: inset 1px 0 rgba(195, 195, 195, 0.42);
 }
 
 .slate-notification-window .linked:not(.vertical) > button:active + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover,
@@ -8777,7 +8777,7 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 
 .budgie-session-dialog .linked.horizontal > button:not(.suggested-action):not(.destructive-action):hover,
 .budgie-polkit-dialog .linked.horizontal > button:not(.suggested-action):not(.destructive-action):hover {
-  background-color: alpha(#323232,0.06);
+  background-color: alpha(#272727,0.06);
   border-color: rgba(0, 0, 0, 0.08);
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -8785,8 +8785,8 @@ box.vertical > stack > box.vertical > .raven-background > viewport.frame > list 
 .budgie-session-dialog .linked.horizontal > button:not(.suggested-action):not(.destructive-action):active, .budgie-session-dialog .linked.horizontal > button:not(.suggested-action):not(.destructive-action):checked,
 .budgie-polkit-dialog .linked.horizontal > button:not(.suggested-action):not(.destructive-action):active,
 .budgie-polkit-dialog .linked.horizontal > button:not(.suggested-action):not(.destructive-action):checked {
-  color: #323232;
-  background-color: alpha(#323232,0.1);
+  color: #272727;
+  background-color: alpha(#272727,0.1);
   border-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -8901,7 +8901,7 @@ panel-toplevel.background button#tasklist-button:active, .xfce4-panel PanelTople
 .XfceHeading {
   border: 0 none transparent;
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 .xfce4-panel {
@@ -9079,7 +9079,7 @@ window#whiskermenu-window scrolledwindow treeview.view {
 }
 
 window#whiskermenu-window scrolledwindow treeview.view:selected:hover {
-  background-color: #3c3b3b;
+  background-color: #3c3c3c;
   color: #d0c8c8;
 }
 
@@ -9089,11 +9089,11 @@ window.thunar .sidebar {
 
 window.thunar .sidebar treeview.view {
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
 }
 
 window.thunar .sidebar treeview.view:hover {
-  background-color: rgba(50, 50, 50, 0.1);
+  background-color: rgba(39, 39, 39, 0.1);
   box-shadow: none;
 }
 
@@ -9221,7 +9221,7 @@ button.flat.toggle.switcher:hover image, button.toggle.switcher.sidebar-button:h
 }
 
 .circular label:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 .circular.accent {
@@ -9326,7 +9326,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
 
 treeview.view.sidebar {
   color: #0c0404;
-  background-color: rgba(54, 54, 54, 0.95);
+  background-color: rgba(238, 238, 238, 0.95);
 }
 
 treeview.view.sidebar.source-list {
@@ -9428,7 +9428,7 @@ scale.warmth trough {
   font-weight: normal;
   border-style: none;
   background-color: transparent;
-  color: #323232;
+  color: #272727;
 }
 
 #content_frame {
@@ -9441,13 +9441,13 @@ scale.warmth trough {
 }
 
 #content_frame button {
-  color: #323232;
+  color: #272727;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #fcfcfc;
 }
 
 #content_frame button:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
 }
@@ -9464,47 +9464,47 @@ scale.warmth trough {
 }
 
 #content_frame button:disabled label, #content_frame button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 #buttonbox_frame {
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: rgba(41, 41, 41, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px;
-  box-shadow: inset 0 1px rgba(54, 54, 54, 0.95);
+  box-shadow: inset 0 1px rgba(238, 238, 238, 0.95);
 }
 
 #buttonbox_frame button {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.42);
 }
 
 #buttonbox_frame button:hover {
   color: #0c0404;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(115, 115, 115, 0.52);
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.52);
 }
 
 #buttonbox_frame button:active, #buttonbox_frame button:checked {
   color: #ffffff;
-  border-color: rgba(11, 11, 11, 0.42);
+  border-color: rgba(195, 195, 195, 0.42);
   background-color: #F0544C;
 }
 
 #buttonbox_frame button:disabled {
-  color: #201e1e;
-  border-color: rgba(11, 11, 11, 0.42);
-  background-color: rgba(97, 97, 97, 0.85);
+  color: #a19f9f;
+  border-color: rgba(195, 195, 195, 0.42);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 #login_window #user_combobox {
-  color: #323232;
+  color: #272727;
   font-size: 13px;
 }
 
@@ -9623,7 +9623,7 @@ toolbar.bottom-toolbar button, .bottom-toolbar.inline-toolbar button {
 .source-list,
 .source-list.view {
   background-color: #f7f7f7;
-  color: #323232;
+  color: #272727;
   -gtk-icon-style: regular;
 }
 
@@ -9673,7 +9673,7 @@ toolbar.bottom-toolbar button, .bottom-toolbar.inline-toolbar button {
 }
 
 .source-list.category-expander {
-  color: #323232;
+  color: #272727;
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
   -GtkTreeView-expander-size: 16;
 }
@@ -9693,14 +9693,14 @@ GraniteWidgetsWelcome {
 }
 
 GraniteWidgetsWelcome label {
-  color: #959595;
+  color: #8f8f8f;
   font-size: 11px;
   text-shadow: none;
 }
 
 GraniteWidgetsWelcome .h1,
 GraniteWidgetsWelcome .h3 {
-  color: rgba(50, 50, 50, 0.8);
+  color: rgba(39, 39, 39, 0.8);
 }
 
 .help_button {
@@ -9745,7 +9745,7 @@ GraniteWidgetsXsEntry entry {
 
 .h4,
 .category-label {
-  color: #707070;
+  color: #6c6c6c;
   font-weight: 600;
 }
 
@@ -9760,7 +9760,7 @@ GtkListBox .h4 {
 
 filechooser paned > separator,
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(54, 54, 54, 0.95), rgba(54, 54, 54, 0.95));
+  background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95));
 }
 
 filechooser paned > separator:dir(ltr),
@@ -9781,7 +9781,7 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(54, 54, 54, 0.95);
+  background-color: rgba(238, 238, 238, 0.95);
 }
 
 filechooser placessidebar.sidebar row.sidebar-row,
@@ -9882,12 +9882,12 @@ filechooser placessidebar.sidebar separator,
 
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
-  background-color: #363636;
+  background-color: #eeeeee;
 }
 
 .nemo-window .sidebar {
   color: #0c0404;
-  background-color: rgba(54, 54, 54, 0.95);
+  background-color: rgba(238, 238, 238, 0.95);
 }
 
 .nemo-window .sidebar .view, .nemo-window .sidebar row {
@@ -9904,7 +9904,7 @@ filechooser.maximized placessidebar.sidebar,
 }
 
 .nemo-window .sidebar .view.expander, .nemo-window .sidebar row.expander {
-  color: rgba(32, 28, 28, 0.975);
+  color: rgba(119, 115, 115, 0.975);
 }
 
 .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar row.expander:hover {
@@ -9916,13 +9916,13 @@ filechooser.maximized placessidebar.sidebar,
 }
 
 filechooser actionbar {
-  color: #323232;
+  color: #272727;
   background-color: #f7f7f7;
   border-color: rgba(0, 0, 0, 0.08);
 }
 
 filechooser actionbar label, filechooser actionbar combobox {
-  color: #323232;
+  color: #272727;
 }
 
 .gedit-bottom-panel-paned {
@@ -9930,7 +9930,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(54, 54, 54, 0.95), rgba(54, 54, 54, 0.95));
+  background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95));
 }
 
 .gedit-bottom-panel-paned > separator {
@@ -9938,11 +9938,11 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-document-panel {
-  background-color: rgba(54, 54, 54, 0.95);
+  background-color: rgba(238, 238, 238, 0.95);
 }
 
 .maximized .gedit-document-panel {
-  background-color: #363636;
+  background-color: #eeeeee;
 }
 
 .gedit-document-panel row {
@@ -9973,13 +9973,13 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 filechooser actionbar button {
-  color: #323232;
+  color: #272727;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #fcfcfc;
 }
 
 filechooser actionbar button:hover {
-  color: #0c0c0c;
+  color: #010101;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: white;
 }
@@ -9996,30 +9996,30 @@ filechooser actionbar button:disabled {
 }
 
 filechooser actionbar button:disabled label, filechooser actionbar button:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
 }
 
 filechooser actionbar entry {
-  color: #363636;
+  color: #303030;
   border-color: rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
 }
 
 filechooser actionbar entry:focus {
-  color: #363636;
+  color: #303030;
   border-color: #F0544C;
   background-color: #ffffff;
 }
 
 filechooser actionbar entry:disabled {
-  color: rgba(50, 50, 50, 0.55);
+  color: rgba(39, 39, 39, 0.55);
   border-color: rgba(0, 0, 0, 0.04);
   background-color: rgba(255, 255, 255, 0.55);
 }
 
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar {
-  border-color: rgba(41, 41, 41, 0.95);
+  border-color: rgba(225, 225, 225, 0.95);
 }
 
 filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
@@ -10044,26 +10044,26 @@ filechooser placessidebar.sidebar scrollbar slider:disabled, .nautilus-window pl
 }
 
 filechooser placessidebar.sidebar scrollbar trough, .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough {
-  background-color: rgba(41, 41, 41, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
 }
 
-@define-color theme_fg_color #323232;
-@define-color theme_text_color #363636;
+@define-color theme_fg_color #272727;
+@define-color theme_text_color #303030;
 @define-color theme_bg_color #f7f7f7;
 @define-color theme_base_color #ffffff;
 @define-color theme_selected_bg_color #F0544C;
 @define-color theme_selected_fg_color #ffffff;
-@define-color fg_color #323232;
-@define-color text_color #363636;
+@define-color fg_color #272727;
+@define-color text_color #303030;
 @define-color bg_color #f7f7f7;
 @define-color base_color #ffffff;
 @define-color selected_bg_color #F0544C;
 @define-color selected_fg_color #ffffff;
 @define-color insensitive_bg_color #fcfcfc;
-@define-color insensitive_fg_color alpha(rgba(50, 50, 50, 0.55), 0.5);
+@define-color insensitive_fg_color alpha(rgba(39, 39, 39, 0.55), 0.5);
 @define-color insensitive_base_color #ffffff;
-@define-color theme_unfocused_fg_color #323232;
-@define-color theme_unfocused_text_color #363636;
+@define-color theme_unfocused_fg_color #272727;
+@define-color theme_unfocused_text_color #303030;
 @define-color theme_unfocused_bg_color #f7f7f7;
 @define-color theme_unfocused_base_color #ffffff;
 @define-color borders rgba(0, 0, 0, 0.08);
@@ -10084,7 +10084,7 @@ filechooser placessidebar.sidebar scrollbar trough, .nautilus-window placessideb
 @define-color wm_button_close_hover_bg #f68095;
 @define-color wm_button_close_active_bg #ff0044;
 @define-color wm_icon_close_bg #dddddd;
-@define-color wm_button_hover_bg #f7f6f6;
+@define-color wm_button_hover_bg #f7f7f7;
 @define-color wm_button_active_bg #F0544C;
 @define-color wm_button_hover_border #cbcbcb;
 @define-color wm_icon_bg #909090;

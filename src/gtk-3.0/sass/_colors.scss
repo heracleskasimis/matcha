@@ -6,20 +6,6 @@ $text_color: if($variant == 'light', #303030, #bbbbbb);
 $bg_color: if($variant =='light', #f7f7f7, #222222);
 $fg_color: if($variant =='light', #272727, #cccccc);
 
-@if $color=='aliz' {
-  $base_color: if($variant =='light', #ffffff, #262626);
-  $text_color: if($variant == 'light', #363636, #b5abab);
-  $bg_color: if($variant =='light', #f7f7f7, #222222);
-  $fg_color: if($variant =='light', #323232, #cbbfbf);
-}
-
-@if $color=='azul' {
-  $base_color: if($variant =='light', #ffffff, #22252c);
-  $text_color: if($variant == 'light', #2e313d, #afb4ba);
-  $bg_color: if($variant =='light', #f7f7f7, #1b1d24);
-  $fg_color: if($variant =='light', #2b2f3b, #bbc3c8);
-}
-
 $selected_fg_color: #ffffff;
 $selected_bg_color: #00d0d0;
 @if $color=='aliz' { $selected_bg_color: #F0544C; }
@@ -56,13 +42,6 @@ $progress_color: #ed3163;
     $suggested_color: #00d0d0;
 }
 
-@if $color=='azul' {
-    $progress_color: #7C4DFF;
-    $success_color: #00d0d0;
-    $destructive_color: #db5b5b;
-    $suggested_color: #4146d1;
-}
-
 $drop_target_color: #F08437;
 
 //insensitive state derived colors
@@ -84,9 +63,7 @@ $header_fg: if($variant =='light', mix($selected_bg_color, #000000, 5%), $fg_col
 
 $dark_sidebar_bg: #303030;
 @if $variant=='light' { $dark_sidebar_bg: #eeeeee }
-@if $color=='sea' { $dark_sidebar_bg: if($trans == 'true', rgba($dark_sidebar_bg, 0.95), $dark_sidebar_bg); }
-@if $color=='aliz' { $dark_sidebar_bg: if($trans == 'true', rgba(#363636, 0.95), #363636); }
-@if $color=='azul' { $dark_sidebar_bg: if($trans == 'true', rgba(#30343e, 0.95), #30343e); }
+$dark_sidebar_bg: if($trans == 'true', rgba($dark_sidebar_bg, 0.95), $dark_sidebar_bg);
 $dark_sidebar_fg: $header_fg;
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
@@ -104,9 +81,6 @@ $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 $osd_borders_color: $osd_button_border;
 
 $panel_bg: #222222;
-@if $color=='sea' { $panel_bg: #222222; }
-@if $color=='aliz' { $panel_bg: #222222; }
-@if $color=='azul' { $panel_bg: #1b1d24; }
 $panel_fg: mix($selected_bg_color, #cecece, 5%);
 
 $entry_bg: if($variant == 'light', $base_color, lighten($base_color, 0%));
