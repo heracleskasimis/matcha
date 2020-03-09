@@ -2486,6 +2486,7 @@ menubar,
   padding: 0 0 0 0;
   background-color: #dddddd;
   color: #000a0a;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.08);
 }
 
 menubar:backdrop,
@@ -6185,17 +6186,20 @@ dialog.background.csd box.dialog-vbox grid.horizontal stack scrolledwindow.frame
 
 .nautilus-window .floating-bar {
   padding: 1px;
-  background-color: #00d0d0;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #272727;
   border-radius: 2px 2px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .nautilus-window .floating-bar.bottom.left {
   border-top-left-radius: 0;
+  border-width: 1px 1px 0 0;
 }
 
 .nautilus-window .floating-bar.bottom.right {
   border-top-right-radius: 0;
+  border-width: 1px 0 0 1px;
 }
 
 .nautilus-window .floating-bar button {
@@ -6244,6 +6248,7 @@ dialog.background.csd box.dialog-vbox grid.horizontal stack scrolledwindow.frame
   border: none;
   color: #000a0a;
   background-color: #dddddd;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.08);
 }
 
 .nemo-window .primary-toolbar button, .nemo-window .primary-toolbar entry {
@@ -8984,6 +8989,7 @@ XfdesktopIconView.view:active, XfdesktopIconView.view:checked {
 }
 
 window#whiskermenu-window scrolledwindow scrollbar {
+  background-color: rgba(0, 0, 0, 0.15);
   border-color: #1d1d1d;
 }
 
@@ -9073,12 +9079,12 @@ window#whiskermenu-window entry:disabled image {
   color: rgba(196, 206, 206, 0.45);
 }
 
-window#whiskermenu-window scrolledwindow treeview.view {
+window#whiskermenu-window scrolledwindow .view {
   background-color: rgba(47, 47, 47, 0.9);
   color: #c4cece;
 }
 
-window#whiskermenu-window scrolledwindow treeview.view:selected:hover {
+window#whiskermenu-window scrolledwindow .view:selected:hover {
   background-color: #3c3c3c;
   color: #c4cece;
 }
@@ -9089,12 +9095,6 @@ window.thunar .sidebar {
 
 window.thunar .sidebar treeview.view {
   background-color: #f7f7f7;
-  color: #272727;
-}
-
-window.thunar .sidebar treeview.view:hover {
-  background-color: rgba(39, 39, 39, 0.1);
-  box-shadow: none;
 }
 
 window.thunar toolbar#location-toolbar, window.thunar #location-toolbar.inline-toolbar {

@@ -95,6 +95,7 @@ StEntry {
   border-radius: 0;
   border-width: 0;
   color: $fg_color;
+  caret-color: $fg_color;
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
   @include font(subheading);
@@ -746,14 +747,14 @@ StScrollBar {
 .popup-menu {
   min-width: 200px;
   color: $fg_color;
-  border-image: url("assets/menu.svg") 9 9 9 9;
+  border-image: url("assets/menu.svg") 18 18 18 18;
 
   // .popup-menu-arrow { } //defined globally in the TOP BAR
 
   .popup-sub-menu {
     background: none;
     box-shadow: none;
-    border-image: url("assets/submenu.svg") 9 9 9 9;
+    border-image: url("assets/submenu.svg") 18 18 2 2;
   }
 
   .popup-menu-content { padding: 1em 0; }
@@ -768,12 +769,12 @@ StScrollBar {
       font-weight: normal;
       background: none;
       box-shadow: none;
-      border-image: url("assets/submenu-open.svg") 9 9 9 9;
+      border-image: url("assets/submenu-open.svg") 18 18 2 2;
 
       &:active, &.selected {
         color: $selected_fg_color;
         background-color: transparent;
-        border-image: url("assets/menu-hover.svg") 9 9 1 1;
+        border-image: url("assets/menu-hover.svg") 18 18 2 2;
       }
 
       &:insensitive {
@@ -785,7 +786,7 @@ StScrollBar {
     &:hover, &:active, &.selected {
       color: $selected_fg_color;
       background-color: transparent;
-      border-image: url("assets/menu-hover.svg") 9 9 1 1;
+      border-image: url("assets/menu-hover.svg") 18 18 2 2;
     }
 
     &:insensitive { color: $insensitive_fg_color; }
@@ -823,10 +824,8 @@ StScrollBar {
   // .popup-menu-content {
   // }
 
-  StEntry {
-    selection-background-color: $selected_fg_color;
-    selected-color: $selected_bg_color;
-    text-shadow: none;
+  StEntry, .search-entry {
+    caret-color: $fg_color;
   }
 }
 
@@ -840,7 +839,7 @@ StScrollBar {
   border: 0 none transparent;
   background: transparent; // needs to reset?
   color: $fg_color;
-  border-image: url("assets/menu.svg") 9 9 9 9;
+  border-image: url("assets/menu.svg") 18 18 18 18;
 
   .candidate-popup-content {
     margin: 6px;
@@ -1083,6 +1082,11 @@ StScrollBar {
       color: $topbar_fg_color;
 
       & > .system-status-icon { icon-shadow: none; }
+
+      .clock {
+        background-color: transparent;
+        box-shadow: none;
+      }
     }
 
     .system-status-icon { @include em(16px); padding: 0 4px; }
@@ -1138,6 +1142,8 @@ StScrollBar {
 
   .calendar {
     margin-bottom: 0;
+    background-color: transparent;
+    border-color: transparent;
   }
 
     .calendar,
@@ -1186,10 +1192,17 @@ StScrollBar {
     .weather-button,
     .message-list-section-title,
     .events-section-title {
-      &:hover,&:focus { color: $fg_color; background-color: $semi_track_color; }
+      background-color: transparent;
+      border-color: transparent;
+      &:hover,&:focus {
+        color: $fg_color;
+        background-color: $semi_track_color;
+        border-color: $semi_track_color;
+      }
       &:active {
         color: $fg_color;
         background-color: $track_color;
+        border-color: $track_color;
       }
     }
 
@@ -1620,13 +1633,13 @@ StScrollBar {
     &:active {
       color: $selected_fg_color;
       background-color: $selected_bg_color;
-      border: 1px solid $selected_bg_color;
+      border: 1px solid rgba(black, 0.8);
       box-shadow: none;
     }
     &:checked {
       color: $selected_fg_color;
       background-color: $selected_bg_color;
-      border: 1px solid $selected_bg_color;
+      border: 1px solid rgba(black, 0.8);
       box-shadow: none;
     }
     &:first-child {
@@ -1635,6 +1648,7 @@ StScrollBar {
       &:checked { border-radius: 2px 0 0 2px; }
     }
     &:last-child {
+      border-left-width: 0;
       border-radius: 0 2px 2px 0;
       &:checked { border-radius: 0 2px 2px 0; }
     }
@@ -1679,6 +1693,7 @@ StScrollBar {
   padding: 0 8px;
   border-radius: 20px;
   color: $entry_color;
+  caret-color: $entry_color;
   background-color: rgba(white, 0.10);
   box-shadow: none;
   border: 1px solid transparent;
@@ -2258,6 +2273,7 @@ $legacy_icon_size: 24px;
 
   StEntry {
     color: $selected_fg_color;
+    caret-color: $selected_fg_color;;
     selection-background-color: $selected_bg_color;
     selected-color: $selected_fg_color;
     border: 1px solid rgba(white, 0.2);
