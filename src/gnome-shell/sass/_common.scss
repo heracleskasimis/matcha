@@ -35,6 +35,7 @@ $menuitem_size: if($laptop == 'true', 28px, 32px);
 * {
   transition-timing-function : cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.2s;
+  text-shadow: none;
 }
 
 /* GLOBALS */
@@ -1729,7 +1730,12 @@ StScrollBar {
 }
 
 .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
-.search-section-content { spacing: 32px; } // This is the space between the provider icon and the results container
+.search-section-content {
+  border-radius: 8px;
+  box-shadow: none;
+  background-color: $osd_bg_color;
+  spacing: 32px; // This is the space between the provider icon and the results container
+}
 .search-statustext { // "no results"
   @extend %status_text;
 }
