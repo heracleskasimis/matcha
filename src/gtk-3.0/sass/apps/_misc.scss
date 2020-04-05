@@ -1,7 +1,7 @@
 //
 // Nemo
 //
-.nemo-desktop.nemo-canvas-item { @extend .nautilus-desktop.nautilus-canvas-item; }
+.nemo-desktop.nemo-canvas-item { @extend %nautilus-canvas-item; }
 
 .nemo-window {
   menubar,
@@ -12,17 +12,41 @@
   }
 
   paned.horizontal > separator {
-    @if $variant=='light' { background: none; }
+    background-image: image($solid_borders_color);
   }
 
   .nemo-places-sidebar {
     &.frame { border-width: 0; }
 
     .places-treeview {
-      @extend row.activatable;
+      @extend %row_activatable;
+      background-color: $bg_color;
+
+      &:selected, &:selected:hover {
+        @extend %selected_items;
+
+        .sidebar-icon { color: inherit; }
+      }
 
       -NemoPlacesTreeView-disk-full-bg-color: $solid_borders_color;
       -NemoPlacesTreeView-disk-full-fg-color: darken($progress_color, 5%);
+    }
+  }
+
+  .NemoSidebar {
+    background-color: $bg_color;
+
+    &:selected, &:selected:hover, &:selected:focus {
+      background-color: rgba($fg_color, 0.15);
+      color: $fg_color;
+    }
+
+    &.expander {
+      &:hover { color: mix($fg_color, $base_color, 90%); }
+
+      &:selected {
+        &, &:hover { color: mix($fg_color, $base_color, 80%); }
+      }
     }
   }
 
@@ -43,17 +67,28 @@
   .primary-toolbar {
     padding-top: 0;
     padding-bottom: 0;
-    @extend %header_widgets;
     border: none;
     color: $header_fg;
     background-color: opacify($header_bg, 1);
 
     @if $header == 'light' { box-shadow: inset 0 -1px $borders_color; }
 
-    button, entry {
-      min-height: 16px;
+    .linked:not(.vertical):not(.path-bar):not(.stack-switcher) {
+      @include linking_rules($entry_rules:'false', $button_rules:'false', $e_border: $header_entry_border, $b_border: transparent);
+    }
+
+    button {
+      min-height: 20px;
       margin-top: 6px;
       margin-bottom: 6px;
+      @extend %header_button;
+    }
+
+    entry {
+      min-height: 22px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      @extend %header_entry;
     }
   }
 
@@ -63,8 +98,8 @@
     button {
       @extend %pathbar_box_button;
       padding: 2px 4px 4px 4px;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      margin-top: 6px;
+      margin-bottom: 6px;
     }
   }
 
@@ -232,8 +267,8 @@ window.background:not(.csd) {
 $chrome_borders_color: $solid_borders_color;
 $chrome_bg_color: $bg_color;
 $chrome_fg_color: $fg_color;
-$chrome_menu_bg_color: $_menu_bg;
-$chrome_menu_fg_color: $text_color;
+$chrome_menu_bg_color: white;
+$chrome_menu_fg_color: #303030;
 
 window.background.chromium {
   // checked-tab & toolbar & button widgets
@@ -301,9 +336,10 @@ window.background.chromium {
   }
 
   > menu {
-    border: 1px solid $solid_borders_color;
+    border: 1px solid dakren($chrome_menu_bg_color, 15%);
     background-color: $chrome_menu_bg_color;
     color: $chrome_menu_fg_color;
+    border-color: dakren($chrome_menu_bg_color, 15%);
 
     > separator {
       color: $chrome_menu_bg_color;
@@ -322,9 +358,14 @@ window.background.chromium {
         color: rgba($chrome_menu_fg_color, 0.45);
       }
 
-      label { &:disabled { color: rgba($chrome_menu_fg_color, 0.45); }}
+      label:disabled { color: rgba($chrome_menu_fg_color, 0.45); }
     }
   }
+}
+
+tooltip.background.chromium {
+  border-color: $osd_borders_color;
+  background-color: rgba($osd_bg_color, 1);
 }
 
 //
@@ -525,7 +566,6 @@ window#ValaPanel.background {
   button#tasklist-button.toggle.flat,
   // tasklist-arrow-button.toggle.flat.-panel-flat-button, // xfce tasklist button
   button.flat.-panel-icon-button {
-    @extend %budgie_icon_tasklist_button;
     color: $panel_fg;
 
     &:hover {

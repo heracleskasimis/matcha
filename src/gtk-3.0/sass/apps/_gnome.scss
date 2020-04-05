@@ -117,6 +117,7 @@ terminal-window,
   border-radius: 2px;
 }
 
+%nautilus-canvas-item,
 .nautilus-desktop.nautilus-canvas-item {
   color: $selected_fg_color;
   text-shadow: 1px 1px transparentize(black, 0.4);
@@ -149,7 +150,7 @@ terminal-window,
 }
 
 button.nautilus-circular-button.image-button {
-  @extend button.circular;
+  @extend %circular_button;
 }
 
 $disk_space_unknown: transparentize($fg_color, 0.5);
@@ -544,6 +545,23 @@ box.horizontal > separator.sidebar,
 hdyleaflet > separator.sidebar {
   background: none;
   min-width: 0;
+}
+
+window.background {
+  > hdyleaflet > stack.background {
+    > widget > box.vertical > box.vertical {
+      > scrolledwindow > viewport.frame {
+        > box.vertical > box.vertical > flowbox.horizontal {
+          > flowboxchild > overlay {
+            > button.osd.image-button.remove-button {
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //

@@ -81,38 +81,31 @@ filechooser,
   &.maximized placessidebar.sidebar { background-color: opacify($dark_sidebar_bg, 1); }
 }
 
-.nemo-window {
-  .sidebar {
-    color: $dark_sidebar_fg;
-    background-color: $dark_sidebar_bg;
-
-    .view, row {
-      background-color: transparent;
-      color: $dark_sidebar_fg;
-
-      &:hover {
-        background-color: rgba($dark_sidebar_fg, 0.15);
-      }
-
-      &:selected,
-      &:selected:hover, {
-        @extend %selected_items;
-
-        .sidebar-icon { color: inherit; }
-      }
-
-      &.expander {
-        color: mix($dark_sidebar_fg, $dark_sidebar_bg, 50%);
-
-        &:hover { color: $dark_sidebar_fg; }
-      }
-    }
-
-    separator { background-color: transparent; }
-
-    scrollbar { @extend %dark_sidebar_scrollbar }
-  }
-}
+// .nemo-window {
+//   .sidebar {
+//     color: $dark_sidebar_fg;
+//     background-color: $dark_sidebar_bg;
+//
+//     .view, row {
+//       background-color: transparent;
+//       color: $dark_sidebar_fg;
+//
+//       &:hover {
+//         background-color: rgba($dark_sidebar_fg, 0.15);
+//       }
+//
+//       &.expander {
+//         color: mix($dark_sidebar_fg, $dark_sidebar_bg, 50%);
+//
+//         &:hover { color: $dark_sidebar_fg; }
+//       }
+//     }
+//
+//     separator { background-color: transparent; }
+//
+//     scrollbar { @extend %dark_sidebar_scrollbar }
+//   }
+// }
 
 filechooser {
 
@@ -121,8 +114,20 @@ filechooser {
     background-color: $bg_color;
     border-color: $borders_color;
 
-    button { @extend %dark_sidebar_button; }
-    entry { @extend %dark_sidebar_entry; }
+    button {
+      @include button(normal);
+
+      &:hover { @include button(hover); }
+      &:active, &:checked { @include button(active); }
+      &:disabled { @include button(insensitive); }
+    }
+
+    entry {
+      @include entry(normal);
+
+      &:focus { @include entry(focus); }
+      &:disabled { @include entry(insensitive); }
+    }
 
     @extend %osd_check_radio;
 
@@ -162,21 +167,6 @@ filechooser {
       color: $dark_sidebar_fg;
     }
   }
-}
-
-%dark_sidebar_button {
-  @include button(normal);
-
-  &:hover { @include button(hover); }
-  &:active, &:checked { @include button(active); }
-  &:disabled { @include button(insensitive); }
-}
-
-%dark_sidebar_entry {
-  @include entry(normal);
-
-  &:focus { @include entry(focus); }
-  &:disabled { @include entry(insensitive); }
 }
 
 %dark_sidebar_scrollbar {
