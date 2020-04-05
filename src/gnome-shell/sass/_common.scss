@@ -985,6 +985,7 @@ StScrollBar {
     height: 48px;
     background-color: $selected_bg_color;
     color: $selected_fg_color;
+    border-color: $selected_bg_color;
     background-size: 32px;
     border-radius: 2px;
   }

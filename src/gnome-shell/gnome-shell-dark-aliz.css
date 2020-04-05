@@ -1128,6 +1128,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 48px;
   background-color: #F0544C;
   color: #FFFFFF;
+  border-color: #F0544C;
   background-size: 32px;
   border-radius: 2px;
 }
@@ -1588,6 +1589,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .message:hover, .message:focus {
   background-color: rgba(255, 255, 255, 0.06);
+}
+
+.message:focus {
+  border-color: #F0544C;
 }
 
 .message:active {
