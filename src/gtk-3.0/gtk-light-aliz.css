@@ -6533,10 +6533,10 @@ window.background.chromium > menubar > menuitem {
 }
 
 window.background.chromium > menu {
-  border: 1px solid dakren(white, 15%);
+  border: 1px solid #d9d9d9;
   background-color: white;
   color: #303030;
-  border-color: dakren(white, 15%);
+  border-color: #d9d9d9;
 }
 
 window.background.chromium > menu > separator {
