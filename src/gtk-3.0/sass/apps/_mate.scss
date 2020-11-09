@@ -38,14 +38,11 @@ panel-toplevel.background {
 
   &, menubar { background-color: opacify($panel_bg, 1); }
 
-  // menubar,
-  // #PanelApplet label,
-  // #PanelApplet image { color: $panel_fg; }
-
   // Panel buttons
   button,
   button#tasklist-button {
     label, image { color: inherit; }
+    @extend %panelbutton;
   }
 
   .wnck-pager {
@@ -183,7 +180,7 @@ PanelToplevel.mate-panel-menu-bar > grid.horizontal > button {
   #tasklist-button,
   #clock-applet-button,
   #showdesktop-button {
-    &:hover { box-shadow: inset 2px 0 rgba(white, 0.1); }
+    &:hover { box-shadow: inset 2px 0 rgba($selected_bg_color, 0.5); }
     &:checked,
     &:hover:checked { box-shadow: inset 2px 0 $selected_bg_color; }
   }
@@ -297,15 +294,13 @@ PanelToplevel.mate-panel-menu-bar > grid.horizontal > button {
 .mate-panel-applet-slider {
   background-color: transparent;
 
-  frame { // draw actual widget
-    border-width: 1px;
-    border-style: solid;
-    border-color: $borders_color;
+  > frame { // draw actual widget
+    border: 1px solid $borders_color;
     border-radius: 2px;
     background-color: $bg_color;
 
     // unset borders
-    *,
+    // *,
     > border { border: unset; }
   }
 }
@@ -352,7 +347,7 @@ PanelToplevel.mate-panel-menu-bar > grid.horizontal > button {
     background-color: $header_bg;
     color: $header_fg;
 
-    // button { }
+    button { @extend %header_button; }
   }
 }
 

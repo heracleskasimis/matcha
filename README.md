@@ -62,6 +62,15 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 
 ### Install from repository
 
+Archlinux:
+This package is available in the AUR
+
+    yay -S matcha-gtk-theme
+
+FreeBSD:
+
+    # pkg install matcha-gtk-themes
+
 Solus:
 
     sudo eopkg it matcha-gtk-theme

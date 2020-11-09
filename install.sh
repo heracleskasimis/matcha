@@ -58,7 +58,7 @@ install() {
   echo "GtkTheme=${name}${color}${theme}"                                          >> ${themedir}/index.theme
   echo "MetacityTheme=${name}${color}${theme}"                                     >> ${themedir}/index.theme
   echo "IconTheme=Qogir-manjaro"                                                   >> ${themedir}/index.theme
-  echo "CursorTheme=Breeze_cursors"                                                >> ${themedir}/index.theme
+  echo "CursorTheme=Qogir-manjaro"                                                 >> ${themedir}/index.theme
   echo "ButtonLayout=menu:minimize,maximize,close"                                 >> ${themedir}/index.theme
 
   # Install GNOME Shell Theme
@@ -76,6 +76,8 @@ install() {
   cp -ur key-hide${ELSE_DARK}.svg                                                     ${themedir}/gnome-shell/assets/key-hide.svg
   cp -ur key-layout${ELSE_DARK}.svg                                                   ${themedir}/gnome-shell/assets/key-layout.svg
   cp -ur key-shift${ELSE_DARK}.svg                                                    ${themedir}/gnome-shell/assets/key-shift.svg
+  cp -ur checkbox-off${ELSE_DARK}.svg                                                 ${themedir}/gnome-shell/assets/checkbox-off.svg
+  cp -ur calendar-today${ELSE_DARK}.svg                                               ${themedir}/gnome-shell/assets/calendar-today.svg
   [[ ${ELSE_DARK} == '' ]] && \
   cp -ur menu.svg                                                                     ${themedir}/gnome-shell/assets
   cp -ur submenu${ELSE_DARK}.svg                                                      ${themedir}/gnome-shell/assets/submenu.svg
