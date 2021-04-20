@@ -1,5 +1,4 @@
-#!/bin/bash
-  # Copying files
+#! /usr/bin/env bash
 
 ROOT_UID=0
 DEST_DIR=
@@ -17,6 +16,18 @@ SRC_DIR=${REO_DIR}/src
 THEME_NAME=Matcha
 COLOR_VARIANTS=('' '-light' '-dark')
 THEME_VARIANTS=('-aliz' '-azul' '-sea')
+
+if [[ "$(command -v gnome-shell)" ]]; then
+  SHELL_VERSION="$(gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f -2)"
+  if [[ "${SHELL_VERSION:-}" == '40.0' ]]; then
+    GS_VERSION="new"
+  else
+    GS_VERSION="old"
+  fi
+  else
+    echo "'gnome-shell' not found, using styles for last gnome-shell version available."
+    GS_VERSION="new"
+fi
 
 usage() {
   printf "%s\n" "Usage: $0 [OPTIONS...]"
@@ -64,39 +75,31 @@ install() {
   # Install GNOME Shell Theme
   mkdir -p                                                                            ${themedir}/gnome-shell
   cd ${SRC_DIR}/gnome-shell
-  cp -ur extensions                                                                   ${themedir}/gnome-shell
-  cp -ur gnome-shell${ELSE_DARK}${theme}.css                                          ${themedir}/gnome-shell/gnome-shell.css
+  cp -ur pad-osd.css                                                                  ${themedir}/gnome-shell
+  cp -ur icons                                                                        ${themedir}/gnome-shell
   cp -ur common-assets                                                                ${themedir}/gnome-shell/assets
 
+  if [[ "${GS_VERSION:-}" == 'new' ]]; then
+    cp -ur 40.0/gnome-shell${ELSE_DARK}${theme}.css                                   ${themedir}/gnome-shell/gnome-shell.css
+  else
+    cp -ur 3.28/gnome-shell${ELSE_DARK}${theme}.css                                   ${themedir}/gnome-shell/gnome-shell.css
+  fi
+
   cd ${SRC_DIR}/gnome-shell/assets
-  cp -ur no-events${ELSE_DARK}.svg                                                    ${themedir}/gnome-shell/assets/no-events.svg
-  cp -ur no-notifications${ELSE_DARK}.svg                                             ${themedir}/gnome-shell/assets/no-notifications.svg
   cp -ur calendar-arrow-left${ELSE_DARK}.svg                                          ${themedir}/gnome-shell/assets/calendar-arrow-left.svg
   cp -ur calendar-arrow-right${ELSE_DARK}.svg                                         ${themedir}/gnome-shell/assets/calendar-arrow-right.svg
-  cp -ur key-hide${ELSE_DARK}.svg                                                     ${themedir}/gnome-shell/assets/key-hide.svg
-  cp -ur key-layout${ELSE_DARK}.svg                                                   ${themedir}/gnome-shell/assets/key-layout.svg
-  cp -ur key-shift${ELSE_DARK}.svg                                                    ${themedir}/gnome-shell/assets/key-shift.svg
   cp -ur checkbox-off${ELSE_DARK}.svg                                                 ${themedir}/gnome-shell/assets/checkbox-off.svg
   cp -ur calendar-today${ELSE_DARK}.svg                                               ${themedir}/gnome-shell/assets/calendar-today.svg
-  [[ ${ELSE_DARK} == '' ]] && \
-  cp -ur menu.svg                                                                     ${themedir}/gnome-shell/assets
-  cp -ur submenu${ELSE_DARK}.svg                                                      ${themedir}/gnome-shell/assets/submenu.svg
-  cp -ur submenu-open${ELSE_DARK}.svg                                                 ${themedir}/gnome-shell/assets/submenu-open.svg
-
-  cd ${SRC_DIR}/gnome-shell/theme-assets
   cp -ur checkbox${theme}.svg                                                         ${themedir}/gnome-shell/assets/checkbox.svg
-  [[ ${ELSE_DARK} == '-dark' ]] && \
-  cp -ur menu${ELSE_DARK}${theme}.svg                                                 ${themedir}/gnome-shell/assets/menu.svg
-  cp -ur menu-hover${theme}.svg                                                       ${themedir}/gnome-shell/assets/menu-hover.svg
   cp -ur more-results${theme}.svg                                                     ${themedir}/gnome-shell/assets/more-results.svg
   cp -ur toggle-on${theme}.svg                                                        ${themedir}/gnome-shell/assets/toggle-on.svg
 
   cd ${themedir}/gnome-shell
-  ln -s assets/no-events.svg no-events.svg
-  ln -s assets/process-working.svg process-working.svg
-  ln -s assets/no-notifications.svg no-notifications.svg
+  mv -f assets/no-events.svg no-events.svg
+  mv -f assets/process-working.svg process-working.svg
+  mv -f assets/no-notifications.svg no-notifications.svg
 
-  # Install GTK+ 2 Theme
+  # Install GTK+ 2.0 Theme
   mkdir -p                                                                            ${themedir}/gtk-2.0
   cd ${SRC_DIR}/gtk-2.0
   cp -ur {apps.rc,main.rc,panel.rc,xfce-notify.rc}                                    ${themedir}/gtk-2.0
@@ -104,14 +107,22 @@ install() {
   cp -ur assets${ELSE_DARK}${theme}                                                   ${themedir}/gtk-2.0/assets
   cp -ur menubar-toolbar${ELSE_DARK}.rc                                               ${themedir}/gtk-2.0/menubar-toolbar.rc
 
-  # Install GTK+ 3 Theme
+  # Install GTK+ 3.0 Theme
   mkdir -p                                                                            ${themedir}/gtk-3.0
-  cd ${SRC_DIR}/gtk-3.0
+  cd ${SRC_DIR}/gtk
   cp -ur assets${theme}                                                               ${themedir}/gtk-3.0/assets
-  cp -ur gtk${color}${theme}.css                                                      ${themedir}/gtk-3.0/gtk.css
-  cp -ur gtk-dark${theme}.css                                                         ${themedir}/gtk-3.0/gtk-dark.css
+  cp -ur gtk-3.0/gtk${color}${theme}.css                                              ${themedir}/gtk-3.0/gtk.css
+  cp -ur gtk-3.0/gtk-dark${theme}.css                                                 ${themedir}/gtk-3.0/gtk-dark.css
 
   cp -ur thumbnail${ELSE_DARK}${theme}.png                                            ${themedir}/gtk-3.0/thumbnail.png
+
+  # Install GTK+ 4.0 Theme
+  mkdir -p                                                                            ${themedir}/gtk-4.0
+  cp -ur gtk-4.0/gtk${color}${theme}.css                                              ${themedir}/gtk-4.0/gtk.css
+  cp -ur gtk-4.0/gtk-dark${theme}.css                                                 ${themedir}/gtk-4.0/gtk-dark.css
+  cd ${themedir}/gtk-4.0
+  ln -sf ../gtk-3.0/assets  assets
+  ln -sf ../gtk-3.0/thumbnail.png thumbnail.png
 
   # Install CINNAMON Theme
   mkdir -p                                                                            ${themedir}/cinnamon
@@ -161,16 +172,21 @@ install() {
 }
 
 # Backup and install files related to GDM theme
-
 GS_THEME_FILE="/usr/share/gnome-shell/gnome-shell-theme.gresource"
 SHELL_THEME_FOLDER="/usr/share/gnome-shell/theme"
 ETC_THEME_FOLDER="/etc/alternatives"
 ETC_THEME_FILE="/etc/alternatives/gdm3.css"
+ETC_NEW_THEME_FILE="/etc/alternatives/gdm3-theme.gresource"
 UBUNTU_THEME_FILE="/usr/share/gnome-shell/theme/ubuntu.css"
 UBUNTU_NEW_THEME_FILE="/usr/share/gnome-shell/theme/gnome-shell.css"
+UBUNTU_YARU_THEME_FILE="/usr/share/gnome-shell/theme/Yaru/gnome-shell-theme.gresource"
 
 install_gdm() {
   local GDM_THEME_DIR="${1}/${2}${3}${4}"
+  local YARU_GDM_THEME_DIR="$SHELL_THEME_FOLDER/Yaru/${2}${3}${4}"
+
+  [[ ${color} == '-dark' ]] && local ELSE_DARK=${color}
+  [[ ${color} == '-light' ]] && local ELSE_LIGHT=${color}
 
   echo
   echo "Installing ${2}${3}${4} gdm theme..."
@@ -187,8 +203,6 @@ install_gdm() {
   if [[ -f "$UBUNTU_THEME_FILE" && -f "$GS_THEME_FILE.bak" ]]; then
     echo "Installing '$UBUNTU_THEME_FILE'..."
     cp -an "$UBUNTU_THEME_FILE" "$UBUNTU_THEME_FILE.bak"
-    # rm -rf "$GS_THEME_FILE"
-    # mv "$GS_THEME_FILE.bak" "$GS_THEME_FILE"
     cp -af "$GDM_THEME_DIR/gnome-shell/gnome-shell.css" "$UBUNTU_THEME_FILE"
   fi
 
@@ -198,42 +212,85 @@ install_gdm() {
     cp -af "$GDM_THEME_DIR"/gnome-shell/* "$SHELL_THEME_FOLDER"
   fi
 
+  # > Ubuntu 18.04
   if [[ -f "$ETC_THEME_FILE" && -f "$GS_THEME_FILE.bak" ]]; then
-    echo "Installing Ubuntu gnome-shell theme..."
+    echo "Installing Ubuntu GDM theme..."
     cp -an "$ETC_THEME_FILE" "$ETC_THEME_FILE.bak"
-    # rm -rf "$ETC_THEME_FILE" "$GS_THEME_FILE"
-    # mv "$GS_THEME_FILE.bak" "$GS_THEME_FILE"
-    [[ -d $SHELL_THEME_FOLDER/Matcha ]] && rm -rf $SHELL_THEME_FOLDER/Matcha
-    cp -ur "$GDM_THEME_DIR/gnome-shell" "$SHELL_THEME_FOLDER/Matcha"
+    [[ -d "$SHELL_THEME_FOLDER/$THEME_NAME" ]] && rm -rf "$SHELL_THEME_FOLDER/$THEME_NAME"
+    cp -r "$GDM_THEME_DIR/gnome-shell" "$SHELL_THEME_FOLDER/$THEME_NAME"
     cd "$ETC_THEME_FOLDER"
-    ln -s "$SHELL_THEME_FOLDER/Matcha-dark-sea/gnome-shell.css" gdm3.css
+    [[ -f "$ETC_THEME_FILE.bak" ]] && ln -sf "$SHELL_THEME_FOLDER/$THEME_NAME/gnome-shell.css" gdm3.css
+  fi
+
+  # > Ubuntu 20.04
+  if [[ -d "$SHELL_THEME_FOLDER/Yaru" && -f "$GS_THEME_FILE.bak" ]]; then
+    echo "Installing Ubuntu GDM theme..."
+    cp -an "$UBUNTU_YARU_THEME_FILE" "$UBUNTU_YARU_THEME_FILE.bak"
+    rm -rf "$UBUNTU_YARU_THEME_FILE"
+    rm -rf "$YARU_GDM_THEME_DIR" && mkdir -p "$YARU_GDM_THEME_DIR"
+
+    mkdir -p                                                                             "$YARU_GDM_THEME_DIR"/gnome-shell
+    mkdir -p                                                                             "$YARU_GDM_THEME_DIR"/gnome-shell/Yaru
+    cp -r "$SRC_DIR"/gnome-shell/{icons,pad-osd.css}                                     "$YARU_GDM_THEME_DIR"/gnome-shell
+    cp -r "$SRC_DIR"/gnome-shell/gnome-shell${ELSE_DARK}${theme}.css                     "$YARU_GDM_THEME_DIR"/gnome-shell/gdm3.css
+    cp -r "$SRC_DIR"/gnome-shell/gnome-shell${ELSE_DARK}${theme}.css                     "$YARU_GDM_THEME_DIR"/gnome-shell/Yaru/gnome-shell.css
+    cp -r "$SRC_DIR"/gnome-shell/common-assets                                           "$YARU_GDM_THEME_DIR"/gnome-shell/assets
+    cp -r "$SRC_DIR"/gnome-shell/assets/calendar-arrow-left${ELSE_DARK}.svg              "$YARU_GDM_THEME_DIR"/gnome-shell/assets/calendar-arrow-left.svg
+    cp -r "$SRC_DIR"/gnome-shell/assets/calendar-arrow-right${ELSE_DARK}.svg             "$YARU_GDM_THEME_DIR"/gnome-shell/assets/calendar-arrow-right.svg
+    cp -r "$SRC_DIR"/gnome-shell/assets/checkbox-off${ELSE_DARK}.svg                     "$YARU_GDM_THEME_DIR"/gnome-shell/assets/checkbox-off.svg
+    cp -r "$SRC_DIR"/gnome-shell/assets/calendar-today${ELSE_DARK}.svg                   "$YARU_GDM_THEME_DIR"/gnome-shell/assets/calendar-today.svg
+    cp -r "$SRC_DIR"/gnome-shell/assets/checkbox${theme}.svg                             "$YARU_GDM_THEME_DIR"/gnome-shell/assets/checkbox.svg
+    cp -r "$SRC_DIR"/gnome-shell/assets/more-results${theme}.svg                         "$YARU_GDM_THEME_DIR"/gnome-shell/assets/more-results.svg
+    cp -r "$SRC_DIR"/gnome-shell/assets/toggle-on${theme}.svg                            "$YARU_GDM_THEME_DIR"/gnome-shell/assets/toggle-on.svg
+
+    cd "$YARU_GDM_THEME_DIR"/gnome-shell
+    mv -f assets/no-events.svg no-events.svg
+    mv -f assets/process-working.svg process-working.svg
+    mv -f assets/no-notifications.svg no-notifications.svg
+
+    glib-compile-resources \
+      --sourcedir="$YARU_GDM_THEME_DIR"/gnome-shell \
+      --target="$UBUNTU_YARU_THEME_FILE" \
+      "$SRC_DIR"/gnome-shell/gdm-theme.gresource.xml
+
+    rm -rf "$YARU_GDM_THEME_DIR"
   fi
 }
 
 revert_gdm() {
   if [[ -f "$GS_THEME_FILE.bak" ]]; then
-    echo "reverting '$GS_THEME_FILE'..."
+    echo "Reverting '$GS_THEME_FILE'..."
     rm -rf "$GS_THEME_FILE"
     mv "$GS_THEME_FILE.bak" "$GS_THEME_FILE"
   fi
 
   if [[ -f "$UBUNTU_THEME_FILE.bak" ]]; then
-    echo "reverting '$UBUNTU_THEME_FILE'..."
+    echo "Reverting '$UBUNTU_THEME_FILE'..."
     rm -rf "$UBUNTU_THEME_FILE"
     mv "$UBUNTU_THEME_FILE.bak" "$UBUNTU_THEME_FILE"
   fi
 
   if [[ -f "$UBUNTU_NEW_THEME_FILE.bak" ]]; then
-    echo "reverting '$UBUNTU_NEW_THEME_FILE'..."
+    echo "Reverting '$UBUNTU_NEW_THEME_FILE'..."
     rm -rf "$UBUNTU_NEW_THEME_FILE" "$SHELL_THEME_FOLDER"/{assets,no-events.svg,process-working.svg,no-notifications.svg}
     mv "$UBUNTU_NEW_THEME_FILE.bak" "$UBUNTU_NEW_THEME_FILE"
   fi
 
+  # > Ubuntu 18.04
   if [[ -f "$ETC_THEME_FILE.bak" ]]; then
-    echo "reverting Ubuntu gnome-shell theme..."
+
+    echo "reverting Ubuntu GDM theme..."
+
     rm -rf "$ETC_THEME_FILE"
     mv "$ETC_THEME_FILE.bak" "$ETC_THEME_FILE"
-    [[ -d $SHELL_THEME_FOLDER/Matcha ]] && rm -rf $SHELL_THEME_FOLDER/Matcha
+    [[ -d $SHELL_THEME_FOLDER/$THEME_NAME ]] && rm -rf $SHELL_THEME_FOLDER/$THEME_NAME
+  fi
+
+  # > Ubuntu 20.04
+  if [[ -f "$UBUNTU_YARU_THEME_FILE.bak" ]]; then
+    echo "reverting Ubuntu GDM theme..."
+    rm -rf "$UBUNTU_YARU_THEME_FILE"
+    mv "$UBUNTU_YARU_THEME_FILE.bak" "$UBUNTU_YARU_THEME_FILE"
   fi
 }
 

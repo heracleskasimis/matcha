@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
 if [ ! "$(which sassc 2> /dev/null)" ]; then
    echo sassc needs to be installed to generate the css.
@@ -24,15 +24,19 @@ fi
 
 for color in "${_COLOR_VARIANTS[@]}"; do
   for theme in "${_THEME_VARIANTS[@]}"; do
-  sassc $SASSC_OPT src/gtk-3.0/gtk${color}${theme}.{scss,css}
-  echo "==> Generating the gtk${color}${theme}.css..."
+  sassc $SASSC_OPT src/gtk/gtk-3.0/gtk${color}${theme}.{scss,css}
+  echo "==> Generating the GTK 3.0 gtk${color}${theme}.css..."
+  sassc $SASSC_OPT src/gtk/gtk-4.0/gtk${color}${theme}.{scss,css}
+  echo "==> Generating the GTK 4.0 gtk${color}${theme}.css..."
   done
 done
 
 for color in "${_ECOLOR_VARIANTS[@]}"; do
   for theme in "${_THEME_VARIANTS[@]}"; do
-  sassc $SASSC_OPT src/gnome-shell/gnome-shell${color}${theme}.{scss,css}
-  echo "==> Generating the gnome-shell${color}${theme}.css..."
+  sassc $SASSC_OPT src/gnome-shell/3.28/gnome-shell${color}${theme}.{scss,css}
+  echo "==> Generating the 3.28 gnome-shell${color}${theme}.css..."
+  sassc $SASSC_OPT src/gnome-shell/40.0/gnome-shell${color}${theme}.{scss,css}
+  echo "==> Generating the 40.0 gnome-shell${color}${theme}.css..."
   done
 done
 
