@@ -8,8 +8,7 @@ $bg_color: if($variant == 'light', #f5f5f5, lighten($base_color, 5%));
 $fg_color: if($variant == 'light', #363636, #dddddd);
 $alt_fg_color: if($variant == 'light', #555555, #aaaaaa);
 
-$accent_color: #2eb3b3;
-@if $color=='aliz' { $accent_color: #F0544C; }
+$accent_color: #00f0f0;
 @if $color=='aliz' { $accent_color: #F0544C; }
 @if $color=='azul' { $accent_color: #3498db; }
 
@@ -24,17 +23,17 @@ $link_visited_color: if($variant == 'light', darken($selected_bg_color, 20%), li
 $top_hilight: $borders_edge;
 
 $warning_color: #937FD1;
-$error_color: #DD002C;
-$success_color: if($variant == 'light', #00C873, darken(#00C873, 10%));
-$destructive_color: if($variant == 'light', #EF5364, darken(#EF5364, 10%));
+$error_color: #FF0055;
+$success_color: if($variant == 'light', #00D0D0, darken(#00D0D0, 10%));
+$destructive_color: if($variant == 'light', #FF3075, darken(#FF3075, 10%));
 
 $system_bg_color: lighten(#222222, 5%); //neutralize the HIG color
 @if $color=='aliz' { $system_bg_color: lighten(#222222, 5%); }
 @if $color=='azul' { $system_bg_color: lighten(#222222, 5%); }
 
-$osd_fg_color: #efefef;
-$osd_text_color: white;
-$osd_bg_color: lighten($system_bg_color, 5%);
+$osd_fg_color: #ffffff;
+$osd_text_color: #222222;
+$osd_bg_color: lighten($system_bg_color, 70%);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: transparentize(black, 0.3);

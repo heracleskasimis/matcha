@@ -16,7 +16,7 @@ $window_close_button_padding: 3px;
 
 // Window titles
 .window-caption {
-  color: $osd_fg_color;
+  color: $osd_text_color;
   background-color: $osd_bg_color;
   border-radius: $base_border_radius;
   padding: $base_padding $base_padding * 2;
@@ -25,7 +25,7 @@ $window_close_button_padding: 3px;
 // Close button
 .window-close {
   background-color: $osd_bg_color;
-  color: $osd_fg_color;
+  color: $osd_text_color;
   border-radius: 100%;
   padding: $window_close_button_padding;
   height: $window_close_button_size;
