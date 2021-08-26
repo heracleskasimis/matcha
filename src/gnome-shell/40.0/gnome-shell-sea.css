@@ -1834,12 +1834,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-image: none;
 }
 
-#panel .panel-button.clock-display:hover, #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+#panel .panel-button:hover.clock-display, #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
   box-shadow: none;
   background: none;
 }
 
-#panel .panel-button.clock-display:hover .clock, #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+#panel .panel-button:hover.clock-display .clock, #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 -2px #00e6e6;
 }
@@ -1859,7 +1859,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -st-icon-style: symbolic;
 }
 
-#panel #panelActivities.panel-button {
+#panel .panel-button#panelActivities {
   -natural-hpadding: 18px;
 }
 
@@ -1868,12 +1868,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: inset 0 -2px #00e6e6;
 }
 
-#panel.unlock-screen .panel-button.clock-display:hover, #panel.unlock-screen .panel-button.clock-display:active, #panel.unlock-screen .panel-button.clock-display:overview, #panel.unlock-screen .panel-button.clock-display:focus, #panel.unlock-screen .panel-button.clock-display:checked, #panel.login-screen .panel-button.clock-display:hover, #panel.login-screen .panel-button.clock-display:active, #panel.login-screen .panel-button.clock-display:overview, #panel.login-screen .panel-button.clock-display:focus, #panel.login-screen .panel-button.clock-display:checked, #panel:overview .panel-button.clock-display:hover, #panel:overview .panel-button.clock-display:active, #panel:overview .panel-button.clock-display:overview, #panel:overview .panel-button.clock-display:focus, #panel:overview .panel-button.clock-display:checked {
+#panel.unlock-screen .panel-button:hover.clock-display, #panel.unlock-screen .panel-button:active.clock-display, #panel.unlock-screen .panel-button:overview.clock-display, #panel.unlock-screen .panel-button:focus.clock-display, #panel.unlock-screen .panel-button:checked.clock-display, #panel.login-screen .panel-button:hover.clock-display, #panel.login-screen .panel-button:active.clock-display, #panel.login-screen .panel-button:overview.clock-display, #panel.login-screen .panel-button:focus.clock-display, #panel.login-screen .panel-button:checked.clock-display, #panel:overview .panel-button:hover.clock-display, #panel:overview .panel-button:active.clock-display, #panel:overview .panel-button:overview.clock-display, #panel:overview .panel-button:focus.clock-display, #panel:overview .panel-button:checked.clock-display {
   background: none;
   box-shadow: none;
 }
 
-#panel.unlock-screen .panel-button.clock-display:hover .clock, #panel.unlock-screen .panel-button.clock-display:active .clock, #panel.unlock-screen .panel-button.clock-display:overview .clock, #panel.unlock-screen .panel-button.clock-display:focus .clock, #panel.unlock-screen .panel-button.clock-display:checked .clock, #panel.login-screen .panel-button.clock-display:hover .clock, #panel.login-screen .panel-button.clock-display:active .clock, #panel.login-screen .panel-button.clock-display:overview .clock, #panel.login-screen .panel-button.clock-display:focus .clock, #panel.login-screen .panel-button.clock-display:checked .clock, #panel:overview .panel-button.clock-display:hover .clock, #panel:overview .panel-button.clock-display:active .clock, #panel:overview .panel-button.clock-display:overview .clock, #panel:overview .panel-button.clock-display:focus .clock, #panel:overview .panel-button.clock-display:checked .clock {
+#panel.unlock-screen .panel-button:hover.clock-display .clock, #panel.unlock-screen .panel-button:active.clock-display .clock, #panel.unlock-screen .panel-button:overview.clock-display .clock, #panel.unlock-screen .panel-button:focus.clock-display .clock, #panel.unlock-screen .panel-button:checked.clock-display .clock, #panel.login-screen .panel-button:hover.clock-display .clock, #panel.login-screen .panel-button:active.clock-display .clock, #panel.login-screen .panel-button:overview.clock-display .clock, #panel.login-screen .panel-button:focus.clock-display .clock, #panel.login-screen .panel-button:checked.clock-display .clock, #panel:overview .panel-button:hover.clock-display .clock, #panel:overview .panel-button:active.clock-display .clock, #panel:overview .panel-button:overview.clock-display .clock, #panel:overview .panel-button:focus.clock-display .clock, #panel:overview .panel-button:checked.clock-display .clock {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 -2px #00e6e6;
 }
@@ -1963,7 +1963,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .window-close:active {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(34, 34, 34, 0.8);
   background-color: #d5d5d5;
 }
 
@@ -2120,8 +2120,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .dash-label {
-  color: #ffffff;
-  background-color: #e1e1e1;
+  color: #e1e1e1;
+  background-color: #222222;
   border-radius: 3px;
   padding: 6px 12px;
   text-align: center;
@@ -2733,7 +2733,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .lg-dialog StEntry {
   background-color: rgba(238, 238, 238, 0.6);
-  color: #ffffff;
+  color: #222222;
   border-color: rgba(255, 255, 255, 0.2);
   min-height: 22px;
   selection-background-color: #00e6e6;
