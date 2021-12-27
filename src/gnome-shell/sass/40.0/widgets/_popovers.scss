@@ -10,7 +10,7 @@ $popover_arrow_height: 12px;
   -arrow-border-color: transparent;
   -arrow-base: $popover_arrow_height * 2;
   -arrow-rise: $popover_arrow_height / 2;
-  -arrow-box-shadow: 0 1px 3px rgba(0,0,0,0.5); // dreaming bugzilla #689995
+  -arrow-box-shadow: 0 1px 3px rgba(black, 0.35); // dreaming bugzilla #689995
 }
 
 // container of the popover menu
@@ -20,17 +20,41 @@ $popover_arrow_height: 12px;
   padding: 0 0;
   background: none;
   border-image: none;
+  @include fontsize($base_font_size - 1);
 
   //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
   &.panel-menu {
     -boxpointer-gap: $base_margin; // distance from the panel
     margin-bottom: 1.75em;
   }
+
+  .search-entry {
+    color: $alt_fg_color;
+    caret-color: $alt_fg_color;
+    background-color: rgba($fg_color, 0.10);
+    border-color: $borders_color;
+
+    &:hover {
+      background-color: rgba($fg_color, 0.15);
+      border-color: $borders_color;
+      color: $fg_color;
+    }
+
+    &:focus, &:focus:hover {
+      background-color: rgba($fg_color, 0.15);
+      color: $fg_color;
+      border-color: $selected_bg_color;
+    }
+
+    StLabel.hint-text {
+      color: $insensitive_fg_color;
+    }
+  }
 }
 
 .popup-menu-content {
   padding: $base_padding 0;
-  margin: 0 $base_margin;
+  margin: 0 $base_margin 10px 8px;
   color: $fg_color;
   @extend %theme_dialogs;
 }

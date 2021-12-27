@@ -79,9 +79,13 @@ button.gtkstyle-fallback { // For Cinnamon system setting
 }
 
 .view, %view {
-  color: rgba($text_color, 1);
+  color: $text_color;
   background-color: $base_color;
-  &:hover { color: $fg_color; }
+
+  &:hover {
+    color: $fg_color;
+    background-color: mix($fg_color, $base_color, 8%);
+  }
 
   &:selected {
     @extend %selected_items;
@@ -90,7 +94,7 @@ button.gtkstyle-fallback { // For Cinnamon system setting
       @extend %selected_items;
     }
 
-   &:hover { background-color: mix(black, $selected_bg_color, 10%); }
+    &:hover { background-color: mix(black, $selected_bg_color, 10%); }
   }
 }
 
@@ -129,6 +133,11 @@ flowbox {
       @extend %selected_items;
 
       outline-offset: -2px;
+    }
+
+    &:focus {
+      background-image: image(rgba($fg_color, 0.05));
+      background-clip: border-box;
     }
   }
 }
@@ -1157,9 +1166,11 @@ searchbar {
 }
 
 actionbar {
-  padding: 6px;
-  border-top: 1px solid $borders_color;
-  background-color: darken($bg_color, 3%);
+  > revealer > box {
+    padding: 6px;
+    border-top: 1px solid $borders_color;
+    background-color: darken($bg_color, 3%);
+  }
 }
 
 //
@@ -1258,7 +1269,7 @@ headerbar,
   border-radius: 0;
   box-shadow: none;
   border: none;
-  margin: 0 0 0 0;
+  margin: 0;
   border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
                                 $selected_bg_color 0%,
                                 transparent 0%)
@@ -1306,9 +1317,15 @@ headerbar,
   &.windowhandle {
     viewswitcher button:not(.titlebutton):not(.suggested-action):not(.destructive-action) {
       border-radius: 0;
-      margin-top: 0;
-      margin-bottom: 0;
+      min-width: 120px;
+      padding: 0 0;
       @extend %viewswitcher_button;
+
+      > stack > box {
+        padding: 0 12px;
+
+        image { margin-top: 4px; }
+      }
     }
   }
 }
@@ -1347,7 +1364,7 @@ window.background > box.vertical > headerbar:not(.titlebar) { // reset headerbar
 
   &:disabled { @include entry(header-insensitive); }
 
-  selection:focus {
+  selection, selection:focus {
     background-color: $selected_fg_color;
     color: $selected_bg_color;
   }
@@ -1803,7 +1820,7 @@ treeview.view {
     -GtkTreeView-expander-size: 16;
   }
 
-  @extend %row_activatable;
+  // @extend %view;
 
   border-left-color: rgba($fg_color, 0.15);   // this is actually the tree lines color,
   border-top-color: rgba(black, 0.1);         // while this is the grid lines color, better then nothing
@@ -2051,13 +2068,13 @@ menu,
   // overflow buttons
 
   > arrow {
-//    @include button(undecorated);
+    // @include button(undecorated);
     min-width: 16px;
     min-height: 16px;
     padding: 4px;
     background-color: $_menu_bg;
     border-radius: 0;
-//    border: 1px solid $borders_color;
+    // border: 1px solid $borders_color;
 
     &.top {
       margin-top: -6px;
@@ -2829,7 +2846,36 @@ frame > border.flat,
 
 scrolledwindow {
   viewport.frame { // avoid double borders when viewport inside scrolled window
-    border-style: none;
+    border: none;
+
+    > box.vertical list.content.view {
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+    }
+
+    > box.vertical list.frame {
+      border-radius: 2px;
+      padding: 0;
+
+      > row.activatable {
+        &:first-child { border-radius: 2px 2px 0 0; }
+        &:last-child { border-radius: 0 0 2px 2px; }
+      }
+
+      list {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+        background: none;
+
+        > row.activatable {
+          &, &:first-child, &:last-child {
+            border-radius: 0;
+          }
+        }
+      }
+    }
   }
 
   // This is used by GtkScrolledWindow, when content is touch-dragged past boundaries.
@@ -2872,13 +2918,16 @@ separator {
 list {
   background-color: $base_color;
   border-color: $borders_color;
-  border-radius: 2px;
 
-  row {
-    padding: 2px;
+  row { padding: 2px; }
 
-    &:first-child { border-radius: 2px 2px 0 0; }
-    &:last-child { border-radius: 0 0 2px 2px; }
+  &.content:not(.conversation-listbox) {
+    border-radius: 2px;
+
+    > row {
+      &:first-child { border-radius: 2px 2px 0 0; }
+      &:last-child { border-radius: 0 0 2px 2px; }
+    }
   }
 }
 
@@ -3002,7 +3051,6 @@ calendar {
 //
 
 messagedialog { // Message Dialog styling
-
   &.csd .titlebar {
     min-height: 20px;
     background-color: $bg_color;
@@ -3573,7 +3621,6 @@ button.circular-button {
 .keycap {
   min-width: 16px;
   min-height: 20px;
-
   padding: 3px 6px 4px 6px;
 
   color: $fg_color;
@@ -3586,6 +3633,25 @@ button.circular-button {
 stackswitcher button {
   &.text-button { min-width: 80px; }
   &.circular { min-width: 0; }
+}
+
+viewswitcher button {
+  @extend %linked;
+
+  > stack > box {
+    padding: 6px 12px;
+
+    &.narrow { font-size: 10px; }
+  }
+
+  &:active, &:active:hover, &:checked {
+    background-color: mix($fg_color, $button_bg, 15%);
+    color: $fg_color;
+    border-color: $borders_color;
+    background-clip: if($variant=='light', border-box, padding-box);
+
+    + button { border-left-color: if($variant=='light', rgba(black, 0.2), $borders_color); }
+  }
 }
 
 //
