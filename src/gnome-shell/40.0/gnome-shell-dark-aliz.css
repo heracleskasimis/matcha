@@ -1963,8 +1963,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .window-close {
-  background-color: #e1e1e1;
-  color: #222222;
+  background-color: #222222;
+  color: #e1e1e1;
   border-radius: 1000px;
   padding: 3px;
   height: 30px;
@@ -1980,7 +1980,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .window-close:hover {
-  background-color: white;
+  background-color: #484848;
 }
 
 .window-close:active {
