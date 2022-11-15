@@ -4926,22 +4926,6 @@ headerbar button.titlebutton.minimize:active {
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
 }
 
-headerbar button.titlebutton.restore {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore.png"), url("assets/titlebutton-restore@2.png"));
-}
-
-headerbar button.titlebutton.restore:backdrop {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore-backdrop.png"), url("assets/titlebutton-restore-backdrop@2.png"));
-}
-
-headerbar button.titlebutton.restore:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore-hover.png"), url("assets/titlebutton-restore-hover@2.png"));
-}
-
-headerbar button.titlebutton.restore:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore-active.png"), url("assets/titlebutton-restore-active@2.png"));
-}
-
 .fullscreen headerbar button.titlebutton.maximize, .maximized headerbar button.titlebutton.maximize {
   background-image: -gtk-scaled(url("assets/titlebutton-restore.png"), url("assets/titlebutton-restore@2.png"));
 }
@@ -6870,6 +6854,8 @@ window.background.chromium headerbar.titlebar button.titlebutton {
   margin: 0 4px;
   padding: 0;
   color: transparent;
+  background-color: transparent;
+  border: none;
 }
 
 window.background.chromium button {
@@ -7160,7 +7146,6 @@ MsdOsdWindow.background.osd {
 MsdOsdWindow.background.osd .progressbar {
   background-color: #F0544C;
   border: none;
-  border-color: red;
   border-radius: 5px;
 }
 
@@ -7567,27 +7552,12 @@ window#MyControlCenter > frame > box.horizontal > widget > scrolledwindow.frame 
   background-color: #f7f7f7;
 }
 
-MsdOsdWindow.background.osd {
-  border-radius: 2px;
-  border: 1px solid rgba(204, 204, 204, 0.95);
-  background-color: rgba(242, 242, 242, 0.95);
-  box-shadow: none;
+.background.osd {
+  border-radius: 3px;
 }
 
-MsdOsdWindow.background.osd image {
-  color: #303030;
-}
-
-MsdOsdWindow.background.osd .trough {
-  border-radius: 0;
-  border: none;
-  background-color: rgba(48, 48, 48, 0.2);
-}
-
-MsdOsdWindow.background.osd .progressbar {
-  border-radius: 0;
-  border: none;
-  background-color: #3498db;
+.background.osd image:selected {
+  background-color: #F0544C;
 }
 
 .slate-notification {
