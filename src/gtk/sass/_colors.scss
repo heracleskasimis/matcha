@@ -36,14 +36,16 @@ $selection_mode_bg: if($trans == 'true', rgba($selected_bg_color, 0.95), $select
 $selection_mode_fg: $selected_fg_color;
 $warning_color: #b37fd1;
 $error_color: #FC4160;
-$warning_fg_color: white;
-$error_fg_color: white;
 $success_color: #00d0d0;
 $destructive_color: #ed3163;
 $suggested_color: $selected_bg_color;
+$progress_color: $selected_bg_color;
+
+$warning_fg_color: white;
+$error_fg_color: white;
+$success_fg_color: white;
 $destructive_fg_color: white;
 $suggested_fg_color: white;
-$progress_color: $selected_bg_color;
 
 @if $color=='aliz' {
   $success_color: #3498db;
@@ -82,9 +84,9 @@ $dark_sidebar_bg: #303030;
 $dark_sidebar_fg: if($variant == 'light' and $header == 'light', $text_color, mix($selected_bg_color, #cecece, 5%));
 $dark_sidebar_border: if($variant == 'light' and $header == 'light', darken($dark_sidebar_bg, 15%), darken($base_color, 5%));
 
-$osd_fg_color: $dark_sidebar_fg;
-$osd_bg_color: rgba($header_bg, 0.95);
-$osd_borders_color: if($variant == 'light', darken($osd_bg_color, 15%), darken($osd_bg_color, 4%));
+$osd_fg_color: $text_color;
+$osd_bg_color: rgba($base_color, 0.95);
+$osd_borders_color: $borders_color;
 
 $osd_button_bg: lighten($osd_bg_color, 3%);
 $osd_button_border: $osd_borders_color;
@@ -101,16 +103,17 @@ $panel_bg: $bg_color;
 @if $color=='aliz' and $header == 'dark' { $panel_bg: #222222; }
 @if $color=='azul' and $header == 'dark' { $panel_bg: #222222; }
 @if $color=='pueril' and $header == 'dark' { $panel_bg: #222222; }
+
 $panel_fg: $fg_color;
 @if $color=='sea' and $header == 'dark' { $panel_fg: #ccd7d7; }
 @if $color=='aliz' and $header == 'dark' { $panel_fg: #cbbfbf; }
 @if $color=='azul' and $header == 'dark' { $panel_fg: #bbc3c8; }
 @if $color=='pueril' and $header == 'dark' { $panel_fg: #bfbfbf; }
 
-
 $menu_bg_color: if($variant=='light', $base_color, $bg_color);
-$menu_selected_color: if($variant == 'light', darken($base_color, 8%), lighten($bg_color, 5%));
-$menu_active_color: if($variant == 'light', darken($base_color, 15%), lighten($bg_color, 10%));
+$menu_hover_color: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.04));
+$menu_selected_color: if($variant == 'light', rgba(black, 0.08), rgba(white, 0.07));
+$menu_active_color: if($variant == 'light', rgba(black, 0.15), rgba(white, 0.12));
 
 $entry_bg: if($variant == 'light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', $borders_color, darken($borders_color, 3%));

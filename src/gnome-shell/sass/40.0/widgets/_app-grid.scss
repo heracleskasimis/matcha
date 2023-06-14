@@ -30,10 +30,20 @@ $app_icon_size: 96px;
   }
 }
 
+.icon-grid .overview-icon {
+  border-radius: $base_border_radius * 2;
+}
+
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: darken($system_bg_color, 3%);
-  border-radius: $base_border_radius; // same as %icon_tile
+  background-color: transparent !important;
+  border-radius: $base_border_radius * 2; // same as %icon_tile
+
+  .overview-icon {
+    background-color: rgba(white, 0.1);
+  }
+
+  @include overview-icon($selected_fg_color);
 }
 
 // expanded folder
@@ -41,6 +51,8 @@ $app_icon_size: 96px;
   border-radius: $modal_radius * 1.5;
   background-color: rgba($system_bg_color, 1);
   padding: 8px !important;
+  box-shadow: none;
+  outline: none;
 
   .folder-name-container {
     padding: 24px 36px 0;

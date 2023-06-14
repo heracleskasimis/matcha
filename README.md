@@ -7,6 +7,12 @@ This theme is based on Arc gtk theme of horst3180. Thanks horst3180 sincerely fo
 
 horst3180 - Arc gtk theme: https://github.com/horst3180/Arc-theme
 
+## Donate
+
+If you like my project, you can buy me a coffee:
+
+<span class="paypal"><a href="https://www.paypal.me/vinceliuice" title="Donate to this project using Paypal"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal donate button" /></a></span>
+
 ## Info
 
 ### GTK+ > 3.20
@@ -45,17 +51,21 @@ Run
 
     ./install.sh
 
-Usage:  `./install.sh`  **[OPTIONS...]**
+Usage: ./install.sh [OPTIONS...]
 
-|  OPTIONS:     | |
-|:--------------|:-------------|
-| -d, --dest    | Specify theme destination directory (Default: $HOME/.themes) |
-| -n, --name    | Specify theme name (Default: Matcha) |
-| -c, --color   | Specify theme color variant(s) **[standard/light/dark]** (Default: All variants) |
-| -t, --theme   | Specify hue theme variant(s) **[aliz/azul/sea/pueril]** (Default: All variants) |
-| -g, --gdm     | Install GDM theme, this option need root user authority! please run this with sudo |
-| -r, --revert  | revert GDM theme, this option need root user authority! please run this with sudo |
-| -h, --help    | Show this help |
+OPTIONS:
+
+```sh
+  -d, --dest DIR           Specify theme destination directory (Default: /home/fedora/.themes)
+  -n, --name NAME          Specify theme name (Default: Matcha)
+  -c, --color VARIANTS     Specify theme color variant(s) [standard|dark] (Default: All variants)
+  -t, --theme VARIANTS     Specify hue theme variant(s) [aliz|azul|sea|pueril] (Default: All variants)
+  -s, --gnome-shell        Set gnome-shell flavor, where new is version 44.0 or later, [38|40|42|44] (Default: Auto detect)
+  -l, --libadwaita         Force all libadwaita app use linked gtk-4.0 theme
+  -g, --gdm                Install GDM theme, this option need root user authority! please run this with sudo
+  -r, --remove             Remove(Uninstall) themes/GDM/libadwaita
+  -h, --help               Show this help
+```
 
 ### Fix for flatpak apps
 
@@ -85,19 +95,13 @@ Solus:
 
     sudo eopkg it matcha-gtk-theme
 
-### Firefox theme
-[Install Firefox theme](src/extra/firefox)
-
-#### Preview
-![Firefox-theme](src/extra/firefox/preview.png?raw=true)
-
 ## Icon theme for Matcha
 
 - Qogir-manjaro:  https://github.com/vinceliuice/Qogir-icon-theme
 
 ## Screenshots
 
-![01](https://github.com/vinceliuice/matcha/blob/imgs/screenshot01.png?raw=true)
-![02](https://github.com/vinceliuice/matcha/blob/imgs/screenshot02.png?raw=true)
-![03](https://github.com/vinceliuice/matcha/blob/imgs/screenshot03.png?raw=true)
-![04](https://github.com/vinceliuice/matcha/blob/imgs/screenshot04.png?raw=true)
+![01](https://github.com/vinceliuice/matcha/blob/imgs/Screenshot-01.png?raw=true)
+![02](https://github.com/vinceliuice/matcha/blob/imgs/Screenshot-02.png?raw=true)
+![03](https://github.com/vinceliuice/matcha/blob/imgs/Screenshot-03.png?raw=true)
+![04](https://github.com/vinceliuice/matcha/blob/imgs/Screenshot-04.png?raw=true)

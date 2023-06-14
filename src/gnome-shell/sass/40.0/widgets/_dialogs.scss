@@ -5,8 +5,8 @@
 }
 
 .modal-dialog {
-  border-radius: $modal_radius;
   @extend %bubble_panel;
+  padding: 0 !important;
 
   .modal-dialog-content-box {
     margin: 32px 40px;
@@ -101,6 +101,7 @@
 
   .prompt-dialog-password-entry {
     width: auto;
+    @extend %entry;
 
     // 4px (spacing) + 16px (spinner-width)
     &:ltr { margin-left: 20px; }
@@ -110,10 +111,6 @@
 
 .prompt-dialog-password-layout {
   spacing: 8px;
-}
-
-.prompt-dialog-password-entry {
-  width: 20em;
 }
 
 .prompt-dialog-error-label,
@@ -148,7 +145,7 @@
   border: 1px solid $bubble_borders_color;
   border-radius: 12px;
   &:hover,&:focus { background-color: $hover_bg_color; }
-  &:active { 
+  &:active {
     background-color: $selected_bg_color;
     color: $selected_fg_color;
   }

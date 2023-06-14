@@ -40,8 +40,8 @@ $base_font_size: 11;
 $text_shadow_color: if($variant == 'light', rgba(255,255,255,0.3), rgba(0,0,0,0.2));
 
 // icons
-$base_icon_size: 1.09em;
-// $base_icon_size: 16px;
+//$base_icon_size: 1.09em;
+$base_icon_size: 16px;
 
 // Stage
 stage {
@@ -62,9 +62,14 @@ stage {
 %osd_panel {
   color: $osd_text_color;
   background-color: $osd_bg_color;
-  //border: 1px solid $osd_outer_borders_color;
-  border-radius: $base_border_radius;
+  border-radius: $modal_radius;
   padding: $base_padding * 2;
+
+  @if $variant == 'dark' {
+    border: 1px solid rgba(black, 0.75);
+  } @else {
+    border: none;
+  }
 }
 
 // Overview panels
@@ -87,7 +92,14 @@ stage {
 %bubble_panel {
   color: $fg_color;
   background-color: $base_color;
-  border: 1px solid if($variant=='light', rgba(black, 0.6), rgba(black, 0.75));
+  box-shadow: none;
+  border-radius: $modal_radius;
+
+  @if $variant == 'dark' {
+    border: 1px solid rgba(black, 0.75);
+  } @else {
+    border: none;
+  }
 }
 
 // button styling
@@ -118,12 +130,10 @@ stage {
 // buttons in dialogs
 %bubble_button {
   @include button(normal, $shadow: none);
-  padding: $base_padding * 2;
-  border-style: solid;
-  border-width: 1px;
-  border-left-width: 0;
-  border-bottom-width: 0;
-  margin: 0;
+  padding: $base_padding * 2 !important;
+  min-height: 0;
+  border-top: 1px solid $borders_color !important;
+  margin: 0 !important;
 
   &:insensitive { @include button(insensitive, $shadow: none); }
   &:hover { @include button(hover, $shadow: none); }
@@ -132,16 +142,23 @@ stage {
 
   // radius is 2 pixel less to fit in bubble
   &:first-child {
-    border-radius: 0 0 0 $modal_radius - 2px;
+    border-left: none !important;
+    border-radius: 0 0 0 $modal_radius !important;
   }
 
   &:last-child {
-    border-right-width: 0;
-    border-radius: 0 0 $modal_radius - 2px 0;
+    border-radius: 0 0 $modal_radius 0 !important;
+    border-left: 1px solid $borders_color !important;
+    color: $selected_bg_color !important;
+
+    &:insensitive {
+      color: rgba($selected_bg_color, 0.35) !important;
+    }
   }
 
   &:first-child:last-child {
-    border-radius: 0 0 $modal_radius - 2px $modal_radius - 2px;
+    border-radius: 0 0 $modal_radius $modal_radius !important;
+    border-left: none !important;
   }
 }
 
@@ -156,8 +173,9 @@ stage {
 // notification styling
 @mixin notification_bubble($flat: false) {
   border: none;
-  border-radius: $base_border_radius;
-  margin: $base_margin 0;
+  border-radius: $base_border_radius !important;
+  margin: $base_margin 0 !important;
+  box-shadow: none !important;
 
   @if $flat {
     @include button(undecorated);
@@ -177,3 +195,53 @@ stage {
     @include button(flat-active);
   }
 }
+
+/* General Typography */
+
+%large_title {
+  font-weight: 300;
+  @include fontsize(24);
+}
+
+%title_1 {
+  font-weight: 800;
+  @include fontsize(20);
+}
+
+%title_2 {
+  font-weight: 800;
+  @include fontsize(15);
+}
+
+%title_3 {
+  font-weight: 700;
+  @include fontsize(15);
+}
+
+%title_4 {
+  font-weight: 700;
+  @include fontsize(13);
+}
+
+%heading {
+  font-weight: 700;
+  @include fontsize(11);
+}
+
+%caption_heading {
+  font-weight: 700;
+  @include fontsize(9);
+}
+
+%caption {
+  font-weight: 400;
+  @include fontsize(9);
+}
+
+%smaller {
+  font-weight: 400;
+  @include fontsize(8);
+}
+
+%monospace {font-family: monospace;}
+%numeric { font-feature-settings: "tnum";}
