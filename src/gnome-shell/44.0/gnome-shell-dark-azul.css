@@ -2301,6 +2301,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .switcher-list {
   border-radius: 9px;
+  border: none;
 }
 
 .switcher-list .item-box {
@@ -2315,8 +2316,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .switcher-list .item-box:selected {
-  background-color: #217dbb;
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #222222;
 }
 
 .switcher-list .thumbnail-box {
