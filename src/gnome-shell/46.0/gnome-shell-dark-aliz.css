@@ -50,7 +50,7 @@ stage {
   background-color: #cfcfcf;
   border-radius: 5px;
   padding: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .workspace-thumbnails .workspace-thumbnail {
@@ -2236,7 +2236,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .switcher-list {
   border-radius: 9px;
-  border: none;
 }
 
 .switcher-list .item-box {

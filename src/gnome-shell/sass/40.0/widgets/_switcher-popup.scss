@@ -9,7 +9,6 @@
 .switcher-list {
   @extend %osd_panel;
   border-radius: $base_border_radius + $base_padding;
-  border: none;
 
   .item-box {
     padding: 8px;
