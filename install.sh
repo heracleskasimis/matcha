@@ -71,22 +71,15 @@ install() {
   cd "${SRC_DIR}/gnome-shell"
   cp -r pad-osd.css                                                                   "${themedir}/gnome-shell"
   cp -r icons                                                                         "${themedir}/gnome-shell"
+  cp -r *.svg                                                                         "${themedir}/gnome-shell"
   cp -r common-assets                                                                 "${themedir}/gnome-shell/assets"
+  cp -r assets${ELSE_DARK}/*.svg                                                      "${themedir}/gnome-shell/assets"
   cp -r "${GS_VERSION}/gnome-shell${ELSE_DARK}${theme}.css"                           "${themedir}/gnome-shell/gnome-shell.css"
 
-  cd "${SRC_DIR}/gnome-shell/assets"
-  cp -r "calendar-arrow-left${ELSE_DARK}.svg"                                         "${themedir}/gnome-shell/assets/calendar-arrow-left.svg"
-  cp -r "calendar-arrow-right${ELSE_DARK}.svg"                                        "${themedir}/gnome-shell/assets/calendar-arrow-right.svg"
-  cp -r "checkbox-off${ELSE_DARK}.svg"                                                "${themedir}/gnome-shell/assets/checkbox-off.svg"
-  cp -r "calendar-today${ELSE_DARK}.svg"                                              "${themedir}/gnome-shell/assets/calendar-today.svg"
+  cd "${SRC_DIR}/gnome-shell/theme-assets"
   cp -r "checkbox${theme}.svg"                                                        "${themedir}/gnome-shell/assets/checkbox.svg"
   cp -r "more-results${theme}.svg"                                                    "${themedir}/gnome-shell/assets/more-results.svg"
-  cp -r "toggle-on${theme}.svg"                                                       "${themedir}/gnome-shell/assets/toggle-on.svg"
-
-  cd "${themedir}/gnome-shell"
-  mv -f assets/no-events.svg no-events.svg
-  mv -f assets/process-working.svg process-working.svg
-  mv -f assets/no-notifications.svg no-notifications.svg
+  cp -r "toggle-on${theme}${ELSE_DARK}.svg"                                           "${themedir}/gnome-shell/assets/toggle-on.svg"
 
   # Install GTK+ 2.0 Theme
   mkdir -p                                                                            "${themedir}/gtk-2.0"
@@ -362,6 +355,14 @@ while [[ $# -gt 0 ]]; do
           GS_VERSION=44.0
           shift 2
           ;;
+        46)
+          GS_VERSION=46.0
+          shift 2
+          ;;
+        47)
+          GS_VERSION=47.0
+          shift 2
+          ;;
         -*|--*)
           shift 1
           break
@@ -453,7 +454,9 @@ if [[ -z "$GS_VERSION" ]]; then
   if [[ "$(command -v gnome-shell)" ]]; then
     gnome-shell --version
     SHELL_VERSION="$(gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f -1)"
-    if [[ "${SHELL_VERSION:-}" -ge "46" ]]; then
+    if [[ "${SHELL_VERSION:-}" -ge "47" ]]; then
+      GS_VERSION="47.0"
+    elif [[ "${SHELL_VERSION:-}" -ge "46" ]]; then
       GS_VERSION="46.0"
     elif [[ "${SHELL_VERSION:-}" -ge "44" ]]; then
       GS_VERSION="44.0"
@@ -466,7 +469,7 @@ if [[ -z "$GS_VERSION" ]]; then
     fi
   else
     echo "'gnome-shell' not found, using styles for last gnome-shell version available."
-    GS_VERSION="46.0"
+    GS_VERSION="47.0"
   fi
 fi
 

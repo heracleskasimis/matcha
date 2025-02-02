@@ -7853,22 +7853,6 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
   border: none;
 }
 
-.fullscreen .content-pane headerbar windowcontrols button.maximize, .maximized .content-pane headerbar windowcontrols button.maximize {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore#.png"), url("assets/titlebutton-restore@2.png"));
-}
-
-.fullscreen .content-pane headerbar windowcontrols button.maximize:backdrop, .maximized .content-pane headerbar windowcontrols button.maximize:backdrop {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore-backdrop#.png"), url("assets/titlebutton-restore-backdrop@2.png"));
-}
-
-.fullscreen .content-pane headerbar windowcontrols button.maximize:hover, .maximized .content-pane headerbar windowcontrols button.maximize:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore-hover#.png"), url("assets/titlebutton-restore-hover@2.png"));
-}
-
-.fullscreen .content-pane headerbar windowcontrols button.maximize:active, .maximized .content-pane headerbar windowcontrols button.maximize:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-restore-active#.png"), url("assets/titlebutton-restore-active@2.png"));
-}
-
 .content-pane toolbarview, .content-pane toolbarview.view {
   background-color: transparent;
 }
@@ -7964,7 +7948,7 @@ themeswitcher .check {
   min-height: 16px;
   min-width: 16px;
   background-color: #3498db;
-  color: on(#3498db);
+  color: #ffffff;
   padding: 2px;
   border-radius: 100%;
   margin: 3px;
@@ -7974,12 +7958,12 @@ themeswitcher .check {
 
 themeswitcher .check:hover {
   background-color: #5faee3;
-  color: on(#3498db);
+  color: #ffffff;
 }
 
 themeswitcher .check:active {
   background-color: #3498db;
-  color: on(#3498db);
+  color: #ffffff;
 }
 
 themeswitcher checkbutton radio {
