@@ -2282,6 +2282,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /* Audio selection dialog */
 .audio-device-selection-dialog {
   min-width: 24em;
+  background-color: #cfcfcf;
 }
 
 .audio-device-selection-dialog .audio-selection-box {

@@ -164,6 +164,7 @@
 /* Audio selection dialog */
 .audio-device-selection-dialog {
   min-width: 24em;
+  background-color: $osd_bg_color;
 
   .audio-selection-box {
     spacing: $base_padding * 2;
